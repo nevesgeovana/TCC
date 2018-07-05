@@ -204,27 +204,27 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Main_Wing()
     wing.tag = 'main_wing'
 
-    wing.aspect_ratio            = 9.3
-    wing.sweeps.quarter_chord    = 23.0 * Units.deg
+    wing.aspect_ratio            = 8.6
+    wing.sweeps.quarter_chord    = 23.0 * Units.deg # 22.5
     wing.thickness_to_chord      = 0.11
     wing.taper                   = 0.28
-    wing.span_efficiency         = 1.0
+    wing.span_efficiency         = 1.0 #
     wing.spans.projected         = 26.0  * Units.meter
-    wing.chords.root             = 5.203 * Units.meter
-    wing.chords.tip              = 1.460 * Units.meter
-    wing.chords.mean_aerodynamic = 3.680 * Units.meter
+    wing.chords.root             = 5.428 * Units.meter # 5.203
+    wing.chords.tip              = 1.380 * Units.meter # 1.460
+    wing.chords.mean_aerodynamic = 3.806 * Units.meter
     wing.areas.reference         = 72.72 * Units['meters**2']  
     wing.areas.wetted            = 2.0   * wing.areas.reference
     wing.areas.exposed           = 0.8   * wing.areas.wetted
     wing.areas.affected          = 0.6   * wing.areas.reference
     wing.twists.root             = 2.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
-    wing.origin                  = [13.2,0,0]
+    wing.origin                  = [10.36122,0,0] #
     wing.vertical                = False
     wing.symmetric               = True
     wing.high_lift               = True
     wing.flaps.type              = "double_slotted"
-    wing.flaps.chord             = 0.280 * Units.meter
+    wing.flaps.chord             = 0.280 * Units.meter #
     wing.dynamic_pressure_ratio  = 1.0
 
     # add to vehicle
@@ -237,25 +237,25 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Wing()
     wing.tag = 'horizontal_stabilizer'
 
-    wing.aspect_ratio            = 5.5
-    wing.sweeps.quarter_chord    = 34.5 * Units.deg
-    wing.thickness_to_chord      = 0.11
+    wing.aspect_ratio            = 4.3 #5.5
+    wing.sweeps.quarter_chord    = 30.0 * Units.deg #34.5
+    wing.thickness_to_chord      = 0.3707 #0.11
     wing.taper                   = 0.11
-    wing.span_efficiency         = 0.9
-    wing.spans.projected         = 11.958 * Units.meter
-    wing.chords.root             = 3.030  * Units.meter
-    wing.chords.tip              = 0.883  * Units.meter
-    wing.chords.mean_aerodynamic = 2.3840 * Units.meter
-    wing.areas.reference         = 26.0 * Units['meters**2'] 
-    wing.areas.wetted            = 2.0  * wing.areas.reference
-    wing.areas.exposed           = 0.8  * wing.areas.wetted
-    wing.areas.affected          = 0.6  * wing.areas.reference
-    wing.twists.root             = 2.0 * Units.degrees
-    wing.twists.tip              = 2.0 * Units.degrees
-    wing.origin                  = [31.,0,0]
+    wing.span_efficiency         = 0.9 #
+    wing.spans.projected         = 10.000 * Units.meter
+    wing.chords.root             = 3.394  * Units.meter
+    wing.chords.tip              = 1.258  * Units.meter
+    wing.chords.mean_aerodynamic = 2.4895 * Units.meter
+    wing.areas.reference         = 23.25  * Units['meters**2'] 
+    wing.areas.wetted            = 2.0    * wing.areas.reference
+    wing.areas.exposed           = 0.8    * wing.areas.wetted
+    wing.areas.affected          = 0.6    * wing.areas.reference
+    wing.twists.root             = 2.0    * Units.degrees
+    wing.twists.tip              = 2.0    * Units.degrees
+    wing.origin                  = [24.6,0,0]
     wing.vertical                = False
     wing.symmetric               = True
-    wing.dynamic_pressure_ratio  = 0.9
+    wing.dynamic_pressure_ratio  = 0.9 #
 
     # add to vehicle
     vehicle.append_component(wing)
@@ -266,7 +266,7 @@ def vehicle_setup():
 
     wing = SUAVE.Components.Wings.Wing()
     wing.tag = 'vertical_stabilizer'
-
+    # equal to E190 data
     wing.aspect_ratio            = 1.7   
     wing.sweeps.quarter_chord    = 35 * Units.deg
     wing.thickness_to_chord      = 0.11
@@ -282,7 +282,7 @@ def vehicle_setup():
     wing.areas.affected          = 0.6   * wing.areas.reference
     wing.twists.root             = 0.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
-    wing.origin                  = [29.5,0,0]
+    wing.origin                  = [23.9,0,0]
     wing.vertical                = True
     wing.symmetric               = False
     wing.dynamic_pressure_ratio  = 1.0
@@ -298,20 +298,20 @@ def vehicle_setup():
     fuselage.tag = 'fuselage'
     fuselage.number_coach_seats    = vehicle.passengers
     fuselage.seats_abreast         = 4
-    fuselage.seat_pitch            = 0.7455
-    fuselage.fineness.nose         = 2.0
-    fuselage.fineness.tail         = 3.0
-    fuselage.lengths.nose          = 6.0   * Units.meter
-    fuselage.lengths.tail          = 9.0   * Units.meter
-    fuselage.lengths.cabin         = 21.24 * Units.meter
-    fuselage.lengths.total         = 36.24 * Units.meter
+    fuselage.seat_pitch            = 0.7455  #
+    fuselage.fineness.nose         = 2.0     #
+    fuselage.fineness.tail         = 3.0     #
+    fuselage.lengths.nose          = 6.82  * Units.meter
+    fuselage.lengths.tail          = 10.67   * Units.meter
+    fuselage.lengths.cabin         = 18.23 * Units.meter
+    fuselage.lengths.total         = 29.90 * Units.meter
     fuselage.lengths.fore_space    = 0.    * Units.meter
     fuselage.lengths.aft_space     = 0.    * Units.meter
-    fuselage.width                 = 3.18  * Units.meter
-    fuselage.heights.maximum       = 3.50  * Units.meter
-    fuselage.areas.side_projected  = 239.20 * Units['meters**2'] 
-    fuselage.areas.wetted          = 327.01 * Units['meters**2'] 
-    fuselage.areas.front_projected = 8.0110 * Units['meters**2']    
+    fuselage.width                 = 2.955 * Units.meter
+    fuselage.heights.maximum       = 3.361 * Units.meter
+    fuselage.areas.side_projected  = 203.32 * Units['meters**2'] 
+    fuselage.areas.wetted          = 277.96 * Units['meters**2'] 
+    fuselage.areas.front_projected = 31.2 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.18
     fuselage.differential_pressure = 10**5 * Units.pascal 
     
@@ -331,9 +331,9 @@ def vehicle_setup():
     gt_engine.tag               = 'turbofan'
 
     gt_engine.number_of_engines = 2.0
-    gt_engine.bypass_ratio      = 5.4
-    gt_engine.engine_length     = 2.71
-    gt_engine.nacelle_diameter  = 2.05
+    gt_engine.bypass_ratio      = 5.0
+    gt_engine.engine_length     = 3.1 # 2.71
+    gt_engine.nacelle_diameter  = 1.64395 # 2.05
 
     #set the working fluid for the network
     gt_engine.working_fluid = SUAVE.Attributes.Gases.Air()
@@ -444,7 +444,7 @@ def vehicle_setup():
     thrust.tag ='compute_thrust'
 
     #total design thrust (includes all the engines)
-    thrust.total_design             = 52700.0* Units.N #Newtons
+    thrust.total_design             = 40000.0* Units.N #Newtons (?) 52700.0
                                         
     #design sizing conditions
     altitude      = 35000.0*Units.ft
