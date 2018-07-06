@@ -21,7 +21,7 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_engine_data,   \
      print_mission_breakdown, \
      print_weight_breakdown
-
+from SUAVE.Methods.Performance  import payload_range
 # ----------------------------------------------------------------------
 #   Main
 # ----------------------------------------------------------------------
@@ -61,7 +61,13 @@ def main():
 
     # print mission breakdown
     print_mission_breakdown(results,filename='E170_mission_breakdown.dat')
-
+    
+    # run payload diagram
+    config = configs.base
+    cruise_segment_tag = "cruise"
+    reserves = 1750.
+    payload_range_results = payload_range(config,mission,cruise_segment_tag,reserves)
+    
     # plt the old results
     plot_mission(results)
 
