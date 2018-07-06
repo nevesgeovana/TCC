@@ -1,7 +1,8 @@
-# tut_mission_E170.py
+# based on tut_mission_B737.py and Vehicle.py from Regional Jet Optimization
 # 
 # Created:  Aug 2014, SUAVE Team
 # Modified: Aug 2017, SUAVE Team
+# Modified: Jul 2018, geo
 
 # ----------------------------------------------------------------------
 #   Imports
@@ -37,11 +38,19 @@ def main():
 
     # weight analysis
     weights = analyses.configs.base.weights
-    breakdown = weights.evaluate()      
+    breakdown = weights.evaluate()
+
+    weights.vehicle.mass_properties.center_of_gravity = SUAVE.Methods.Center_of_Gravity.compute_aircraft_center_of_gravity(weights.vehicle, nose_load_fraction=.06)
 
     # mission analysis
     mission = analyses.missions.base
     results = mission.evaluate()
+
+    CM = results.conditions.cruise.stability.static.CM[0][0]
+    cm0 = results.conditions.cruise.stability.static.cm0[0][0]
+    cm_alpha = results.conditions.cruise.stability.static.cm_alpha[0][0]
+    cn_beta = results.conditions.cruise.stability.static.cn_beta[0][0]
+    static_margin = results.conditions.cruise.stability.static.static_margin[0][0]
 
     # print weight breakdown
     print_weight_breakdown(configs.base,filename = 'E170_weight_breakdown.dat')
@@ -136,11 +145,6 @@ def base_analysis(vehicle):
     stability.geometry = vehicle
     analyses.append(stability)
 
-    # ------------------------------------------------------------------
-    #  Energy
-    energy= SUAVE.Analyses.Energy.Energy()
-    energy.network = vehicle.propulsors 
-    analyses.append(energy)
 
     # ------------------------------------------------------------------
     #  Planet Analysis
@@ -163,14 +167,14 @@ def vehicle_setup():
     
     # ------------------------------------------------------------------
     #   Initialize the Vehicle
-    # ------------------------------------------------------------------    
-    
+    # ------------------------------------------------------------------
+
     vehicle = SUAVE.Vehicle()
-    vehicle.tag = 'Boeing_737-800'    
-    
+    vehicle.tag = 'Embraer_E190'
+
     # ------------------------------------------------------------------
     #   Vehicle-level Properties
-    # ------------------------------------------------------------------    
+    # ------------------------------------------------------------------
 
     # mass properties
     vehicle.mass_properties.max_takeoff               = 38600. * Units.kg
@@ -181,32 +185,17 @@ def vehicle_setup():
     vehicle.mass_properties.max_payload               = 9743.0 * Units.kg
     vehicle.mass_properties.max_fuel                  = 9335.0 * Units.kg
 
+    vehicle.mass_properties.center_of_gravity         = [14.85, 0, 0]
+
     # envelope properties
-    vehicle.envelope.ultimate_load = 2.5
-    vehicle.envelope.limit_load    = 1.5
+    vehicle.envelope.ultimate_load = 3.75
+    vehicle.envelope.limit_load    = 2.50
 
     # basic parameters
     vehicle.reference_area         = 72.72 * Units['meters**2']  
     vehicle.passengers             = 72
     vehicle.systems.control        = "fully powered"
     vehicle.systems.accessories    = "medium range"
-
-    # ------------------------------------------------------------------        
-    #  Landing Gear
-    # ------------------------------------------------------------------        
-    # used for noise calculations
-    landing_gear = SUAVE.Components.Landing_Gear.Landing_Gear()
-    landing_gear.tag = "main_landing_gear"
-    
-    landing_gear.main_tire_diameter = 1.12000 * Units.m
-    landing_gear.nose_tire_diameter = 0.6858 * Units.m
-    landing_gear.main_strut_length  = 1.8 * Units.m
-    landing_gear.nose_strut_length  = 1.3 * Units.m
-    landing_gear.main_units  = 2    #number of main landing gear units
-    landing_gear.nose_units  = 1    #number of nose landing gear
-    landing_gear.main_wheels = 2    #number of wheels on the main landing gear
-    landing_gear.nose_wheels = 2    #number of wheels on the nose landing gear      
-    vehicle.landing_gear = landing_gear
 
     # ------------------------------------------------------------------
     #   Main Wing
@@ -332,7 +321,7 @@ def vehicle_setup():
 
     # add to vehicle
     vehicle.append_component(fuselage)
-    
+
     # ------------------------------------------------------------------
     #   Turbofan Network
     # ------------------------------------------------------------------    
@@ -518,9 +507,27 @@ def vehicle_setup():
     vehicle.append_component(turbofan)      
     
     # ------------------------------------------------------------------
+    # ------------------------------------------------------------------
+    
+    #now add weights objects
+    vehicle.landing_gear       = SUAVE.Components.Landing_Gear.Landing_Gear()
+    vehicle.control_systems    = SUAVE.Components.Physical_Component()
+    vehicle.electrical_systems = SUAVE.Components.Physical_Component()
+    vehicle.avionics           = SUAVE.Components.Energy.Peripherals.Avionics()
+    vehicle.passenger_weights  = SUAVE.Components.Physical_Component()
+    vehicle.furnishings        = SUAVE.Components.Physical_Component()
+    vehicle.air_conditioner    = SUAVE.Components.Physical_Component()
+    vehicle.fuel               = SUAVE.Components.Physical_Component()
+    vehicle.apu                = SUAVE.Components.Physical_Component()
+    vehicle.hydraulics         = SUAVE.Components.Physical_Component()
+    vehicle.optionals          = SUAVE.Components.Physical_Component()
+
+    vehicle.wings['vertical_stabilizer'].rudder = SUAVE.Components.Physical_Component()
+    
+    # ------------------------------------------------------------------
     #   Vehicle Definition Complete
     # ------------------------------------------------------------------
-
+    
     return vehicle
 
 # ----------------------------------------------------------------------
@@ -528,10 +535,10 @@ def vehicle_setup():
 # ---------------------------------------------------------------------
 
 def configs_setup(vehicle):
-    
     # ------------------------------------------------------------------
     #   Initialize Configurations
     # ------------------------------------------------------------------
+
     configs = SUAVE.Components.Configs.Config.Container()
 
     base_config = SUAVE.Components.Configs.Config(vehicle)
@@ -541,42 +548,40 @@ def configs_setup(vehicle):
     # ------------------------------------------------------------------
     #   Cruise Configuration
     # ------------------------------------------------------------------
+
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'cruise'
-    configs.append(config)
 
-    # ------------------------------------------------------------------
-    #   Takeoff Configuration
-    # ------------------------------------------------------------------
-    config = SUAVE.Components.Configs.Config(base_config)
-    config.tag = 'takeoff'
-    config.wings['main_wing'].flaps.angle = 20. * Units.deg
-    config.wings['main_wing'].slats.angle = 25. * Units.deg
-    # config.max_lift_coefficient_factor    = 1.
-    config.V2_VS_ratio = 1.21
-    config.maximum_lift_coefficient = 2.
-    
     configs.append(config)
+    
+    config.maximum_lift_coefficient = 1.2
+    
     # ------------------------------------------------------------------
     #   Cruise with Spoilers Configuration
     # ------------------------------------------------------------------
 
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'cruise_spoilers'
-    config.maximum_lift_coefficient = 1.2
-    
+
     configs.append(config)
     
-    # ------------------------------------------------------------------
-    #   Cutback Configuration
-    # ------------------------------------------------------------------
-    config = SUAVE.Components.Configs.Config(base_config)
-    config.tag = 'cutback'
-    config.wings['main_wing'].flaps.angle = 20. * Units.deg
-    config.wings['main_wing'].slats.angle = 20. * Units.deg
-    config.max_lift_coefficient_factor    = 1. #0.95
+    config.maximum_lift_coefficient = 1.2
 
-    configs.append(config)    
+
+    # ------------------------------------------------------------------
+    #   Takeoff Configuration
+    # ------------------------------------------------------------------
+
+    config = SUAVE.Components.Configs.Config(base_config)
+    config.tag = 'takeoff'
+
+    config.wings['main_wing'].flaps.angle = 20. * Units.deg
+    config.wings['main_wing'].slats.angle = 25. * Units.deg
+
+    config.V2_VS_ratio = 1.21
+    config.maximum_lift_coefficient = 2.
+
+    configs.append(config)
 
     # ------------------------------------------------------------------
     #   Landing Configuration
@@ -585,15 +590,14 @@ def configs_setup(vehicle):
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'landing'
 
-    config.wings['main_wing'].flaps.angle = 30. * Units.deg
-    config.wings['main_wing'].slats.angle = 25. * Units.deg  
-    # config.max_lift_coefficient_factor    = 1. #0.95
-    
+    config.wings['main_wing'].flaps_angle = 30. * Units.deg
+    config.wings['main_wing'].slats_angle = 25. * Units.deg
+
     config.Vref_VS_ratio = 1.23
     config.maximum_lift_coefficient = 2.
-    
-    configs.append(config)
 
+    configs.append(config)
+    
     # ------------------------------------------------------------------
     #   Short Field Takeoff Configuration
     # ------------------------------------------------------------------ 
@@ -603,8 +607,10 @@ def configs_setup(vehicle):
     
     config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
-    config.max_lift_coefficient_factor    = 1. #0.95
-  
+
+    # config.V2_VS_ratio = 1.21
+    # config.maximum_lift_coefficient = 2. 
+    
     configs.append(config)
 
     return configs
@@ -647,7 +653,7 @@ def simple_sizing(configs):
 # ----------------------------------------------------------------------
 
 def mission_setup(analyses):
-
+    
     # ------------------------------------------------------------------
     #   Initialize the Mission
     # ------------------------------------------------------------------
@@ -659,7 +665,7 @@ def mission_setup(analyses):
     airport = SUAVE.Attributes.Airports.Airport()
     airport.altitude   =  0.0  * Units.ft
     airport.delta_isa  =  0.0
-    airport.atmosphere = SUAVE.Attributes.Atmospheres.Earth.US_Standard_1976()
+    airport.atmosphere =  SUAVE.Analyses.Atmospheric.US_Standard_1976()
 
     mission.airport = airport    
 
@@ -668,18 +674,25 @@ def mission_setup(analyses):
 
     # base segment
     base_segment = Segments.Segment()
-
+    atmosphere=SUAVE.Attributes.Atmospheres.Earth.US_Standard_1976()
+    planet = SUAVE.Attributes.Planets.Earth()
+    
     # ------------------------------------------------------------------
     #   First Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
-    segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Climb.Constant_Speed_Constant_Rate()
     segment.tag = "climb_1"
 
-    segment.analyses.extend( analyses.takeoff )
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.base )
+
+    # define segment attributes
+    segment.atmosphere     = atmosphere
+    segment.planet         = planet
 
     segment.altitude_start = 0.0   * Units.km
-    segment.altitude_end   = 3.048   * Units.km
+    segment.altitude_end   = 3.048 * Units.km
     segment.air_speed      = 138.0 * Units['m/s']
     segment.climb_rate     = 3000. * Units['ft/min']
 
@@ -688,12 +701,17 @@ def mission_setup(analyses):
 
     # ------------------------------------------------------------------
     #   Second Climb Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------    
+    # ------------------------------------------------------------------
 
-    segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Climb.Constant_Speed_Constant_Rate()
     segment.tag = "climb_2"
 
+    # connect vehicle configuration
     segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 3.657 * Units.km
     segment.air_speed    = 168.0 * Units['m/s']
@@ -703,13 +721,18 @@ def mission_setup(analyses):
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Third Climb Segment: constant Speed, Constant Rate
-    # ------------------------------------------------------------------    
+    #   Third Climb Segment: Constant Speed, Constant Climb Rate
+    # ------------------------------------------------------------------
 
-    segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Climb.Constant_Speed_Constant_Rate()
     segment.tag = "climb_3"
 
+    # connect vehicle configuration
     segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 25000. * Units.ft
     segment.air_speed    = 200.0  * Units['m/s']
@@ -718,7 +741,7 @@ def mission_setup(analyses):
     # add to mission
     mission.append_segment(segment)
     
-    # ------------------------------------------------------------------
+     # ------------------------------------------------------------------
     #   Fourth Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
@@ -729,15 +752,15 @@ def mission_setup(analyses):
     segment.analyses.extend( analyses.cruise )
 
     # segment attributes
-    # segment.atmosphere   = atmosphere
-    # segment.planet       = planet
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 32000. * Units.ft
     segment.air_speed    = 230.0* Units['m/s']
     segment.climb_rate   = 900. * Units['ft/min']
 
     # add to mission
-    mission.append_segment(segment)
+    mission.append_segment(segment)   
     
     # ------------------------------------------------------------------
     #   Fifth Climb Segment: Constant Speed, Constant Rate
@@ -750,8 +773,8 @@ def mission_setup(analyses):
     segment.analyses.extend( analyses.cruise )
 
     # segment attributes
-    # segment.atmosphere   = atmosphere
-    # segment.planet       = planet
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 37000. * Units.ft
     segment.air_speed    = 230.0  * Units['m/s']
@@ -760,17 +783,23 @@ def mission_setup(analyses):
     # add to mission
     mission.append_segment(segment)    
     
-    # ------------------------------------------------------------------    
+    
+    # ------------------------------------------------------------------
     #   Cruise Segment: Constant Speed, Constant Altitude
-    # ------------------------------------------------------------------    
+    # ------------------------------------------------------------------
 
-    segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+    segment = Segments.Cruise.Constant_Speed_Constant_Altitude()
     segment.tag = "cruise"
 
+    # connect vehicle configuration
     segment.analyses.extend( analyses.cruise )
 
+    # segment attributes
+    segment.atmosphere = atmosphere
+    segment.planet     = planet
+
     segment.air_speed  = 450. * Units.knots
-    segment.distance   = 2050. * Units.nautical_miles
+    segment.distance   = 2050. * Units.nmi
 
     # add to mission
     mission.append_segment(segment)
@@ -779,10 +808,15 @@ def mission_setup(analyses):
     #   First Descent Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
-    segment = Segments.Descent.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Descent.Constant_Speed_Constant_Rate()
     segment.tag = "descent_1"
 
+    # connect vehicle configuration
     segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 9.31  * Units.km
     segment.air_speed    = 440.0 * Units.knots
@@ -795,40 +829,124 @@ def mission_setup(analyses):
     #   Second Descent Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
-    segment = Segments.Descent.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Descent.Constant_Speed_Constant_Rate()
     segment.tag = "descent_2"
 
-    segment.analyses.extend( analyses.landing )
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.cruise_spoilers )
+
+    # segment attributes
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 3.657 * Units.km
     segment.air_speed    = 365.0 * Units.knots
     segment.descent_rate = 2300. * Units['ft/min']
 
-    # add to mission
+    # append to mission
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
     #   Third Descent Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
-    segment = Segments.Descent.Constant_Speed_Constant_Rate(base_segment)
+    segment = Segments.Descent.Constant_Speed_Constant_Rate()
     segment.tag = "descent_3"
 
-    segment.analyses.extend( analyses.landing )
-    analyses.landing.aerodynamics.settings.spoiler_drag_increment = 0.00
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere   = atmosphere
+    segment.planet       = planet
 
     segment.altitude_end = 0.0   * Units.km
     segment.air_speed    = 250.0 * Units.knots
     segment.descent_rate = 1500. * Units['ft/min']
 
-    # add to mission
+    # append to mission
     mission.append_segment(segment)
-
 
     # ------------------------------------------------------------------
     #   Mission definition complete    
     # ------------------------------------------------------------------
-
+    
+    
+    
+    #------------------------------------------------------------------
+    ###         Reserve mission
+    #------------------------------------------------------------------
+    
+    # ------------------------------------------------------------------
+    #   First Climb Segment: Constant Speed, Constant Throttle
+    # ------------------------------------------------------------------
+ 
+    segment = Segments.Climb.Constant_Speed_Constant_Rate()
+    segment.tag = "reserve_climb"
+ 
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.base )
+ 
+    # define segment attributes
+    segment.atmosphere     = atmosphere
+    segment.planet         = planet
+ 
+    segment.altitude_start = 0.0    * Units.km
+    segment.altitude_end   = 15000. * Units.ft
+    segment.air_speed      = 138.0  * Units['m/s']
+    segment.climb_rate     = 3000.  * Units['ft/min']
+ 
+    # add to misison
+    mission.append_segment(segment)
+    
+    # ------------------------------------------------------------------
+    #   Cruise Segment: constant speed, constant altitude
+    # ------------------------------------------------------------------
+    
+    segment = Segments.Cruise.Constant_Mach_Constant_Altitude(base_segment)
+    segment.tag = "reserve_cruise"
+    
+    segment.analyses.extend( analyses.cruise )
+    
+    segment.mach      = 0.5
+    segment.distance  = 140.0 * Units.nautical_mile    
+    mission.append_segment(segment)
+    
+    # ------------------------------------------------------------------
+    #   Loiter Segment: constant mach, constant time
+    # ------------------------------------------------------------------
+    
+    segment = Segments.Cruise.Constant_Mach_Constant_Altitude_Loiter(base_segment)
+    segment.tag = "reserve_loiter"
+    
+    segment.analyses.extend( analyses.cruise )
+    
+    segment.mach = 0.5
+    segment.time = 30.0 * Units.minutes
+    
+    mission.append_segment(segment)    
+    
+    # ------------------------------------------------------------------
+    #  Final Descent Segment: consant speed, constant segment rate
+    # ------------------------------------------------------------------
+    
+    segment = Segments.Descent.Linear_Mach_Constant_Rate(base_segment)
+    segment.tag = "reserve_descent_1"
+    
+    segment.analyses.extend( analyses.landing )
+    
+    segment.altitude_end = 0.0   * Units.km
+    segment.descent_rate = 3.0   * Units['m/s']
+    segment.mach_end    = 0.24
+    segment.mach_start  = 0.3
+    
+    # append to mission
+    mission.append_segment(segment)
+    
+    #------------------------------------------------------------------
+    ###         Reserve mission completed
+    #------------------------------------------------------------------
+    
     return mission
 
 def missions_setup(base_mission):
@@ -875,8 +993,8 @@ def plot_mission(results,line_style='bo-'):
         axes.set_ylabel('Throttle',axis_font)
         axes.grid(True)	
 
-        plt.savefig("E170_engine.pdf")
-        plt.savefig("E170_engine.png")
+        plt.savefig("B737_engine.pdf")
+        plt.savefig("B737_engine.png")
 
     # ------------------------------------------------------------------
     #   Aerodynamics 2
@@ -906,8 +1024,8 @@ def plot_mission(results,line_style='bo-'):
         axes.set_ylabel('AOA (deg)',axis_font)
         axes.grid(True)
 
-        plt.savefig("E170_aero.pdf")
-        plt.savefig("E170_aero.png")
+        plt.savefig("B737_aero.pdf")
+        plt.savefig("B737_aero.png")
 
     # ------------------------------------------------------------------
     #   Aerodynamics 2
@@ -942,8 +1060,8 @@ def plot_mission(results,line_style='bo-'):
     axes.set_xlabel('Time (min)')
     axes.set_ylabel('CD')
     axes.grid(True)
-    plt.savefig("E170_drag.pdf")
-    plt.savefig("E170_drag.png")
+    plt.savefig("B737_drag.pdf")
+    plt.savefig("B737_drag.png")
 
     # ------------------------------------------------------------------
     #   Altitude, sfc, vehicle weight
@@ -976,8 +1094,8 @@ def plot_mission(results,line_style='bo-'):
         axes.set_ylabel('Weight (lb)',axis_font)
         axes.grid(True)
 
-        plt.savefig("E170_mission.pdf")
-        plt.savefig("E170_mission.png")
+        plt.savefig("B737_mission.pdf")
+        plt.savefig("B737_mission.png")
         
     # ------------------------------------------------------------------
     #   Velocities
