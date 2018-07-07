@@ -188,31 +188,14 @@ def vehicle_setup():
     vehicle.mass_properties.max_fuel                  = 9335.0 * Units.kg
 
     # envelope properties
-    vehicle.envelope.ultimate_load = 2.5
-    vehicle.envelope.limit_load    = 1.5
+    vehicle.envelope.ultimate_load = 2.5 * 1.5
+    vehicle.envelope.limit_load    = 2.5
 
     # basic parameters
     vehicle.reference_area         = 72.72 * Units['meters**2']  
     vehicle.passengers             = 72
     vehicle.systems.control        = "fully powered"
     vehicle.systems.accessories    = "medium range"
-
-    # ------------------------------------------------------------------        
-    #  Landing Gear
-    # ------------------------------------------------------------------        
-    # used for noise calculations
-    landing_gear = SUAVE.Components.Landing_Gear.Landing_Gear()
-    landing_gear.tag = "main_landing_gear"
-    
-    landing_gear.main_tire_diameter = 1.12000 * Units.m
-    landing_gear.nose_tire_diameter = 0.6858 * Units.m
-    landing_gear.main_strut_length  = 1.8 * Units.m
-    landing_gear.nose_strut_length  = 1.3 * Units.m
-    landing_gear.main_units  = 2    #number of main landing gear units
-    landing_gear.nose_units  = 1    #number of nose landing gear
-    landing_gear.main_wheels = 2    #number of wheels on the main landing gear
-    landing_gear.nose_wheels = 2    #number of wheels on the nose landing gear      
-    vehicle.landing_gear = landing_gear
 
     # ------------------------------------------------------------------
     #   Main Wing
@@ -241,7 +224,7 @@ def vehicle_setup():
     wing.symmetric               = True
     wing.high_lift               = True
     wing.flaps.type              = "double_slotted"
-    wing.flaps.chord             = 0.280 * Units.meter #
+    wing.flaps.chord             = 0.280
     wing.dynamic_pressure_ratio  = 1.0
 
     # add to vehicle
@@ -256,8 +239,8 @@ def vehicle_setup():
 
     wing.aspect_ratio            = 4.3 #5.5
     wing.sweeps.quarter_chord    = 30.0 * Units.deg #34.5
-    wing.thickness_to_chord      = 0.3707 #0.11
-    wing.taper                   = 0.11
+    wing.thickness_to_chord      = 0.11
+    wing.taper                   = 0.3707 #0.11
     wing.span_efficiency         = 0.9 #
     wing.spans.projected         = 10.000 * Units.meter
     wing.chords.root             = 3.394  * Units.meter
@@ -319,7 +302,7 @@ def vehicle_setup():
     fuselage.fineness.nose         = 2.0     #
     fuselage.fineness.tail         = 3.0     #
     fuselage.lengths.nose          = 6.82  * Units.meter
-    fuselage.lengths.tail          = 10.67   * Units.meter
+    fuselage.lengths.tail          = 10.67 * Units.meter
     fuselage.lengths.cabin         = 18.23 * Units.meter
     fuselage.lengths.total         = 29.90 * Units.meter
     fuselage.lengths.fore_space    = 0.    * Units.meter
@@ -350,8 +333,8 @@ def vehicle_setup():
     # setup
     turbofan.number_of_engines = 2
     turbofan.bypass_ratio      = 5.0
-    turbofan.engine_length     = 3.1 * Units.meter
-    turbofan.nacelle_diameter  = 1.64395 * Units.meter
+    turbofan.engine_length     = 3.1  * Units.meter
+    turbofan.nacelle_diameter  = 1.64 * Units.meter
     turbofan.origin            = [[9.721, 3.984,-1],[9.721,-3.984,-1]] # meters
     
     #compute engine areas
@@ -506,7 +489,7 @@ def vehicle_setup():
     thrust.tag ='compute_thrust'
  
     #total design thrust (includes all the engines)
-    thrust.total_design             = 52700.0 * Units.N #Newtons
+    thrust.total_design             = 37000.0 * Units.N #Newtons
  
     #design sizing conditions
     altitude      = 35000.0*Units.ft
