@@ -172,7 +172,7 @@ def vehicle_setup():
     # ------------------------------------------------------------------    
     
     vehicle = SUAVE.Vehicle()
-    vehicle.tag = 'Boeing_737-800'    
+    vehicle.tag = 'E170'
     
     # ------------------------------------------------------------------
     #   Vehicle-level Properties
@@ -501,7 +501,7 @@ def vehicle_setup():
     turbofan.thrust = thrust
 
     #size the turbofan
-    turbofan_sizing(turbofan,mach_number,altitude)   
+    turbofan_sizing(turbofan, mach_number, altitude, isa_deviation)
     
     # add  gas turbine network turbofan to the vehicle 
     vehicle.append_component(turbofan)      
