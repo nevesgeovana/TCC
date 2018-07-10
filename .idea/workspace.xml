@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/E170.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_compress_drag.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_drag.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_drag.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/E170_drag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_engine.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_engine.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_engine.png" beforeDir="false" afterPath="$PROJECT_DIR$/E170_engine.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_engine_data.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_mission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_mission.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_mission.png" beforeDir="false" afterPath="$PROJECT_DIR$/E170_mission.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_mission_breakdown.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_parasite_drag.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_weight_breakdown.dat" afterDir="false" />
@@ -27,13 +32,21 @@
       <file leaf-file-name="E170.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="184" column="21" lean-forward="true" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+            <state relative-caret-position="143">
+              <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+              <folding>
+                <element signature="e#268#286#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>simple_sizing</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -66,11 +80,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,7 +161,44 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/E170.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/E170.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/E170.py</url>
+          <line>188</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/E170.py</url>
+          <line>510</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="184" column="21" lean-forward="true" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9469">
@@ -158,8 +208,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="184" column="21" lean-forward="true" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+        <state relative-caret-position="143">
+          <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

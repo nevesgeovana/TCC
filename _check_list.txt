@@ -1,0 +1,16 @@
+# Conferir em relação a que essas distancias sao definidas
+wing.origin                  = [50,0,0] # meters
+wing.aerodynamic_center      = [2,0,0] # meters
+
+# Conferir definição dessas areas e calcular
+fuselage.areas.side_projected  = 203.32 * Units['meters**2'] 
+fuselage.areas.wetted          = 277.96 * Units['meters**2'] 
+fuselage.areas.front_projected = 31.2 * Units['meters**2']  
+fuselage.differential_pressure = 10**5 * Units.pascal 
+
+# Conferir arquivo de saída do motor - 'nan' output (OK)
+
+# Conferir arrasto parasita
+Drag Coefficient Increment
+
+# Diferença na somatória do arrasto parasita E170
