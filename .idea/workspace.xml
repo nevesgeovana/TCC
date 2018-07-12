@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/E170.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.pdf" afterDir="false" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="E170.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+            <state relative-caret-position="187">
+              <caret line="377" column="4" lean-forward="true" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
               </folding>
@@ -166,7 +165,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -174,21 +173,21 @@
           <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>188</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>510</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10387">
+          <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3128">
@@ -208,8 +207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="611" lean-forward="true" selection-start-line="611" selection-end-line="611" />
+        <state relative-caret-position="187">
+          <caret line="377" column="4" lean-forward="true" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
           <folding>
             <element signature="e#268#286#0" expanded="true" />
           </folding>

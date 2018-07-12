@@ -37,7 +37,8 @@ def main():
 
     # weight analysis
     weights = analyses.configs.base.weights
-    breakdown = weights.evaluate()      
+    breakdown = weights.evaluate()
+    analyses.configs.base.weights.mass_properties.operating_empty = 20736. * Units.kg
 
     # mission analysis
     mission = analyses.missions.base
@@ -183,13 +184,13 @@ def vehicle_setup():
     # ------------------------------------------------------------------    
 
     # mass properties
-    vehicle.mass_properties.max_takeoff               = 38600. * Units.kg
-    vehicle.mass_properties.operating_empty           = 21157. * Units.kg
-    vehicle.mass_properties.takeoff                   = 38600. * Units.kg
-    vehicle.mass_properties.max_zero_fuel             = 30900. * Units.kg
+    vehicle.mass_properties.max_takeoff               = 37200. * Units.kg
+    vehicle.mass_properties.operating_empty           = 20736. * Units.kg
+    vehicle.mass_properties.takeoff                   = 37200. * Units.kg
+    vehicle.mass_properties.max_zero_fuel             = 30140. * Units.kg
     vehicle.mass_properties.cargo                     = 0.0    * Units.kg
-    vehicle.mass_properties.max_payload               = 9743.0 * Units.kg
-    vehicle.mass_properties.max_fuel                  = 9335.0 * Units.kg
+    vehicle.mass_properties.max_payload               = 9404.0 * Units.kg
+    vehicle.mass_properties.max_fuel                  = 9428.0 * Units.kg
 
     # envelope properties
     vehicle.envelope.ultimate_load = 2.5 * 1.5
@@ -317,7 +318,7 @@ def vehicle_setup():
     fuselage.areas.wetted          = 269.80 * Units['meters**2']
     fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.2
-    fuselage.differential_pressure = 10**5 * Units.pascal 
+    fuselage.differential_pressure = 8.5 * Units.psi
     
     fuselage.heights.at_quarter_length          = 3.4 * Units.meter
     fuselage.heights.at_three_quarters_length   = 3.4 * Units.meter
@@ -367,7 +368,7 @@ def vehicle_setup():
     
     # setup
     inlet_nozzle.polytropic_efficiency = 0.98
-    inlet_nozzle.pressure_ratio        = 0.99
+    inlet_nozzle.pressure_ratio        = 0.98
     
     # add to network
     turbofan.append(inlet_nozzle)
@@ -409,7 +410,7 @@ def vehicle_setup():
     
     # setup
     turbine.mechanical_efficiency = 0.99
-    turbine.polytropic_efficiency = 0.99
+    turbine.polytropic_efficiency = 0.93
     
     # add to network
     turbofan.append(turbine)
@@ -423,7 +424,7 @@ def vehicle_setup():
 
     # setup
     turbine.mechanical_efficiency = 0.99
-    turbine.polytropic_efficiency = 0.99
+    turbine.polytropic_efficiency = 0.93
     
     # add to network
     turbofan.append(turbine)  
@@ -454,7 +455,7 @@ def vehicle_setup():
     
     # setup
     nozzle.polytropic_efficiency = 0.95
-    nozzle.pressure_ratio        = 0.99    
+    nozzle.pressure_ratio        = 0.98
     
     # add to network
     turbofan.append(nozzle)
