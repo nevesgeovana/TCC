@@ -315,7 +315,7 @@ def vehicle_setup():
     fuselage.width                 = 3.000 * Units.meter
     fuselage.heights.maximum       = 3.400 * Units.meter
     fuselage.areas.side_projected  = 197.35 * Units['meters**2']
-    fuselage.areas.wetted          = 269.80 * Units['meters**2']
+    fuselage.areas.wetted          = 280.00 * Units['meters**2'] # 269.80
     fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.2
     fuselage.differential_pressure = 8.5 * Units.psi
@@ -396,7 +396,7 @@ def vehicle_setup():
     
     # setup
     compressor.polytropic_efficiency = 0.91
-    compressor.pressure_ratio        = 10.0
+    compressor.pressure_ratio        = 7.5
     
     # add to network
     turbofan.append(compressor)
@@ -498,7 +498,7 @@ def vehicle_setup():
  
     #design sizing conditions
     altitude      = 35000.0*Units.ft
-    mach_number   = 0.78 
+    mach_number   = 0.78
     isa_deviation = 0.
     
     #Engine setup for noise module    

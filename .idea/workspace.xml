@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/E170.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.pdf" afterDir="false" />
@@ -31,8 +32,8 @@
       <file leaf-file-name="E170.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="377" column="4" lean-forward="true" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
+            <state relative-caret-position="272">
+              <caret line="317" column="35" selection-start-line="317" selection-start-column="35" selection-end-line="317" selection-end-column="35" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
               </folding>
@@ -57,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -135,19 +136,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19089574" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.095168374" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32750398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39427662" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -165,19 +166,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
+          <line>72</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
+          <line>40</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6409">
+          <caret line="377" column="4" lean-forward="true" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10387">
@@ -207,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="377" column="4" lean-forward="true" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
+        <state relative-caret-position="272">
+          <caret line="317" column="35" selection-start-line="317" selection-start-column="35" selection-end-line="317" selection-end-column="35" />
           <folding>
             <element signature="e#268#286#0" expanded="true" />
           </folding>
