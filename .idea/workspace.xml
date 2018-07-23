@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/E170.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/E170_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/E170_aero.png" afterDir="false" />
@@ -32,11 +30,20 @@
       <file leaf-file-name="E170.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="317" column="35" selection-start-line="317" selection-start-column="35" selection-end-line="317" selection-end-column="35" />
+            <state relative-caret-position="51">
+              <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="87" selection-end-column="94" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estimate_take_off_field_length.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -59,7 +66,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -97,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.E170">
     <configuration name="E170" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="1_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,9 +123,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="estimate_take_off_field_length" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="1_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.E170" />
+      <item itemvalue="Python.estimate_take_off_field_length" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.E170" />
+        <item itemvalue="Python.estimate_take_off_field_length" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +169,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.095168374" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.095168374" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -148,7 +178,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39427662" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39427662" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -157,6 +187,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32750398" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.095168374" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39427662" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -166,19 +215,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
+          <line>90</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5389">
+          <caret line="317" column="35" selection-start-line="317" selection-start-column="35" selection-end-line="317" selection-end-column="35" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6409">
@@ -216,10 +275,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="317" column="35" selection-start-line="317" selection-start-column="35" selection-end-line="317" selection-end-column="35" />
+        <state relative-caret-position="51">
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="87" selection-end-column="94" />
           <folding>
             <element signature="e#268#286#0" expanded="true" />
           </folding>

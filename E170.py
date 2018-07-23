@@ -22,13 +22,14 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_mission_breakdown, \
      print_weight_breakdown
 from SUAVE.Methods.Performance  import payload_range
+from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
 # ----------------------------------------------------------------------
 #   Main
 # ----------------------------------------------------------------------
 
 def main():
 
-    configs, analyses = full_setup()
+    configs, analyses, vehicle = full_setup()
 
     simple_sizing(configs)
 
@@ -39,7 +40,7 @@ def main():
     weights = analyses.configs.base.weights
     breakdown = weights.evaluate()
     analyses.configs.base.weights.mass_properties.operating_empty = 20736. * Units.kg
-
+    analyses.base = analyses.configs.base
     # mission analysis
     mission = analyses.missions.base
     results = mission.evaluate()
@@ -70,11 +71,22 @@ def main():
     # run payload diagram
     config = configs.base
     cruise_segment_tag = "cruise"
-    reserves = 1750.
-    payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+    reserves = 1600.
+    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
     
     # plt results
-    plot_mission(results)
+    # plot_mission(results)
+
+    # --- Airport definition ---
+    airport = SUAVE.Attributes.Airports.Airport()
+    airport.tag = 'airport'
+    airport.altitude = 0.0 * Units.ft
+    airport.delta_isa = 0.0
+    airport.atmosphere = SUAVE.Analyses.Atmospheric.US_Standard_1976()
+
+    clb_grad = 1
+    tofl, secsegclbgrad = estimate_take_off_field_length(vehicle, analyses, airport, clb_grad)
+
 
     return
 
@@ -99,7 +111,7 @@ def full_setup():
     analyses.configs  = configs_analyses
     analyses.missions = missions_analyses
 
-    return configs, analyses
+    return configs, analyses, vehicle
 
 # ----------------------------------------------------------------------
 #   Define the Vehicle Analyses
@@ -764,7 +776,7 @@ def mission_setup(analyses):
     segment.analyses.extend( analyses.cruise )
 
     segment.air_speed  = 450. * Units.knots
-    segment.distance   = 2050. * Units.nautical_miles
+    segment.distance   = 1400. * Units.nautical_miles
 
     # add to mission
     mission.append_segment(segment)
