@@ -29,7 +29,7 @@ from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_ta
 
 def main():
 
-    configs, analyses, vehicle, airport = full_setup()
+    configs, analyses, vehicle = full_setup()
 
     simple_sizing(configs)
 
@@ -78,11 +78,15 @@ def main():
     # plot_mission(results)
 
     # --- Airport definition ---
+    airport = SUAVE.Attributes.Airports.Airport()
+    airport.tag = 'airport'
     airport.altitude = 0.0 * Units.ft
     airport.delta_isa = 0.0
+    airport.atmosphere = SUAVE.Analyses.Atmospheric.US_Standard_1976()
 
     clb_grad = 1
     tofl, secsegclbgrad = estimate_take_off_field_length(vehicle, analyses, airport, clb_grad)
+
 
     return
 
@@ -100,14 +104,14 @@ def full_setup():
     configs_analyses = analyses_setup(configs)
 
     # mission analyses
-    mission, airport  = mission_setup(configs_analyses)
+    mission  = mission_setup(configs_analyses)
     missions_analyses = missions_setup(mission)
 
     analyses = SUAVE.Analyses.Analysis.Container()
     analyses.configs  = configs_analyses
     analyses.missions = missions_analyses
 
-    return configs, analyses, vehicle, airport
+    return configs, analyses, vehicle
 
 # ----------------------------------------------------------------------
 #   Define the Vehicle Analyses
@@ -831,7 +835,7 @@ def mission_setup(analyses):
     #   Mission definition complete    
     # ------------------------------------------------------------------
 
-    return mission, airport
+    return mission
 
 def missions_setup(base_mission):
 
