@@ -40,7 +40,7 @@ def main():
     weights = analyses.configs.base.weights
     breakdown = weights.evaluate()
     # analyses.configs.base.weights.mass_properties.operating_empty = 20736. * Units.kg
-    analyses.base = analyses.configs.base
+
     # mission analysis
     mission = analyses.missions.base
     results = mission.evaluate()
@@ -68,25 +68,65 @@ def main():
     state.conditions = SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics()
     state.numerics = SUAVE.Analyses.Mission.Segments.Conditions.Numerics()
 
-    # run payload diagram
+    # ---------------------------------------------------------------------------------------
+    # PAYLOAD RANGE DIAGRAM
+
     config = configs.base
     cruise_segment_tag = "cruise"
     reserves = 1600.
-    payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
-    
-    # plt results
+    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+
+    # ---------------------------------------------------------------------------------------
+    # PLOT RESULTS
+
     # plot_mission(results)
 
-    # --- Airport definition ---
-    airport = SUAVE.Attributes.Airports.Airport()
-    airport.tag = 'airport'
-    airport.altitude = 0.0 * Units.ft
-    airport.delta_isa = 0.0
-    airport.atmosphere = SUAVE.Analyses.Atmospheric.US_Standard_1976()
+    # ---------------------------------------------------------------------------------------
+    # TAKE OFF FIELD LENGTH
+    # ---- Inputs
+    analyses.base = analyses.configs.base
+    airport = mission.airport
+    
+    airport.delta_isa  = 0.0
+    airport.altitude   = 8000.0 * Units.ft
+
 
     clb_grad = 1
-    tofl, secsegclbgrad = estimate_take_off_field_length(vehicle, analyses, airport, clb_grad)
+    weights_tofl = [20000,
+    21009.319,
+    22008.12425,
+    23017.44325,
+    24005.73477,
+    25009.79689,
+    25998.08841,
+    27427.95699,
+    28999.76105,
+    29988.05257,
+    30997.37157,
+    32994.98208,
+    35008.3632,
+    37005.97372,
+    38588.29152]
 
+    np.linspace(vehicle.mass_properties.operating_empty, vehicle.mass_properties.max_takeoff, 10)
+    tofl          = np.zeros(len(weights_tofl))
+    secsegclbgrad = np.zeros(len(weights_tofl))
+
+    # ---- Run
+    for i, TOW in enumerate(weights_tofl):
+        configs.takeoff.mass_properties.takeoff = TOW * Units.kg
+        tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
+        print tofl[i]
+
+    import pylab as plt
+    title = "TOFL vs W"
+    plt.figure(1)
+    plt.plot(weights_tofl, tofl, 'k-')
+    plt.xlabel('TOW (kg)')
+    plt.ylabel('Takeoff Field Length (m)')
+    plt.title(title)
+    plt.grid(True)
+    plt.show(True)
 
     return
 
@@ -559,8 +599,8 @@ def configs_setup(vehicle):
     config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
     # config.max_lift_coefficient_factor    = 1.
-    config.V2_VS_ratio = 1.21
-    config.maximum_lift_coefficient = 2.
+    config.V2_VS_ratio = 1.20
+    config.maximum_lift_coefficient = 2.5
     
     configs.append(config)
     # ------------------------------------------------------------------
