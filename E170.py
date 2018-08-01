@@ -86,37 +86,43 @@ def main():
     # ---- Inputs
     analyses.base = analyses.configs.base
     airport = mission.airport
-    
-    airport.delta_isa  = 0.0
-    airport.altitude   = 8000.0 * Units.ft
+    # configs.takeoff.maximum_lift_coefficient
 
-
-    clb_grad = 1
-    weights_tofl = [20000,
-    21009.319,
-    22008.12425,
-    23017.44325,
-    24005.73477,
-    25009.79689,
-    25998.08841,
-    27427.95699,
-    28999.76105,
-    29988.05257,
-    30997.37157,
-    32994.98208,
-    35008.3632,
-    37005.97372,
-    38588.29152]
+    maximum_lift_coefficient = [2.62, 2.1, 1.85]
+    clb_grad     = 1
+    altitude     = [0, 2000, 6000, 8000]
+    delta_isa    = [0, 15]
+    weights_tofl = apmdata_tow_tofl()
 
     np.linspace(vehicle.mass_properties.operating_empty, vehicle.mass_properties.max_takeoff, 10)
-    tofl          = np.zeros(len(weights_tofl))
-    secsegclbgrad = np.zeros(len(weights_tofl))
+
+    fid = open('TOFL.txt', 'w')  # Open output file
 
     # ---- Run
-    for i, TOW in enumerate(weights_tofl):
-        configs.takeoff.mass_properties.takeoff = TOW * Units.kg
-        tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
-        print tofl[i]
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        fid.write('Altitude: %4.0f ft \n' %(h))
+        fid.write('TOFL      CLIMB GRADIENT \n')
+        tofl = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad = np.zeros(len(weights_tofl[j]))
+
+        CLmax_ind = 0
+        configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+
+        for i, TOW in enumerate(weights_tofl[j]):
+
+            configs.takeoff.mass_properties.takeoff = TOW * Units.kg
+            tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
+
+            if secsegclbgrad[i] < 0.024:
+                CLmax_ind = CLmax_ind + 1
+                configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+                tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
+
+            fid.write('%4.2f     %4.4f \n' %(tofl[i], secsegclbgrad[i]))
+        fid.write('\n')
+
+    fid.close()
 
     # import pylab as plt
     # title = "TOFL vs W"
@@ -600,7 +606,7 @@ def configs_setup(vehicle):
     config.wings['main_wing'].slats.angle = 25. * Units.deg
     # config.max_lift_coefficient_factor    = 1.
     config.V2_VS_ratio = 1.20
-    config.maximum_lift_coefficient = 2.5
+    config.maximum_lift_coefficient = 2.62
 
     configs.append(config)
     # ------------------------------------------------------------------
@@ -889,6 +895,83 @@ def missions_setup(base_mission):
     missions.base = base_mission
 
     return missions  
+# ----------------------------------------------------------------------
+#   APM DATA - TOFL
+# ----------------------------------------------------------------------
+def apmdata_tow_tofl():
+    # h = 0, 2000, 6000, 8000
+    weights_tofl = [[20000,
+                     21009.319,
+                     22008.12425,
+                     23017.44325,
+                     24005.73477,
+                     25009.79689,
+                     25998.08841,
+                     27427.95699,
+                     28999.76105,
+                     29988.05257,
+                     30997.37157,
+                     32994.98208,
+                     35008.3632,
+                     37005.97372,
+                     38588.29152],
+                    [20000,
+                     21009.319,
+                     22486.4994,
+                     24005.73477,
+                     24489.36679,
+                     25004.54002,
+                     27002.15054,
+                     27517.32378,
+                     28006.21266,
+                     28778.97252,
+                     29441.33811,
+                     30193.07049,
+                     31517.80167,
+                     32322.10275,
+                     33620.54958,
+                     35092.47312,
+                     36259.49821,
+                     36995.45998,
+                     37000.71685,
+                     38567.26404],
+                    [20000,
+                     21004.06213,
+                     22002.86738,
+                     23006.92951,
+                     24000.4779,
+                     25004.54002,
+                     25992.83154,
+                     27275.50777,
+                     27990.44205,
+                     29005.01792,
+                     30003.82318,
+                     31002.62843,
+                     31990.91995,
+                     32001.43369,
+                     33005.49582,
+                     33999.04421,
+                     34235.60335,
+                     34992.59259,
+                     36170.13142,
+                     36984.94624],
+                    [20042.05496,
+                     22008.12425,
+                     23180.40621,
+                     24447.31183,
+                     25015.05376,
+                     26008.60215,
+                     27007.40741,
+                     28405.73477,
+                     29982.7957,
+                     30003.82318,
+                     31806.92951,
+                     33037.03704,
+                     33999.04421,
+                     33999.04421,
+                     34987.33572]]
+
+    return weights_tofl
 
 # ----------------------------------------------------------------------
 #   Plot Mission
