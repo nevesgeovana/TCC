@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.24</version>
+  <File>
+    <Name>C:\Users\geova\OneDrive\TCC\5_SUAVE\1_code\Data\TOFL_ISA0.bmp</Name>
+    <Width>3721</Width>
+    <Height>4663</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">7762,30586,8077,30361,8572,30028,9427,29425,10282,28867,11137,28318,11911,27805,12847,27130,13702,26482,14557,25771</Points>
+    <Points MF="9">15187,25249,15403,25060,15691,24826,15961,24583,16267,24340,16285,22117,16420,21946,16591,21748,16762,21550,16879,21406</Points>
+    <Points MF="9">17041,21217,17131,21118,17284,20938,17392,20803,17482,20704,17581,20578,17662,20479,17869,20245,18121,19930,18337,19642</Points>
+    <Points MF="9">18607,19291,18832,19003,19030,18733,19165,18571,19309,18373,19471,18175,19552,18058,19624,17959,19687,17887,19714,15691</Points>
+    <Points MF="9">19804,15565,19867,15457,19930,15358,20011,15250,20092,15124,20182,14998,20272,14863,20371,14719,20461,14575,20542,14458</Points>
+  </Line>
+  <Line>
+    <Caption>Line 2 6000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>230,220,20</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">8590,30604,8815,30487,9094,30334,9427,30145,9886,29911,10318,29677,10705,29425,11020,29218,11398,28975,11812,28705</Points>
+    <Points MF="9">12199,28453,12478,28282,12982,27958,13468,27661,13828,27427,14260,27157,14575,26950,14989,26653,15394,26338,15934,25942</Points>
+    <Points MF="9">16267,25699,16708,25330,17131,24979,17491,24655,17707,24484,17842,24367,17977,24268,17995,21946,18148,21775,18274,21631</Points>
+    <Points MF="9">18445,21451,18562,21334,18724,21154,18886,20974,19030,20812,19183,20623,19408,20371,19651,20092,19795,19939,19894,19813</Points>
+    <Points MF="9">20155,19453,20488,19003,20713,18688,20983,18301,21379,17743,21559,17500,21775,17158,22243,16429</Points>
+  </Line>
+  <Line>
+    <Caption>Line 3 2000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>255,20,160</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">10273,30559,11128,30523,11524,30235,12028,30037,12847,29596,13288,29353,13702,29119,14125,28894,14557,28660,15115,28309</Points>
+    <Points MF="9">15745,27913,16267,27598,16789,27274,17329,26941,17995,26527,18508,26149,18931,25852,19363,25546,19930,25141,20578,24682</Points>
+    <Points MF="9">21037,24358,21244,24223,21505,24034,21757,23845,21964,23692,22261,23485,22279,20632,22387,20515,22585,20317,22765,20137</Points>
+    <Points MF="9">22954,19948,23125,19777,23305,19606,23458,19453,23593,19327</Points>
+  </Line>
+  <CurrentLine>2</CurrentLine>
+  <Xmin MF="9">7717,33007,2.000000e+004</Xmin>
+  <Xmax MF="9">26545,32998,4.200000e+004</Xmax>
+  <Ymin MF="9">7717,33007,4.000000e+002</Ymin>
+  <Ymax MF="9">7717,7645,4.000000e+003</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>2561,2074</Position>
+  <Zoom>
+    <Scale>250.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>
