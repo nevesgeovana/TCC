@@ -102,9 +102,16 @@ def main():
     for j, h in enumerate(altitude):
         airport.altitude = h * Units.ft
         fid.write('Altitude: %4.0f ft \n' %(h))
-        fid.write('TOFL      CLIMB GRADIENT \n')
-        tofl = np.zeros(len(weights_tofl[j]))
-        secsegclbgrad = np.zeros(len(weights_tofl[j]))
+        fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD \n')
+        tofl                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad                = np.zeros(len(weights_tofl[j]))
+        thrust                       = np.zeros(len(weights_tofl[j]))
+        l_over_d                     = np.zeros(len(weights_tofl[j]))
+        l_over_d_v2                  = np.zeros(len(weights_tofl[j]))
+        asymmetry_drag_coefficient   = np.zeros(len(weights_tofl[j]))
+        windmilling_drag_coefficient = np.zeros(len(weights_tofl[j]))
+        clv2                         = np.zeros(len(weights_tofl[j]))
+        cdv2                         = np.zeros(len(weights_tofl[j]))
 
         CLmax_ind = 0
         configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
@@ -112,14 +119,21 @@ def main():
         for i, TOW in enumerate(weights_tofl[j]):
 
             configs.takeoff.mass_properties.takeoff = TOW * Units.kg
-            tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
+            tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+            windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(configs.takeoff,
+                                                                                               analyses, airport,
+                                                                                               clb_grad)
+            if secsegclbgrad[i] < 0.024:
+                CLmax_ind = CLmax_ind + 1
+                configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+                tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+                windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(configs.takeoff,
+                                                                                                   analyses, airport,
+                                                                                                   clb_grad)
 
-            # if secsegclbgrad[i] < 0.024:
-            #     CLmax_ind = CLmax_ind + 1
-            #     configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
-            #     tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
-
-            fid.write('%4.2f     %4.4f \n' %(tofl[i], secsegclbgrad[i]))
+            fid.write('%4.2f     %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f \n'
+                      %(tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i],
+                        asymmetry_drag_coefficient[i], windmilling_drag_coefficient[i], clv2[i], cdv2[i]))
         fid.write('\n')
 
     fid.close()
@@ -553,7 +567,7 @@ def vehicle_setup():
     thrust.tag ='compute_thrust'
  
     #total design thrust (includes all the engines)
-    thrust.total_design             = 28000.0 * Units.N #Newtons
+    thrust.total_design             = 27550.0 * Units.N #Newtons
  
     #design sizing conditions
     altitude      = 35000.0*Units.ft
@@ -606,7 +620,7 @@ def configs_setup(vehicle):
     config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
     # config.max_lift_coefficient_factor    = 1.
-    config.V2_VS_ratio = 1.20
+    config.V2_VS_ratio = 1.1875
     config.maximum_lift_coefficient = 2.62
 
     configs.append(config)
@@ -998,9 +1012,26 @@ def apmdata_tow_tofl():
                      35963.67113,
                      36173.99618,
                      36426.38623,
-                     36973.23136
-                     ],
-                    [30568.83365,
+                     36973.23136],
+                    [20052.58126,
+                     20420.6501,
+                     20999.04398,
+                     21998.08795,
+                     22997.13193,
+                     23996.17591,
+                     24900.57361,
+                     25994.26386,
+                     26993.30784,
+                     27992.35182,
+                     28728.48948,
+                     28980.87954,
+                     29317.39962,
+                     29632.88719,
+                     29990.43977,
+                     30011.47228,
+                     30169.21606,
+                     30369.02486,
+                     30568.83365,
                      30705.54493,
                      30894.83748,
                      31000,
