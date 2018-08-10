@@ -23,12 +23,16 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_weight_breakdown
 from SUAVE.Methods.Performance  import payload_range
 from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
+from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
+
+
 # ----------------------------------------------------------------------
 #   Main
 # ----------------------------------------------------------------------
 
 def main():
-
+    # ---------------------------------------------------------------------------------------
+    # INITIALIZING AIRCRAFT
     configs, analyses, vehicle = full_setup()
 
     simple_sizing(configs)
@@ -36,12 +40,13 @@ def main():
     configs.finalize()
     analyses.finalize()
 
-    # weight analysis
+    # ---------------------------------------------------------------------------------------
+    # WEIGHT ANALYSIS
     weights = analyses.configs.base.weights
     breakdown = weights.evaluate()
-    # analyses.configs.base.weights.mass_properties.operating_empty = 20736. * Units.kg
 
-    # mission analysis
+    # ---------------------------------------------------------------------------------------
+    # MISSION ANALYSIS
     mission = analyses.missions.base
     results = mission.evaluate()
 
@@ -51,8 +56,7 @@ def main():
     # print engine data into file
     print_engine_data(configs.base,filename = 'E170_engine_data.dat')
 
-    # print parasite drag data into file
-    # define reference condition for parasite drag
+    # print parasite drag data into file - define reference condition for parasite drag
     ref_condition = Data()
     ref_condition.mach_number = 0.3
     ref_condition.reynolds_number = 12e6     
@@ -86,7 +90,11 @@ def main():
     # ---- Inputs
     analyses.base = analyses.configs.base
     airport = mission.airport
-    # configs.takeoff.maximum_lift_coefficient
+    takeoff_constants = [857.4, 2.476, 0.00014]
+
+    # takeoff_constants[0] = takeoff_constants[0] * 0.65
+    # takeoff_constants[1] = takeoff_constants[1] * 1.2
+    # takeoff_constants[2] = takeoff_constants[2] * 0.95
 
     maximum_lift_coefficient = [2.62, 1.98, 1.85]
     clb_grad     = 1
@@ -94,13 +102,19 @@ def main():
     delta_isa    = [0, 15]
     weights_tofl = apmdata_tow_tofl()
 
-    # np.linspace(vehicle.mass_properties.operating_empty, vehicle.mass_properties.max_takeoff, 10)
+    atmo = analyses.base.atmosphere
 
+    # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
 
     # ---- Run
     for j, h in enumerate(altitude):
         airport.altitude = h * Units.ft
+
+
+        atmo_values = atmo.compute_values(h, 0)
+        print atmo_values.density
+
         fid.write('Altitude: %4.0f ft \n' %(h))
         fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD \n')
         tofl                         = np.zeros(len(weights_tofl[j]))
@@ -120,14 +134,16 @@ def main():
 
             configs.takeoff.mass_properties.takeoff = TOW * Units.kg
             tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
-            windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(configs.takeoff,
+            windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(takeoff_constants,
+                                                                                               configs.takeoff,
                                                                                                analyses, airport,
                                                                                                clb_grad)
             if secsegclbgrad[i] < 0.024:
                 CLmax_ind = CLmax_ind + 1
                 configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
                 tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
-                windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(configs.takeoff,
+                windmilling_drag_coefficient[i], clv2[i], cdv2[i] = estimate_take_off_field_length(takeoff_constants,
+                                                                                                   configs.takeoff,
                                                                                                    analyses, airport,
                                                                                                    clb_grad)
 
@@ -138,6 +154,7 @@ def main():
 
     fid.close()
 
+    # ---- Plot
     # import pylab as plt
     # title = "TOFL vs W"
     # plt.figure(1)
@@ -147,6 +164,7 @@ def main():
     # plt.title(title)
     # plt.grid(True)
     # plt.show(True)
+
 
     return
 
@@ -275,6 +293,8 @@ def vehicle_setup():
     vehicle.systems.control        = "fully powered"
     vehicle.systems.accessories    = "medium range"
 
+
+
     # ------------------------------------------------------------------
     #   Main Wing
     # ------------------------------------------------------------------
@@ -304,6 +324,8 @@ def vehicle_setup():
     wing.flaps.type              = "double_slotted"
     wing.flaps.chord             = 0.280
     wing.dynamic_pressure_ratio  = 1.0
+
+    wing_planform(wing)
 
     # add to vehicle
     vehicle.append_component(wing)

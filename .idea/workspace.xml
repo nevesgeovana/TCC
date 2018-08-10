@@ -22,21 +22,42 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="308" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="308" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4662">
-              <caret line="841" column="20" lean-forward="true" selection-start-line="841" selection-start-column="20" selection-end-line="841" selection-end-column="20" />
+            <state relative-caret-position="173">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
               </folding>
@@ -45,10 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="213" column="53" lean-forward="true" selection-start-line="213" selection-start-column="53" selection-end-line="213" selection-end-column="53" />
+            <state relative-caret-position="70">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+              <folding>
+                <element signature="e#358#370#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,14 +100,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
         <option value="$PROJECT_DIR$/E170.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -172,7 +204,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.095168374" />
@@ -180,8 +212,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3243243" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3967213" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.327787" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39434275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -221,23 +253,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>102</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="27" />
+          <line>111</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py</url>
-          <line>210</line>
-          <option name="timeStamp" value="28" />
+          <line>112</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -248,12 +270,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="configs" />
-        <watch expression="results" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/E170_reference.py">
@@ -336,19 +352,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="213" column="53" lean-forward="true" selection-start-line="213" selection-start-column="53" selection-end-line="213" selection-end-column="53" />
+        <state relative-caret-position="1">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4662">
-          <caret line="841" column="20" lean-forward="true" selection-start-line="841" selection-start-column="20" selection-end-line="841" selection-end-column="20" />
+        <state relative-caret-position="173">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#268#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#358#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
