@@ -4,13 +4,7 @@
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/E170.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_compress_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_engine_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_mission_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_parasite_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E170_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_weight_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TOFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TOFL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/datasheet-CF34-8E (1).pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +16,12 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="1632">
               <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
@@ -68,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -77,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="325">
+              <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
               <folding>
                 <element signature="e#358#370#0" expanded="true" />
               </folding>
@@ -105,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -204,7 +199,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.095168374" />
@@ -352,16 +347,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/E170.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="1632">
           <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#268#286#0" expanded="true" />
@@ -369,10 +357,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="325">
+          <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
           <folding>
             <element signature="e#358#370#0" expanded="true" />
           </folding>
