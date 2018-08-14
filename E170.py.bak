@@ -23,12 +23,16 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_weight_breakdown
 from SUAVE.Methods.Performance  import payload_range
 from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
+from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
+
+
 # ----------------------------------------------------------------------
 #   Main
 # ----------------------------------------------------------------------
 
 def main():
-
+    # ---------------------------------------------------------------------------------------
+    # INITIALIZING AIRCRAFT
     configs, analyses, vehicle = full_setup()
 
     simple_sizing(configs)
@@ -36,12 +40,13 @@ def main():
     configs.finalize()
     analyses.finalize()
 
-    # weight analysis
+    # ---------------------------------------------------------------------------------------
+    # WEIGHT ANALYSIS
     weights = analyses.configs.base.weights
     breakdown = weights.evaluate()
-    # analyses.configs.base.weights.mass_properties.operating_empty = 20736. * Units.kg
 
-    # mission analysis
+    # ---------------------------------------------------------------------------------------
+    # MISSION ANALYSIS
     mission = analyses.missions.base
     results = mission.evaluate()
 
@@ -51,8 +56,7 @@ def main():
     # print engine data into file
     print_engine_data(configs.base,filename = 'E170_engine_data.dat')
 
-    # print parasite drag data into file
-    # define reference condition for parasite drag
+    # print parasite drag data into file - define reference condition for parasite drag
     ref_condition = Data()
     ref_condition.mach_number = 0.3
     ref_condition.reynolds_number = 12e6     
@@ -86,25 +90,44 @@ def main():
     # ---- Inputs
     analyses.base = analyses.configs.base
     airport = mission.airport
-    # configs.takeoff.maximum_lift_coefficient
+    configs.takeoff.takeoff_constants = Data()
+    configs.takeoff.takeoff_constants = [857.4, 2.476, 0.00014]
 
-    maximum_lift_coefficient = [2.62, 2.1, 1.85]
+    configs.takeoff.takeoff_constants[0] = configs.takeoff.takeoff_constants[0] * 1
+    configs.takeoff.takeoff_constants[1] = configs.takeoff.takeoff_constants[1] * 1
+    configs.takeoff.takeoff_constants[2] = configs.takeoff.takeoff_constants[2] * 1.124
+
+    maximum_lift_coefficient = [2.62, 1.98, 1.85]
     clb_grad     = 1
     altitude     = [0, 2000, 6000, 8000]
     delta_isa    = [0, 15]
     weights_tofl = apmdata_tow_tofl()
 
-    np.linspace(vehicle.mass_properties.operating_empty, vehicle.mass_properties.max_takeoff, 10)
+    atmo = analyses.base.atmosphere
 
+    # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
 
     # ---- Run
     for j, h in enumerate(altitude):
         airport.altitude = h * Units.ft
+
+
+        atmo_values = atmo.compute_values(h, 0)
+        print atmo_values.density
+
         fid.write('Altitude: %4.0f ft \n' %(h))
-        fid.write('TOFL      CLIMB GRADIENT \n')
-        tofl = np.zeros(len(weights_tofl[j]))
-        secsegclbgrad = np.zeros(len(weights_tofl[j]))
+        fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD \n')
+        tofl                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad                = np.zeros(len(weights_tofl[j]))
+        thrust                       = np.zeros(len(weights_tofl[j]))
+        l_over_d                     = np.zeros(len(weights_tofl[j]))
+        l_over_d_v2                  = np.zeros(len(weights_tofl[j]))
+        asymmetry_drag_coefficient   = np.zeros(len(weights_tofl[j]))
+        windmilling_drag_coefficient = np.zeros(len(weights_tofl[j]))
+        clv2                         = np.zeros(len(weights_tofl[j]))
+        cdv2                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad_corrected      = np.zeros(len(weights_tofl[j]))
 
         CLmax_ind = 0
         configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
@@ -112,18 +135,29 @@ def main():
         for i, TOW in enumerate(weights_tofl[j]):
 
             configs.takeoff.mass_properties.takeoff = TOW * Units.kg
-            tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
-
-            if secsegclbgrad[i] < 0.024:
+            tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+            windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                i] = estimate_take_off_field_length(configs.takeoff,
+                                                    analyses, airport,
+                                                    clb_grad)
+            if secsegclbgrad_corrected[i] < 0.024:
                 CLmax_ind = CLmax_ind + 1
                 configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
-                tofl[i], secsegclbgrad[i] = estimate_take_off_field_length(configs.takeoff, analyses, airport, clb_grad)
+                tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+                windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                    i] = estimate_take_off_field_length(configs.takeoff,
+                                                        analyses, airport,
+                                                        clb_grad)
 
-            fid.write('%4.2f     %4.4f \n' %(tofl[i], secsegclbgrad[i]))
+            fid.write('%4.2f     %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f \n'
+                      % (tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i],
+                         asymmetry_drag_coefficient[i], windmilling_drag_coefficient[i], clv2[i], cdv2[i],
+                         secsegclbgrad_corrected[i]))
         fid.write('\n')
 
     fid.close()
 
+    # ---- Plot
     # import pylab as plt
     # title = "TOFL vs W"
     # plt.figure(1)
@@ -133,6 +167,7 @@ def main():
     # plt.title(title)
     # plt.grid(True)
     # plt.show(True)
+
 
     return
 
@@ -250,6 +285,7 @@ def vehicle_setup():
     vehicle.mass_properties.max_payload               = 9404.0 * Units.kg
     vehicle.mass_properties.max_fuel                  = 9428.0 * Units.kg
 
+    vehicle.mass_properties.center_of_gravity = [11., 0., 0.]
     # envelope properties
     vehicle.envelope.ultimate_load = 2.5 * 1.5
     vehicle.envelope.limit_load    = 2.5
@@ -259,6 +295,8 @@ def vehicle_setup():
     vehicle.passengers             = 72
     vehicle.systems.control        = "fully powered"
     vehicle.systems.accessories    = "medium range"
+
+
 
     # ------------------------------------------------------------------
     #   Main Wing
@@ -289,6 +327,8 @@ def vehicle_setup():
     wing.flaps.type              = "double_slotted"
     wing.flaps.chord             = 0.280
     wing.dynamic_pressure_ratio  = 1.0
+
+    wing_planform(wing)
 
     # add to vehicle
     vehicle.append_component(wing)
@@ -552,7 +592,7 @@ def vehicle_setup():
     thrust.tag ='compute_thrust'
  
     #total design thrust (includes all the engines)
-    thrust.total_design             = 28000.0 * Units.N #Newtons
+    thrust.total_design             = 27550.0 * Units.N #Newtons
  
     #design sizing conditions
     altitude      = 35000.0*Units.ft
@@ -605,7 +645,7 @@ def configs_setup(vehicle):
     config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
     # config.max_lift_coefficient_factor    = 1.
-    config.V2_VS_ratio = 1.20
+    config.V2_VS_ratio = 1.2
     config.maximum_lift_coefficient = 2.62
 
     configs.append(config)
@@ -914,62 +954,141 @@ def apmdata_tow_tofl():
                      32994.98208,
                      35008.3632,
                      37005.97372,
-                     38588.29152],
-                    [20000,
-                     21009.319,
-                     22486.4994,
-                     24005.73477,
-                     24489.36679,
-                     25004.54002,
-                     27002.15054,
-                     27517.32378,
-                     28006.21266,
-                     28778.97252,
-                     29441.33811,
-                     30193.07049,
-                     31517.80167,
-                     32322.10275,
-                     33620.54958,
-                     35092.47312,
-                     36259.49821,
-                     36995.45998,
-                     37000.71685,
-                     38567.26404],
-                    [20000,
-                     21004.06213,
-                     22002.86738,
-                     23006.92951,
-                     24000.4779,
-                     25004.54002,
-                     25992.83154,
-                     27275.50777,
-                     27990.44205,
-                     29005.01792,
-                     30003.82318,
-                     31002.62843,
-                     31990.91995,
-                     32001.43369,
-                     33005.49582,
-                     33999.04421,
-                     34235.60335,
-                     34992.59259,
-                     36170.13142,
-                     36984.94624],
-                    [20042.05496,
-                     22008.12425,
-                     23180.40621,
-                     24447.31183,
-                     25015.05376,
-                     26008.60215,
-                     27007.40741,
-                     28405.73477,
-                     29982.7957,
-                     30003.82318,
-                     31806.92951,
-                     33037.03704,
-                     33999.04421,
-                     33999.04421,
-                     34987.33572]]
+                     38588.29152,
+                     38600.0000],
+                    [22986.61568,
+                     23985.65966,
+                     24448.37476,
+                     25037.28489,
+                     25994.26386,
+                     26509.56023,
+                     26993.30784,
+                     27487.5717,
+                     27992.35182,
+                     28644.35946,
+                     29380.49713,
+                     29990.43977,
+                     30600.38241,
+                     31231.35755,
+                     32009.56023,
+                     32608.98662,
+                     33103.25048,
+                     33608.03059,
+                     34270.55449,
+                     35027.72467,
+                     35564.05354,
+                     35805.92734,
+                     36110.89866,
+                     36405.35373,
+                     36647.22753,
+                     36994.26386,
+                     37015.29637,
+                     37141.4914,
+                     37372.84895,
+                     37583.174,
+                     37804.0153,
+                     38003.82409,
+                     38214.14914,
+                     38392.92543,
+                     38550.66922],
+                    [21020.07648,
+                     21282.98279,
+                     21608.98662,
+                     21998.08795,
+                     22534.41683,
+                     23039.19694,
+                     23491.39579,
+                     23859.46463,
+                     24301.14723,
+                     24784.89484,
+                     25237.09369,
+                     25563.09751,
+                     26152.00765,
+                     26719.88528,
+                     27140.53537,
+                     27645.31549,
+                     28013.38432,
+                     28497.13193,
+                     28970.36329,
+                     29601.33843,
+                     29990.43977,
+                     30505.73614,
+                     31000,
+                     31420.6501,
+                     31673.04015,
+                     31830.78394,
+                     31988.52772,
+                     32009.56023,
+                     32188.33652,
+                     32335.56405,
+                     32535.37285,
+                     32672.08413,
+                     32861.37667,
+                     33050.66922,
+                     33218.92925,
+                     33397.70554,
+                     33660.61185,
+                     33944.55067,
+                     34112.81071,
+                     34228.48948,
+                     34533.4608,
+                     34922.56214,
+                     35185.46845,
+                     35500.95602,
+                     35963.67113,
+                     36173.99618,
+                     36426.38623,
+                     36973.23136],
+                    [20052.58126,
+                     20420.6501,
+                     20999.04398,
+                     21998.08795,
+                     22997.13193,
+                     23996.17591,
+                     24900.57361,
+                     25994.26386,
+                     26993.30784,
+                     27992.35182,
+                     28728.48948,
+                     28980.87954,
+                     29317.39962,
+                     29632.88719,
+                     29990.43977,
+                     30011.47228,
+                     30169.21606,
+                     30369.02486,
+                     30568.83365,
+                     30705.54493,
+                     30894.83748,
+                     31000,
+                     31178.77629,
+                     31304.97132,
+                     31410.13384,
+                     31525.81262,
+                     31620.45889,
+                     31862.3327,
+                     32156.78776,
+                     32409.17782,
+                     32724.66539,
+                     32987.5717,
+                     33218.92925,
+                     33376.67304,
+                     33544.93308,
+                     33734.22562,
+                     33828.87189,
+                     33913.00191,
+                     33986.61568,
+                     34018.16444,
+                     34123.32696,
+                     34196.94073,
+                     34270.55449,
+                     34365.20076,
+                     34459.84704,
+                     34565.00956,
+                     34670.17208,
+                     34785.85086,
+                     34891.01338,
+                     34985.65966]]
 
     return weights_tofl
 

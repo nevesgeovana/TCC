@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/E170.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Data/E170.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/datasheet-CF34-8E (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170.py.bak" beforeDir="false" afterPath="$PROJECT_DIR$/E170.py.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_compress_drag.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_engine_data.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_mission_breakdown.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_parasite_drag.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E170_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/E170_weight_breakdown.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TOFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TOFL.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,32 +22,33 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="308" />
+          <entry key="py" value="1242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="308" />
+          <entry key="Python" value="1242" />
         </counts>
       </usages-collector>
     </session>
@@ -51,10 +58,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/E170.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="611">
+              <caret line="147" column="27" selection-start-line="147" selection-start-column="27" selection-end-line="147" selection-end-column="27" />
               <folding>
                 <element signature="e#268#286#0" expanded="true" />
+                <marker date="1534214303355" expanded="true" signature="39752:47767" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,20 +71,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="1686">
+              <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="199" column="44" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
+              <folding>
+                <element signature="e#358#370#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Helper_Functions/asymmetry_drag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
-              <folding>
-                <element signature="e#358#370#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-628">
+              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_slat_lift.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -95,8 +139,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py" />
-        <option value="$PROJECT_DIR$/E170.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
+        <option value="$PROJECT_DIR$/E170.py" />
       </list>
     </option>
   </component>
@@ -207,8 +254,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.327787" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39434275" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3262295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39267886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -248,13 +295,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/E170.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="39" />
+          <line>146</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -312,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Helper_Functions/estimate_2ndseg_lift_drag_ratio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
@@ -333,13 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Helper_Functions/asymmetry_drag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1451">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2975">
@@ -347,30 +375,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/E170.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="e#268#286#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1686">
+          <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="204">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_slat_lift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="147" column="27" selection-start-line="147" selection-start-column="27" selection-end-line="147" selection-end-column="27" />
+          <folding>
+            <element signature="e#268#286#0" expanded="true" />
+            <marker date="1534214303355" expanded="true" signature="39752:47767" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
+        <state relative-caret-position="235">
+          <caret line="199" column="44" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
           <folding>
             <element signature="e#358#370#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Helper_Functions/asymmetry_drag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
         </state>
       </provider>
     </entry>
