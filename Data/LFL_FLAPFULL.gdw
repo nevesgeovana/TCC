@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.24</version>
+  <File>
+    <Name>C:\Users\geova\OneDrive\TCC\5_SUAVE\1_code\Data\LFL_FLAPFULL.bmp</Name>
+    <Width>5591</Width>
+    <Height>7230</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">16834,45166,18004,45139,18643,44554,20353,43024,21595,41908,22675,40927,24709,39199,26257,37831,28174,36130,29317,35113</Points>
+    <Points MF="9">31153,33511,33187,31819</Points>
+  </Line>
+  <Line>
+    <Caption>Line 2 6000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>230,220,20</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">16825,41026,18004,40927,19165,39712,21784,36976,25186,33448,27373,31225,29713,28768,30883,27526,32035,26293,32287,26014</Points>
+    <Points MF="9">32395,25906,33196,25060</Points>
+  </Line>
+  <Line>
+    <Caption>Line 3 8000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>255,20,160</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">16816,39451,18013,39316,18463,38821,19462,37723,22693,34150,26356,30145,28156,28174,30541,25465,32044,23746,32395,23332</Points>
+    <Points MF="9">33160,22423,32467,31441,32395,31495,32539,32368,32467,32431,32431,32449,32413,32467,32395,32485</Points>
+  </Line>
+  <CurrentLine>2</CurrentLine>
+  <Xmin MF="9">10975,50044,1.500000e+004</Xmin>
+  <Xmax MF="9">40234,50053,4.000000e+004</Xmax>
+  <Ymin MF="9">10975,50044,8.000000e+002</Ymin>
+  <Ymax MF="9">10975,14260,1.800000e+003</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>3570,3522</Position>
+  <Zoom>
+    <Scale>350.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>

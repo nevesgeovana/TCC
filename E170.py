@@ -24,7 +24,7 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
 from SUAVE.Methods.Performance  import payload_range
 from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
 from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
-
+from SUAVE.Methods.Performance.estimate_landing_field_length import estimate_landing_field_length
 
 # ----------------------------------------------------------------------
 #   Main
@@ -95,12 +95,13 @@ def main():
     altitude = [0, 6000, 8000]
     delta_isa = 15
     weights_tofl = apmdata_tow_tofl_ISA15()
+    # weights_tofl = apmdata_tow_tofl()
 
     # ---- Inputs: FLAP AND SLAT DEFLECTION
     # flaps = [[19.6, 11.8], [9.7,9.2], [4.9, 7.3]] # Deflections inboard flap
     # flaps = [31.4, 18.9, 12.2]  # Deflections inboard total
     # flaps = [15.7, 9.4, 4.9]  # Deflections inboard local
-    flaps = [19.0, 9.7, 4.9]  # Deflections inboard local
+    flaps = [19.6, 9.7, 4.9]  # Deflections inboard local
     slats = [20., 12., 12.]
 
     # ---- Inputs: CONSTANTS FOR TAKEOFF EQUATION
@@ -109,6 +110,7 @@ def main():
     configs.takeoff.takeoff_constants[0] = configs.takeoff.takeoff_constants[0] * 1
     configs.takeoff.takeoff_constants[1] = configs.takeoff.takeoff_constants[1] * 1
     configs.takeoff.takeoff_constants[2] = configs.takeoff.takeoff_constants[2] * 1.124
+    configs.takeoff.max_lift_coefficient_factor = 0.97
 
     # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
@@ -167,6 +169,38 @@ def main():
                          secsegclbgrad_corrected[i]))
         fid.write('\n')
 
+    fid.close()
+
+    # ---------------------------------------------------------------------------------------
+    # LANDING FIELD LENGTH
+    # ---- Inputs
+    airport.delta_isa = 0
+    # weights_lfl = weights_lfl_apm_FLAP5()
+    weights_lfl = weights_lfl_apm_FLAPfull()
+    flaps = [19.6, 24.2]  # Deflections inboard local
+    slats = [20., 20.]
+    configs.landing.wings['main_wing'].flaps.angle = flaps[1] * Units.deg
+    configs.landing.wings['main_wing'].slats.angle = slats[1] * Units.deg
+    altitude = [0, 6000, 8000]
+    configs.landing.max_lift_coefficient_factor = 0.97
+
+    # configs.landing.maximum_lift_coefficient = 2.72
+    # configs.landing.landing_constants = Data()
+    #
+    # configs.landing.landing_constants[0] = 250. * 1.1
+    # configs.landing.landing_constants[1] = 0.
+    # configs.landing.landing_constants[2] = 2.485/9.81 * 0.94
+
+    fid = open('LFL.txt', 'w')  # Open output file
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        lfl = np.zeros(len(weights_lfl[j]))
+        fid.write('Altitude: %4.0f ft \n' % (h))
+        for i, TOW in enumerate(weights_lfl[j]):
+            configs.landing.mass_properties.landing = TOW * Units.kg
+            lfl[i] = estimate_landing_field_length(configs.landing, analyses, airport)
+            fid.write('%4.2f \n' % (lfl[i]))
+        fid.write('\n')
     fid.close()
 
     return
@@ -279,13 +313,14 @@ def vehicle_setup():
     # mass properties
     vehicle.mass_properties.max_takeoff               = 37200. * Units.kg
     vehicle.mass_properties.operating_empty           = 20736. * Units.kg
-    vehicle.mass_properties.takeoff                   = 37200. * Units.kg
+    vehicle.mass_properties.takeoff                   = 31406. * Units.kg
     vehicle.mass_properties.max_zero_fuel             = 30140. * Units.kg
     vehicle.mass_properties.cargo                     = 0.0    * Units.kg
     vehicle.mass_properties.max_payload               = 9404.0 * Units.kg
     vehicle.mass_properties.max_fuel                  = 9428.0 * Units.kg
 
     vehicle.mass_properties.center_of_gravity = [11., 0., 0.]
+
     # envelope properties
     vehicle.envelope.ultimate_load = 2.5 * 1.5
     vehicle.envelope.limit_load    = 2.5
@@ -317,7 +352,6 @@ def vehicle_setup():
     wing.areas.reference         = 72.72 * Units['meters**2']
     wing.areas.wetted            = 2.0   * wing.areas.reference
     wing.areas.exposed           = 0.8   * wing.areas.wetted
-    # wing.areas.affected          = 0.6   * wing.areas.reference
     wing.twists.root             = 2.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
     wing.origin                  = [10.36122, 0, 0]
@@ -329,6 +363,7 @@ def vehicle_setup():
     wing.dynamic_pressure_ratio  = 1.0
     wing.flaps.span_start        = 0.13
     wing.flaps.span_end          = 0.75
+
     wing_planform(wing)
 
     # add to vehicle
@@ -353,13 +388,14 @@ def vehicle_setup():
     wing.areas.reference         = 23.25  * Units['meters**2'] 
     wing.areas.wetted            = 2.0    * wing.areas.reference
     wing.areas.exposed           = 0.8    * wing.areas.wetted
-    wing.areas.affected          = 0.6    * wing.areas.reference
     wing.twists.root             = 2.0    * Units.degrees
     wing.twists.tip              = 2.0    * Units.degrees
     wing.origin                  = [24.6, 0, 0]
     wing.vertical                = False
     wing.symmetric               = True
     wing.dynamic_pressure_ratio  = 0.9
+
+    wing_planform(wing)
 
     # add to vehicle
     vehicle.append_component(wing)
@@ -383,13 +419,14 @@ def vehicle_setup():
     wing.areas.reference         = 16.0  * Units['meters**2'] 
     wing.areas.wetted            = 2.0   * wing.areas.reference
     wing.areas.exposed           = 0.8   * wing.areas.wetted
-    wing.areas.affected          = 0.6   * wing.areas.reference
     wing.twists.root             = 0.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
     wing.origin                  = [23.9, 0, 0]
     wing.vertical                = True
     wing.symmetric               = False
     wing.dynamic_pressure_ratio  = 1.0
+
+    wing_planform(wing)
 
     # add to vehicle
     vehicle.append_component(wing)
@@ -417,7 +454,7 @@ def vehicle_setup():
     fuselage.areas.wetted          = 280.00 * Units['meters**2'] # 269.80
     fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.2
-    fuselage.differential_pressure = 8.1 * Units.psi
+    fuselage.differential_pressure = 9.0875 * Units.psi
     
     fuselage.heights.at_quarter_length          = 3.4 * Units.meter
     fuselage.heights.at_three_quarters_length   = 3.4 * Units.meter
@@ -681,9 +718,8 @@ def configs_setup(vehicle):
     config.wings['main_wing'].flaps.angle = 30. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg  
     # config.max_lift_coefficient_factor    = 1. #0.95
-    
-    config.Vref_VS_ratio = 1.23
-    config.maximum_lift_coefficient = 2.
+
+    # config.maximum_lift_coefficient = 2.52
     
     configs.append(config)
 
@@ -863,7 +899,7 @@ def mission_setup(analyses):
     segment.analyses.extend( analyses.cruise )
 
     segment.air_speed  = 450. * Units.knots
-    segment.distance   = 1400. * Units.nautical_miles
+    segment.distance   = 152. * Units.nautical_miles
 
     # add to mission
     mission.append_segment(segment)
@@ -956,7 +992,8 @@ def apmdata_tow_tofl():
                      35008.3632,
                      37005.97372,
                      38588.29152,
-                     38600.0000],
+                     38600.0000,
+                     31406.],
                     [22986.61568,
                      23985.65966,
                      24448.37476,
@@ -1230,7 +1267,8 @@ def apmdata_tow_tofl_ISA15():
                      36754.89728,
                      36817.96464,
                      36870.52078,
-                     36996.65552],
+                     36996.65552,
+                     37000.],
                     [20000,
                      20241.75824,
                      20357.38175,
@@ -1332,6 +1370,142 @@ def apmdata_tow_tofl_ISA15():
                      34000.95557]]
 
     return weights_tofl
+# ----------------------------------------------------------------------
+#   APM DATA - TOFL
+# ----------------------------------------------------------------------
+def weights_lfl_apm_FLAP5():
+    weights_lfl = [[20056.80978,
+                    20315.16652,
+                    20636.15421,
+                    21426.87685,
+                    22006.21935,
+                    22475.95624,
+                    23180.56255,
+                    23493.72306,
+                    24010.43461,
+                    24895.1143,
+                    25991.16835,
+                    26554.85455,
+                    27008.9313,
+                    28011.0399,
+                    28316.37323,
+                    29005.32712,
+                    29623.81903,
+                    30297.11664,
+                    31001.72488,
+                    32003.84702,
+                    32849.3889,
+                    33021.62544,
+                    33326.96264,
+                    33640.12315,
+                    33976.77292,
+                    33300.00000],
+                   [20057.67044,
+                    20386.49497,
+                    21028.48775,
+                    21913.19645,
+                    22484.73691,
+                    23001.47747,
+                    23573.016,
+                    24340.29,
+                    25029.2729,
+                    26000.11148,
+                    26493.36085,
+                    27401.56655,
+                    28012.25449,
+                    29022.24442,
+                    29492.01806,
+                    29930.46753,
+                    30384.58875,
+                    31003.13868,
+                    31566.88485,
+                    31895.74032,
+                    32318.56058,
+                    32741.38278,
+                    33070.24405,
+                    33547.88549,
+                    33680.99775,
+                    33845.43033,
+                    34002.02799],
+                   [20026.67893,
+                    20238.07262,
+                    20700.01135,
+                    21193.26071,
+                    21960.53858,
+                    22140.6197,
+                    22994.02744,
+                    23087.97869,
+                    23886.58266,
+                    24019.67946,
+                    24473.78908,
+                    24943.55692,
+                    25491.62165,
+                    25804.79957,
+                    25867.43438,
+                    26243.25291,
+                    26752.17016,
+                    27214.11276,
+                    27660.3952,
+                    27997.06625,
+                    28310.25384,
+                    28506.00091,
+                    28787.87593,
+                    29288.98728,
+                    29633.50678,
+                    30064.14841,
+                    30486.97834,
+                    30761.03779,
+                    31332.64207,
+                    31457.92523,
+                    31559.71912,
+                    32131.32728,
+                    32820.38754,
+                    33485.96435,
+                    33689.55407,
+                    33971.44456]]
+
+    return weights_lfl
+
+def weights_lfl_apm_FLAPfull():
+    weights_lfl = [[20006.15195,
+                    21005.84436,
+                    21551.83021,
+                    23012.9191,
+                    24074.13104,
+                    24996.92402,
+                    26734.85082,
+                    28057.52076,
+                    29695.47831,
+                    30672.10089,
+                    32240.84897,
+                    33302.1,
+                    33300.00,
+                    33978.77576],
+                   [19998.46201,
+                    21005.84436,
+                    21997.84682,
+                    24235.61981,
+                    27142.41772,
+                    29011.07352,
+                    31010.45832,
+                    32010.15072,
+                    32994.46324,
+                    33209.78161,
+                    33302.0609,
+                    33986.4657],
+                   [19990.77207,
+                    21013.5343,
+                    21398.03137,
+                    22251.61489,
+                    25012.30391,
+                    28142.11012,
+                    29680.09843,
+                    31717.93294,
+                    33002.15318,
+                    33302.0609,
+                    33955.70594]]
+
+    return weights_lfl
 # ----------------------------------------------------------------------
 #   Plot Mission
 # ----------------------------------------------------------------------

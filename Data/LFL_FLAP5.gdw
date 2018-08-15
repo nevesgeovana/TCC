@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.24</version>
+  <File>
+    <Name>C:\Users\geova\OneDrive\TCC\5_SUAVE\1_code\Data\LFL_FLAP5.bmp</Name>
+    <Width>5583</Width>
+    <Height>7025</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">20380,48865,20677,48586,21046,48244,21955,47416,22621,46804,23161,46309,23971,45562,24331,45220,24925,44671,25942,43699</Points>
+    <Points MF="9">27202,42538,27850,41935,28372,41467,29524,40396,29875,40054,30667,39298,31378,38623,32152,37876,32962,37120,34114,35986</Points>
+    <Points MF="9">35086,35023,35284,34843,35635,34483,35995,34141,36382,33763</Points>
+  </Line>
+  <Line>
+    <Caption>Line 2 6000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>230,220,20</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">20380,44860,20758,44473,21496,43708,22513,42601,23170,41872,23764,41188,24421,40468,25303,39487,26095,38596,27211,37345</Points>
+    <Points MF="9">27778,36706,28822,35527,29524,34744,30685,33421,31225,32755,31729,32161,32251,31486,32962,30541,33610,29659,33988,29128</Points>
+    <Points MF="9">34474,28417,34960,27697,35338,27139,35887,26284,36040,26050,36229,25762,36409,25510</Points>
+  </Line>
+  <Line>
+    <Caption>Line 3 8000</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>255,20,160</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">20344,43384,20587,43105,21118,42475,21685,41836,22567,40837,22774,40576,23755,39433,23863,39316,24781,38236,24934,38074</Points>
+    <Points MF="9">25456,37453,25996,36814,26626,36058,26986,35635,27058,35554,27490,35023,28075,34321,28606,33673,29119,33052,29506,32575</Points>
+    <Points MF="9">29866,32107,30091,31792,30415,31342,30991,30541,31387,29965,31882,29281,32368,28525,32683,28021,33340,26995,33484,26770</Points>
+    <Points MF="9">33601,26581,34258,25537,35050,24286,35815,23044,36049,22657,36373,22135</Points>
+  </Line>
+  <CurrentLine>2</CurrentLine>
+  <Xmin MF="9">14566,50980,1.500000e+004</Xmin>
+  <Xmax MF="9">43312,50971,4.000000e+004</Xmax>
+  <Ymin MF="9">14566,50980,9.000000e+002</Ymin>
+  <Ymax MF="9">14557,14557,1.900000e+003</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>-2585,245</Position>
+  <Zoom>
+    <Scale>10.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>
