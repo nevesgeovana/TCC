@@ -91,26 +91,23 @@ def main():
     analyses.base = analyses.configs.base
     airport = mission.airport
     clb_grad = 1
-    # altitude = [0, 2000, 6000, 8000]
-    altitude = [0, 6000, 8000]
-    delta_isa = 15
-    weights_tofl = apmdata_tow_tofl_ISA15()
-    # weights_tofl = apmdata_tow_tofl()
+
+    altitude = [0, 2000, 6000, 8000]
+    delta_isa = 0
+    weights_tofl = apmdata_tow_tofl()
+
+    # altitude = [0, 5433, 8000]
+    # altitude = [0, 6000, 8000]
+    # delta_isa = 15
+    # weights_tofl = apmdata_tow_tofl_ISA15()
+
 
     # ---- Inputs: FLAP AND SLAT DEFLECTION
-    # flaps = [[19.6, 11.8], [9.7,9.2], [4.9, 7.3]] # Deflections inboard flap
-    # flaps = [31.4, 18.9, 12.2]  # Deflections inboard total
-    # flaps = [15.7, 9.4, 4.9]  # Deflections inboard local
-    flaps = [19.6, 9.7, 4.9]  # Deflections inboard local
-    slats = [20., 12., 12.]
+    flaps = [19.6, 9.7, 4.9, 0.]  # Deflections inboard local
+    slats = [20., 12., 12., 0.]
 
-    # ---- Inputs: CONSTANTS FOR TAKEOFF EQUATION
-    configs.takeoff.takeoff_constants = Data()
-    configs.takeoff.takeoff_constants = [857.4, 2.476, 0.00014]
-    configs.takeoff.takeoff_constants[0] = configs.takeoff.takeoff_constants[0] * 1
-    configs.takeoff.takeoff_constants[1] = configs.takeoff.takeoff_constants[1] * 1
-    configs.takeoff.takeoff_constants[2] = configs.takeoff.takeoff_constants[2] * 1.124
-    configs.takeoff.max_lift_coefficient_factor = 0.97
+    # ---- Inputs: FACTOR CLMAX
+    configs.takeoff.max_lift_coefficient_factor = 0.967
 
     # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
@@ -138,7 +135,6 @@ def main():
         configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
 
         for i, TOW in enumerate(weights_tofl[j]):
-            print flaps[CLmax_ind], slats[CLmax_ind]
             configs.takeoff.mass_properties.takeoff = TOW * Units.kg
             tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
             windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
@@ -146,11 +142,10 @@ def main():
                                                     analyses, airport,
                                                     clb_grad)
             if secsegclbgrad_corrected[i] < 0.024:
-                print flaps[CLmax_ind], slats[CLmax_ind]
                 CLmax_ind = CLmax_ind + 1
                 if CLmax_ind > 2:
                     CLmax_ind = 2
-                    print secsegclbgrad_corrected[i]
+                    print CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind
 
                 configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
                 configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
@@ -177,19 +172,13 @@ def main():
     airport.delta_isa = 0
     # weights_lfl = weights_lfl_apm_FLAP5()
     weights_lfl = weights_lfl_apm_FLAPfull()
-    flaps = [19.6, 24.2]  # Deflections inboard local
+    flaps = [19.6, 24.2]
     slats = [20., 20.]
+
     configs.landing.wings['main_wing'].flaps.angle = flaps[1] * Units.deg
     configs.landing.wings['main_wing'].slats.angle = slats[1] * Units.deg
     altitude = [0, 6000, 8000]
-    configs.landing.max_lift_coefficient_factor = 0.97
-
-    # configs.landing.maximum_lift_coefficient = 2.72
-    # configs.landing.landing_constants = Data()
-    #
-    # configs.landing.landing_constants[0] = 250. * 1.1
-    # configs.landing.landing_constants[1] = 0.
-    # configs.landing.landing_constants[2] = 2.485/9.81 * 0.94
+    configs.landing.max_lift_coefficient_factor = configs.takeoff.max_lift_coefficient_factor
 
     fid = open('LFL.txt', 'w')  # Open output file
     for j, h in enumerate(altitude):
