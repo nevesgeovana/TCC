@@ -92,14 +92,14 @@ def main():
     airport = mission.airport
     clb_grad = 1
 
-    altitude = [0, 2000, 6000, 8000]
-    delta_isa = 0
-    weights_tofl = apmdata_tow_tofl()
+    # altitude = [0, 2000, 6000, 8000]
+    # delta_isa = 0
+    # weights_tofl = apmdata_tow_tofl()
 
     # altitude = [0, 5433, 8000]
-    # altitude = [0, 6000, 8000]
-    # delta_isa = 15
-    # weights_tofl = apmdata_tow_tofl_ISA15()
+    altitude = [0, 6000, 8000]
+    delta_isa = 15
+    weights_tofl = apmdata_tow_tofl_ISA15()
 
 
     # ---- Inputs: FLAP AND SLAT DEFLECTION
@@ -107,7 +107,7 @@ def main():
     slats = [20., 12., 12., 0.]
 
     # ---- Inputs: FACTOR CLMAX
-    configs.takeoff.max_lift_coefficient_factor = 0.967
+    configs.takeoff.max_lift_coefficient_factor = 0.9661
 
     # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
@@ -174,6 +174,11 @@ def main():
     weights_lfl = weights_lfl_apm_FLAPfull()
     flaps = [19.6, 24.2]
     slats = [20., 20.]
+    configs.landing.landing_constants = Data()
+
+    configs.landing.landing_constants[0] = 250. * 1.1
+    configs.landing.landing_constants[1] = 0.
+    configs.landing.landing_constants[2] = 2.485/9.81 * 0.94
 
     configs.landing.wings['main_wing'].flaps.angle = flaps[1] * Units.deg
     configs.landing.wings['main_wing'].slats.angle = slats[1] * Units.deg
@@ -332,10 +337,10 @@ def vehicle_setup():
     wing.aspect_ratio            = 8.6
     wing.sweeps.quarter_chord    = 23.0 * Units.deg # 22.5
     wing.thickness_to_chord      = 0.11
-    wing.taper                   = 0.28
+    wing.taper                   = 0.3275 #0.28
     wing.span_efficiency         = 0.96
     wing.spans.projected         = 26.0  * Units.meter
-    wing.chords.root             = 5.428 * Units.meter
+    wing.chords.root             = 4.2138 * Units.meter #5.428 * Units.meter
     wing.chords.tip              = 1.380 * Units.meter
     wing.chords.mean_aerodynamic = 3.806 * Units.meter
     wing.areas.reference         = 72.72 * Units['meters**2']
@@ -443,7 +448,7 @@ def vehicle_setup():
     fuselage.areas.wetted          = 280.00 * Units['meters**2'] # 269.80
     fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.2
-    fuselage.differential_pressure = 9.0875 * Units.psi
+    fuselage.differential_pressure = 8.94 * Units.psi
     
     fuselage.heights.at_quarter_length          = 3.4 * Units.meter
     fuselage.heights.at_three_quarters_length   = 3.4 * Units.meter
@@ -1253,6 +1258,7 @@ def apmdata_tow_tofl_ISA15():
                      36576.2064,
                      36628.76254,
                      36681.31868,
+                     36740.,
                      36754.89728,
                      36817.96464,
                      36870.52078,
