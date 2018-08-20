@@ -33,7 +33,9 @@ from SUAVE.Methods.Performance.estimate_landing_field_length import estimate_lan
 def main():
     # ---------------------------------------------------------------------------------------
     # INITIALIZING AIRCRAFT
+
     configs, analyses, vehicle = full_setup()
+    # analyses.configs.cruise.aerodynamics.settings.drag_coefficient_increment = 0.001
 
     simple_sizing(configs)
 
@@ -78,7 +80,7 @@ def main():
     config = configs.base
     cruise_segment_tag = "cruise"
     reserves = 1600.
-    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+    payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
 
     # ---------------------------------------------------------------------------------------
     # PLOT RESULTS
