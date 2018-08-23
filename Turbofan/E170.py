@@ -80,7 +80,7 @@ def main():
     config = configs.base
     cruise_segment_tag = "cruise"
     reserves = 1600.
-    payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
 
     # ---------------------------------------------------------------------------------------
     # PLOT RESULTS
