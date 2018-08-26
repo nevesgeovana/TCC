@@ -1,13 +1,13 @@
 Output file with parasite drag breakdown
 
-  VEHICLE TAG : cruise
+  VEHICLE TAG : ATR72
 
-  REFERENCE AREA ..................  72.7 m2 
-  ASPECT RATIO ....................   8.6    
-  WING SWEEP ......................  23.0 deg
-  WING THICKNESS RATIO ............  0.11    
-  INDUCED DRAG EFFICIENCY FACTOR .. 0.788    
-  MEAN AEROD. CHORD ............... 3.806 m 
+  REFERENCE AREA ..................  61.0 m2 
+  ASPECT RATIO ....................  12.0    
+  WING SWEEP ......................   3.0 deg
+  WING THICKNESS RATIO ............  0.15    
+  INDUCED DRAG EFFICIENCY FACTOR .. 0.742    
+  MEAN AEROD. CHORD ............... 2.325 m 
   REYNOLDS NUMBER .................  12.0 millions
   MACH NUMBER ..................... 0.300    
 
@@ -15,17 +15,17 @@ Output file with parasite drag breakdown
             COMPONENT                 |      CDO      |  WETTED AREA  |  FORM FACTOR  | FLAT PLATE CF.| REYNOLDS FACT.| COMPRES. FACT.|
                                       |      [-]      |      [m2]     |      [-]      |      [-]      |      [-]      |      [-]      |
                                       |               |               |               |               |               |               |
- vertical_stabilizer                  |    0.00152    |       32.0    |      1.210    |    0.00286    |      0.996    |      0.990    |
- main_wing                            |    0.00718    |      145.4    |      1.249    |    0.00288    |      0.996    |      0.990    |
- horizontal_stabilizer                |    0.00239    |       46.5    |      1.216    |    0.00308    |      0.996    |      0.990    |
- Pylon (TOTAL)                        |    0.00034    |        7.0    |      1.185    |    0.00297    |      0.996    |      0.990    |
- fuselage                             |    0.00901    |      280.0    |      1.106    |    0.00212    |      0.996    |      0.990    |
- turbofan  (EACH)                     |    0.00085    |       17.6    |      1.185    |    0.00297    |      0.996    |      0.990    |
- Miscellaneous Drag                   |    0.00141    |        -      |        -      |        -      |        -      |        -      |
+ vertical_stabilizer                  |    0.00164    |       29.4    |      1.238    |    0.00274    |      0.996    |      0.990    |
+ main_wing                            |    0.00825    |      122.0    |      1.434    |    0.00288    |      0.996    |      0.990    |
+ turboprop  (EACH)                    |    0.00169    |       36.2    |      1.098    |    0.00259    |      0.996    |      0.990    |
+ horizontal_stabilizer                |    0.00157    |       23.7    |      1.331    |    0.00304    |      0.996    |      0.990    |
+ Pylon (TOTAL)                        |    0.00068    |       14.5    |      1.098    |    0.00259    |      0.996    |      0.990    |
+ fuselage                             |    0.00876    |      240.0    |      1.112    |    0.00200    |      0.996    |      0.990    |
+ Miscellaneous Drag                   |    0.00156    |        -      |        -      |        -      |        -      |        -      |
  Drag Coefficient Increment           |    0.00000    |        -      |        -      |        -      |        -      |        -      |
                                       |               |               |               |               |               |               |
-                             SUM 	  |    0.02356    |      546.1    |               |               |               |               |
+                             SUM 	  |    0.02583    |      502.0    |               |               |               |               |
 
 
 -------------------------------------------
- Tuesday, 21. August 2018 10:29:29 AM
+ Sunday, 26. August 2018 06:31:02 PM

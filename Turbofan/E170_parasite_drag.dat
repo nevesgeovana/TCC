@@ -6,8 +6,8 @@ Output file with parasite drag breakdown
   ASPECT RATIO ....................   8.6    
   WING SWEEP ......................  23.0 deg
   WING THICKNESS RATIO ............  0.11    
-  INDUCED DRAG EFFICIENCY FACTOR .. 0.788    
-  MEAN AEROD. CHORD ............... 3.806 m 
+  INDUCED DRAG EFFICIENCY FACTOR .. 0.790    
+  MEAN AEROD. CHORD ............... 3.194 m 
   REYNOLDS NUMBER .................  12.0 millions
   MACH NUMBER ..................... 0.300    
 
@@ -15,17 +15,17 @@ Output file with parasite drag breakdown
             COMPONENT                 |      CDO      |  WETTED AREA  |  FORM FACTOR  | FLAT PLATE CF.| REYNOLDS FACT.| COMPRES. FACT.|
                                       |      [-]      |      [m2]     |      [-]      |      [-]      |      [-]      |      [-]      |
                                       |               |               |               |               |               |               |
- vertical_stabilizer                  |    0.00152    |       32.0    |      1.210    |    0.00286    |      0.996    |      0.990    |
+ vertical_stabilizer                  |    0.00148    |       32.0    |      1.210    |    0.00278    |      0.996    |      0.990    |
  main_wing                            |    0.00718    |      145.4    |      1.249    |    0.00288    |      0.996    |      0.990    |
- horizontal_stabilizer                |    0.00239    |       46.5    |      1.216    |    0.00308    |      0.996    |      0.990    |
- Pylon (TOTAL)                        |    0.00034    |        7.0    |      1.185    |    0.00297    |      0.996    |      0.990    |
- fuselage                             |    0.00901    |      280.0    |      1.106    |    0.00212    |      0.996    |      0.990    |
- turbofan  (EACH)                     |    0.00085    |       17.6    |      1.185    |    0.00297    |      0.996    |      0.990    |
+ horizontal_stabilizer                |    0.00233    |       46.5    |      1.216    |    0.00299    |      0.996    |      0.990    |
+ Pylon (TOTAL)                        |    0.00033    |        7.0    |      1.185    |    0.00289    |      0.996    |      0.990    |
+ fuselage                             |    0.00879    |      280.0    |      1.106    |    0.00206    |      0.996    |      0.990    |
+ turbofan  (EACH)                     |    0.00083    |       17.6    |      1.185    |    0.00289    |      0.996    |      0.990    |
  Miscellaneous Drag                   |    0.00141    |        -      |        -      |        -      |        -      |        -      |
  Drag Coefficient Increment           |    0.00000    |        -      |        -      |        -      |        -      |        -      |
                                       |               |               |               |               |               |               |
-                             SUM 	  |    0.02356    |      546.1    |               |               |               |               |
+                             SUM 	  |    0.02317    |      546.1    |               |               |               |               |
 
 
 -------------------------------------------
- Tuesday, 21. August 2018 07:48:34 PM
+ Sunday, 26. August 2018 12:36:15 PM

@@ -80,7 +80,7 @@ def main():
     config = configs.base
     cruise_segment_tag = "cruise"
     reserves = 1600.
-    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+    payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
 
     # ---------------------------------------------------------------------------------------
     # PLOT RESULTS
@@ -109,7 +109,7 @@ def main():
     slats = [20., 12., 12., 0.]
 
     # ---- Inputs: FACTOR CLMAX
-    configs.takeoff.max_lift_coefficient_factor = 0.9661
+    configs.takeoff.max_lift_coefficient_factor = 0.9765
 
     # ---- Open output file
     fid = open('TOFL.txt', 'w')  # Open output file
@@ -315,7 +315,8 @@ def vehicle_setup():
     vehicle.mass_properties.max_payload               = 9404.0 * Units.kg
     vehicle.mass_properties.max_fuel                  = 9428.0 * Units.kg
 
-    vehicle.mass_properties.center_of_gravity = [11., 0., 0.]
+    # vehicle.mass_properties.center_of_gravity = [11., 0., 0.]
+    vehicle.mass_properties.center_of_gravity = [12.925 + 0.15*3.194, 0., 0.]
 
     # envelope properties
     vehicle.envelope.ultimate_load = 2.5 * 1.5
@@ -344,7 +345,7 @@ def vehicle_setup():
     wing.spans.projected         = 26.0  * Units.meter
     wing.chords.root             = 4.2138 * Units.meter #5.428 * Units.meter
     wing.chords.tip              = 1.380 * Units.meter
-    wing.chords.mean_aerodynamic = 3.806 * Units.meter
+    wing.chords.mean_aerodynamic = 3.194 * Units.meter # 3.806
     wing.areas.reference         = 72.72 * Units['meters**2']
     wing.areas.wetted            = 2.0   * wing.areas.reference
     wing.areas.exposed           = 0.8   * wing.areas.wetted
@@ -446,11 +447,11 @@ def vehicle_setup():
     fuselage.lengths.aft_space     = 0.    * Units.meter
     fuselage.width                 = 3.000 * Units.meter
     fuselage.heights.maximum       = 3.400 * Units.meter
-    fuselage.areas.side_projected  = 197.35 * Units['meters**2']
+    fuselage.areas.side_projected  = 80.000 * Units['meters**2'] # 197.35 * Units['meters**2']
     fuselage.areas.wetted          = 280.00 * Units['meters**2'] # 269.80
     fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
     fuselage.effective_diameter    = 3.2
-    fuselage.differential_pressure = 8.94 * Units.psi
+    fuselage.differential_pressure = 8.965 * Units.psi
     
     fuselage.heights.at_quarter_length          = 3.4 * Units.meter
     fuselage.heights.at_three_quarters_length   = 3.4 * Units.meter

@@ -14,17 +14,14 @@ import pylab as plt
 # SUAVE Imports
 import SUAVE
 from SUAVE.Core import Data, Units
-from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
-from SUAVE.Methods.Geometry.Two_Dimensional.Cross_Section.Propulsion import compute_turbofan_geometry
+from SUAVE.Methods.Propulsion.propeller_design import propeller_design
 from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_compress_drag, \
      print_engine_data,   \
      print_mission_breakdown, \
      print_weight_breakdown
 from SUAVE.Methods.Performance  import payload_range
-from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
 from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
-from SUAVE.Methods.Performance.estimate_landing_field_length import estimate_landing_field_length
 
 # ----------------------------------------------------------------------
 #   Main
@@ -51,17 +48,15 @@ def main():
     # MISSION ANALYSIS
     mission = analyses.missions.base
     results = mission.evaluate()
-
+    configs.cruise.conditions = Data()
+    configs.cruise.conditions = results.segments.cruise.conditions
     # print weight breakdown
     print_weight_breakdown(configs.base,filename = 'ATR72_weight_breakdown.dat')
-
-    # print engine data into file
-    print_engine_data(configs.base,filename = 'ATR72_engine_data.dat')
 
     # print parasite drag data into file - define reference condition for parasite drag
     ref_condition = Data()
     ref_condition.mach_number = 0.3
-    ref_condition.reynolds_number = 12e6     
+    ref_condition.reynolds_number = 12e6
     print_parasite_drag(ref_condition,configs.cruise,analyses,'ATR72_parasite_drag.dat')
 
     # print compressibility drag data into file
@@ -69,6 +64,9 @@ def main():
 
     # print mission breakdown
     print_mission_breakdown(results,filename='ATR72_mission_breakdown.dat')
+
+    # print engine data into file
+    print_engine_data(configs.cruise,filename = 'ATR72_engine_data.dat')
 
     state = Data()
     state.conditions = SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics()
@@ -101,6 +99,8 @@ def full_setup():
 
     # vehicle analyses
     configs_analyses = analyses_setup(configs)
+    configs_analyses.vehicle = Data()
+    configs_analyses.vehicle = vehicle
 
     # mission analyses
     mission  = mission_setup(configs_analyses)
@@ -195,25 +195,26 @@ def vehicle_setup():
     # ------------------------------------------------------------------    
 
     # mass properties
-    vehicle.mass_properties.max_takeoff               = 37200. * Units.kg
-    vehicle.mass_properties.operating_empty           = 20736. * Units.kg
-    vehicle.mass_properties.takeoff                   = 31406. * Units.kg
-    vehicle.mass_properties.max_zero_fuel             = 30140. * Units.kg
+    vehicle.mass_properties.max_takeoff               = 22800. * Units.kg
+    vehicle.mass_properties.operating_empty           = 13800. * Units.kg
+    vehicle.mass_properties.takeoff                   = 22800. * Units.kg
+    vehicle.mass_properties.max_zero_fuel             = 20800. * Units.kg
     vehicle.mass_properties.cargo                     = 0.0    * Units.kg
-    vehicle.mass_properties.max_payload               = 9404.0 * Units.kg
-    vehicle.mass_properties.max_fuel                  = 9428.0 * Units.kg
+    vehicle.mass_properties.max_payload               = 7300.0 * Units.kg
+    vehicle.mass_properties.max_fuel                  = 5000.0* Units.kg
 
-    vehicle.mass_properties.center_of_gravity = [11., 0., 0.]
+    vehicle.mass_properties.center_of_gravity = [11.760, 0., 0.]
 
     # envelope properties
     vehicle.envelope.ultimate_load = 2.5 * 1.5
     vehicle.envelope.limit_load    = 2.5
+    vehicle.maximum_mach_operational = 0.55
 
     # basic parameters
-    vehicle.reference_area         = 72.72 * Units['meters**2']  
+    vehicle.reference_area         = 61 * Units['meters**2']
     vehicle.passengers             = 72
     vehicle.systems.control        = "fully powered"
-    vehicle.systems.accessories    = "medium range"
+    vehicle.systems.accessories    = "short range"
 
 
 
@@ -224,29 +225,29 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Main_Wing()
     wing.tag = 'main_wing'
 
-    wing.aspect_ratio            = 8.6
-    wing.sweeps.quarter_chord    = 23.0 * Units.deg # 22.5
-    wing.thickness_to_chord      = 0.11
-    wing.taper                   = 0.3275 #0.28
-    wing.span_efficiency         = 0.96
-    wing.spans.projected         = 26.0  * Units.meter
-    wing.chords.root             = 4.2138 * Units.meter #5.428 * Units.meter
-    wing.chords.tip              = 1.380 * Units.meter
-    wing.chords.mean_aerodynamic = 3.806 * Units.meter
-    wing.areas.reference         = 72.72 * Units['meters**2']
+    wing.aspect_ratio            = 12
+    wing.sweeps.quarter_chord    = 3.00 * Units.deg
+    wing.thickness_to_chord      = 0.15
+    wing.taper                   = 0.53
+    wing.span_efficiency         = 1.
+    wing.spans.projected         = 27.05 * Units.meter
+    wing.chords.root             = 2.942 * Units.meter
+    wing.chords.tip              = 1.568 * Units.meter
+    wing.chords.mean_aerodynamic = 2.325 * Units.meter
+    wing.areas.reference         = 61.00 * Units['meters**2']
     wing.areas.wetted            = 2.0   * wing.areas.reference
     wing.areas.exposed           = 0.8   * wing.areas.wetted
     wing.twists.root             = 2.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
-    wing.origin                  = [10.36122, 0, 0]
+    wing.origin                  = [11.0946, 0, 0]
     wing.vertical                = False
     wing.symmetric               = True
     wing.high_lift               = True
-    wing.flaps.type              = "double_slotted"
-    wing.flaps.chord             = 0.280
+    wing.flaps.type              = "single_slotted"
+    wing.flaps.chord             = 0.250
     wing.dynamic_pressure_ratio  = 1.0
-    wing.flaps.span_start        = 0.13
-    wing.flaps.span_end          = 0.75
+    wing.flaps.span_start        = 0.11
+    wing.flaps.span_end          = 0.73
 
     wing_planform(wing)
 
@@ -260,21 +261,20 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Wing()
     wing.tag = 'horizontal_stabilizer'
 
-    wing.aspect_ratio            = 4.3
-    wing.sweeps.quarter_chord    = 30.0 * Units.deg
-    wing.thickness_to_chord      = 0.11
-    wing.taper                   = 0.3707
+    wing.aspect_ratio            = 4.54
+    wing.sweeps.quarter_chord    = 4.75 * Units.deg
+    wing.thickness_to_chord      = 0.12
+    wing.taper                   = 0.65
     wing.span_efficiency         = 0.9
-    wing.spans.projected         = 10.000 * Units.meter
-    wing.chords.root             = 3.394  * Units.meter
-    wing.chords.tip              = 1.258  * Units.meter
-    wing.chords.mean_aerodynamic = 2.4895 * Units.meter
-    wing.areas.reference         = 23.25  * Units['meters**2'] 
+    wing.spans.projected         = 7.3347 * Units.meter
+    wing.chords.root             = 1.960  * Units.meter
+    wing.chords.tip              = 1.273  * Units.meter
+    wing.chords.mean_aerodynamic = 1.6413 * Units.meter
+    wing.areas.reference         = 11.86  * Units['meters**2']
     wing.areas.wetted            = 2.0    * wing.areas.reference
-    wing.areas.exposed           = 0.8    * wing.areas.wetted
     wing.twists.root             = 2.0    * Units.degrees
     wing.twists.tip              = 2.0    * Units.degrees
-    wing.origin                  = [24.6, 0, 0]
+    wing.origin                  = [24.96, 0, 0]
     wing.vertical                = False
     wing.symmetric               = True
     wing.dynamic_pressure_ratio  = 0.9
@@ -291,21 +291,20 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Wing()
     wing.tag = 'vertical_stabilizer'
     # equal to E190 data
-    wing.aspect_ratio            = 1.7
-    wing.sweeps.quarter_chord    = 35 * Units.deg
+    wing.aspect_ratio            = 1.6
+    wing.sweeps.quarter_chord    = 30 * Units.deg
     wing.thickness_to_chord      = 0.12
-    wing.taper                   = 0.26
+    wing.taper                   = 0.52
     wing.span_efficiency         = 0.90
-    wing.spans.projected         = 5.2153 * Units.meter
-    wing.chords.root             = 5.5779 * Units.meter
-    wing.chords.tip              = 1.4547 * Units.meter
-    wing.chords.mean_aerodynamic = 3.9192 * Units.meter
-    wing.areas.reference         = 16.0  * Units['meters**2'] 
+    wing.spans.projected         = 4.8502 * Units.meter
+    wing.chords.root             = 3.9845 * Units.meter
+    wing.chords.tip              = 2.0840 * Units.meter
+    wing.chords.mean_aerodynamic = 3.1289 * Units.meter
+    wing.areas.reference         = 14.72  * Units['meters**2']
     wing.areas.wetted            = 2.0   * wing.areas.reference
-    wing.areas.exposed           = 0.8   * wing.areas.wetted
     wing.twists.root             = 0.0   * Units.degrees
     wing.twists.tip              = 0.0   * Units.degrees
-    wing.origin                  = [23.9, 0, 0]
+    wing.origin                  = [21.667, 0, 0]
     wing.vertical                = True
     wing.symmetric               = False
     wing.dynamic_pressure_ratio  = 1.0
@@ -323,213 +322,109 @@ def vehicle_setup():
     fuselage.tag = 'fuselage'
     fuselage.number_coach_seats    = vehicle.passengers
     fuselage.seats_abreast         = 4
-    fuselage.seat_pitch            = 0.7455  #
-    fuselage.fineness.nose         = 2.0     #
-    fuselage.fineness.tail         = 3.0     #
+    fuselage.seat_pitch            = 0.762
+    fuselage.fineness.nose         = 2.0
+    fuselage.fineness.tail         = 3.0
     fuselage.lengths.nose          = 6.00  * Units.meter
-    fuselage.lengths.tail          = 9.00  * Units.meter
+    fuselage.lengths.tail          = 6.00  * Units.meter
     fuselage.lengths.cabin         = 14.90 * Units.meter
-    fuselage.lengths.total         = 29.90 * Units.meter
+    fuselage.lengths.total         = 27.17 * Units.meter
     fuselage.lengths.fore_space    = 0.    * Units.meter
     fuselage.lengths.aft_space     = 0.    * Units.meter
-    fuselage.width                 = 3.000 * Units.meter
-    fuselage.heights.maximum       = 3.400 * Units.meter
-    fuselage.areas.side_projected  = 197.35 * Units['meters**2']
-    fuselage.areas.wetted          = 280.00 * Units['meters**2'] # 269.80
-    fuselage.areas.front_projected = 8.0110 * Units['meters**2']     # 8.0110
-    fuselage.effective_diameter    = 3.2
-    fuselage.differential_pressure = 8.94 * Units.psi
+    fuselage.width                 = 2.787 * Units.meter
+    fuselage.heights.maximum       = 3.020 * Units.meter
+    fuselage.areas.side_projected  = 74.000 * Units['meters**2']
+    fuselage.areas.wetted          = 240.00 * Units['meters**2']
+    fuselage.areas.front_projected = 7.5000 * Units['meters**2']
+    fuselage.effective_diameter    = 3.02
+    fuselage.differential_pressure = 6.35 * Units.psi
     
-    fuselage.heights.at_quarter_length          = 3.4 * Units.meter
-    fuselage.heights.at_three_quarters_length   = 3.4 * Units.meter
-    fuselage.heights.at_wing_root_quarter_chord = 3.4 * Units.meter
+    fuselage.heights.at_quarter_length          = 3.02 * Units.meter
+    fuselage.heights.at_three_quarters_length   = 3.02 * Units.meter
+    fuselage.heights.at_wing_root_quarter_chord = 3.02 * Units.meter
 
     # add to vehicle
     vehicle.append_component(fuselage)
     
     # ------------------------------------------------------------------
-    #   Turbofan Network
+    #   turboprop Network
     # ------------------------------------------------------------------    
     
     #instantiate the gas turbine network
-    turbofan = SUAVE.Components.Energy.Networks.Turbofan()
-    turbofan.tag = 'turbofan'
+    turboprop = SUAVE.Components.Energy.Networks.Turboprop()
+    turboprop.__defaults__()
+    turboprop.tag = 'turboprop'
     
     # setup
-    turbofan.number_of_engines = 2
-    turbofan.bypass_ratio      = 5.0
-    turbofan.engine_length     = 3.1  * Units.meter
-    turbofan.nacelle_diameter  = 1.64 * Units.meter
-    turbofan.origin            = [[9.721, 3.984, -1], [9.721, -3.984, -1]] # meters
-    
+    turboprop.number_of_engines = 2
+    turboprop.origin            = [[8.483, 4.05, 0], [8.483, -4.05, 0]] # meters
+    turboprop.nacelle_diameter  = 1.27  * Units.meter
+    turboprop.engine_length     = 4.532 * Units.meter
+    turboprop.thrust_angle      = 0.0   * Units.deg
+    turboprop.installed_power   = 4050. * Units.hp
+
     #compute engine areas
-    turbofan.areas.wetted      = 1.1*np.pi*turbofan.nacelle_diameter*turbofan.engine_length
+    turboprop.areas             = Data()
+    turboprop.areas.wetted      = 2.0*np.pi*turboprop.nacelle_diameter*turboprop.engine_length
     
     # working fluid
-    turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
+    turboprop.working_fluid = SUAVE.Attributes.Gases.Air()
     
     # ------------------------------------------------------------------
-    #   Component 1 - Ram
+    #   Component 1 - Gas Turbine
     
     # to convert freestream static to stagnation quantities
     # instantiate
-    ram = SUAVE.Components.Energy.Converters.Ram()
-    ram.tag = 'ram'
-    
+    gas_turbine = SUAVE.Components.Energy.Converters.Gas_Turbine()
+    gas_turbine.tag = 'gas_turbine'
+
+    gas_turbine.datum_sea_level_power = 4050.
+    gas_turbine.power_scaling_factor = 1.0
+    gas_turbine.power_extraction = 'bleed_ECS'
+    gas_turbine.load_data('engine.out')
+    gas_turbine.bucket = Data()
+    gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.920, 1.000]
+    gas_turbine.bucket.RSFC = [1.126, 1.086, 1.056, 1.033, 1.014, 1.000]
+
     # add to the network
-    turbofan.append(ram)
-
+    turboprop.gas_turbine = gas_turbine
     # ------------------------------------------------------------------
-    #  Component 2 - Inlet Nozzle
+    #  Component 2 - Propeller
     
     # instantiate
-    inlet_nozzle = SUAVE.Components.Energy.Converters.Compression_Nozzle()
-    inlet_nozzle.tag = 'inlet_nozzle'
+    propeller = SUAVE.Components.Energy.Converters.Propeller()
+    propeller.tag = 'propeller'
     
     # setup
-    inlet_nozzle.polytropic_efficiency = 0.98
-    inlet_nozzle.pressure_ratio        = 0.98
-    
-    # add to network
-    turbofan.append(inlet_nozzle)
-    
-    # ------------------------------------------------------------------
-    #  Component 3 - Low Pressure Compressor
-    
-    # instantiate 
-    compressor = SUAVE.Components.Energy.Converters.Compressor()    
-    compressor.tag = 'low_pressure_compressor'
+    prop_attributes = Data()
+    prop_attributes.number_blades       = 6.0
+    prop_attributes.tip_radius          = 1.980 * Units.meter
+    prop_attributes.hub_radius          = 0.285 * Units.meter
+    prop_attributes.angular_velocity    = 1200.*(2.*np.pi/60.0)  # Rotation Rate in rad/s
+    prop_attributes.freestream_velocity = 140.0   # Freestream Velocity
+    prop_attributes.design_Cl           = 0.43    # Design Lift Coefficient
+    prop_attributes.design_altitude     = 25000.0 * Units.ft
+    prop_attributes.design_thrust       = 0.00    * Units.N
+    prop_attributes.design_power        = 1070.0  * 1e3 * Units.N * Units['m/s']
 
-    # setup
-    compressor.polytropic_efficiency = 0.91
-    compressor.pressure_ratio        = 1.90
-    
+    prop_attributes = propeller_design(prop_attributes)
+    propeller.prop_attributes = prop_attributes
     # add to network
-    turbofan.append(compressor)
-    
+    turboprop.propeller = propeller
+
     # ------------------------------------------------------------------
-    #  Component 4 - High Pressure Compressor
-    
+    #  Component 3 - Gear Box
+
     # instantiate
-    compressor = SUAVE.Components.Energy.Converters.Compressor()    
-    compressor.tag = 'high_pressure_compressor'
-    
-    # setup
-    compressor.polytropic_efficiency = 0.91
-    compressor.pressure_ratio        = 7.5
-    
-    # add to network
-    turbofan.append(compressor)
-
-    # ------------------------------------------------------------------
-    #  Component 5 - Low Pressure Turbine
-    
-    # instantiate
-    turbine = SUAVE.Components.Energy.Converters.Turbine()   
-    turbine.tag='low_pressure_turbine'
-    
-    # setup
-    turbine.mechanical_efficiency = 0.99
-    turbine.polytropic_efficiency = 0.93
-    
-    # add to network
-    turbofan.append(turbine)
-      
-    # ------------------------------------------------------------------
-    #  Component 6 - High Pressure Turbine
-    
-    # instantiate
-    turbine = SUAVE.Components.Energy.Converters.Turbine()   
-    turbine.tag='high_pressure_turbine'
+    gearbox = SUAVE.Components.Energy.Converters.Gearbox()
+    gearbox.tag = 'gear_box'
+    gearbox.efficiency = 0.985
 
     # setup
-    turbine.mechanical_efficiency = 0.99
-    turbine.polytropic_efficiency = 0.93
-    
-    # add to network
-    turbofan.append(turbine)  
-    
-    # ------------------------------------------------------------------
-    #  Component 7 - Combustor
-    
-    # instantiate    
-    combustor = SUAVE.Components.Energy.Converters.Combustor()   
-    combustor.tag = 'combustor'
-    
-    # setup
-    combustor.efficiency                = 0.99 
-    combustor.alphac                    = 1.0     
-    combustor.turbine_inlet_temperature = 1500 # K
-    combustor.pressure_ratio            = 0.95
-    combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
-    
-    # add to network
-    turbofan.append(combustor)
+    turboprop.gearbox = gearbox
 
-    # ------------------------------------------------------------------
-    #  Component 8 - Core Nozzle
-    
-    # instantiate
-    nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
-    nozzle.tag = 'core_nozzle'
-    
-    # setup
-    nozzle.polytropic_efficiency = 0.95
-    nozzle.pressure_ratio        = 0.98
-    
-    # add to network
-    turbofan.append(nozzle)
-
-    # ------------------------------------------------------------------
-    #  Component 9 - Fan Nozzle
-    
-    # instantiate
-    nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
-    nozzle.tag = 'fan_nozzle'
-
-    # setup
-    nozzle.polytropic_efficiency = 0.95
-    nozzle.pressure_ratio        = 0.98
-    
-    # add to network
-    turbofan.append(nozzle)
-    
-    # ------------------------------------------------------------------
-    #  Component 10 - Fan
-    
-    # instantiate
-    fan = SUAVE.Components.Energy.Converters.Fan()   
-    fan.tag = 'fan'
-
-    # setup
-    fan.polytropic_efficiency = 0.93
-    fan.pressure_ratio        = 1.625
-    
-    # add to network
-    turbofan.append(fan)
-    
-    # ------------------------------------------------------------------
-    #Component 10 : thrust (to compute the thrust)
-    thrust = SUAVE.Components.Energy.Processes.Thrust()       
-    thrust.tag ='compute_thrust'
- 
-    #total design thrust (includes all the engines)
-    thrust.total_design             = 27550.0 * Units.N #Newtons
- 
-    #design sizing conditions
-    altitude      = 35000.0*Units.ft
-    mach_number   = 0.78
-    isa_deviation = 0.
-    
-    #Engine setup for noise module    
-    # add to network
-    turbofan.thrust = thrust
-
-    #size the turbofan
-    turbofan_sizing(turbofan, mach_number, altitude, isa_deviation)
-    
-    # add  gas turbine network turbofan to the vehicle 
-    vehicle.append_component(turbofan)      
+    # add  gas turbine network turboprop to the vehicle
+    vehicle.append_component(turboprop)      
     
     # ------------------------------------------------------------------
     #   Vehicle Definition Complete
@@ -550,14 +445,16 @@ def configs_setup(vehicle):
 
     base_config = SUAVE.Components.Configs.Config(vehicle)
     base_config.tag = 'base'
-    configs.append(base_config)
+    configs.base = Data()
+    configs.base = base_config
 
     # ------------------------------------------------------------------
     #   Cruise Configuration
     # ------------------------------------------------------------------
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'cruise'
-    configs.append(config)
+    configs.cruise = Data()
+    configs.cruise = config
 
     # ------------------------------------------------------------------
     #   Takeoff Configuration
@@ -566,31 +463,8 @@ def configs_setup(vehicle):
     config.tag = 'takeoff'
     config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
-    # config.max_lift_coefficient_factor    = 1.
-    config.V2_VS_ratio = 1.2
-    # config.maximum_lift_coefficient = 2.62
-
-    configs.append(config)
-    # ------------------------------------------------------------------
-    #   Cruise with Spoilers Configuration
-    # ------------------------------------------------------------------
-
-    config = SUAVE.Components.Configs.Config(base_config)
-    config.tag = 'cruise_spoilers'
-    config.maximum_lift_coefficient = 1.2
-    
-    configs.append(config)
-    
-    # ------------------------------------------------------------------
-    #   Cutback Configuration
-    # ------------------------------------------------------------------
-    config = SUAVE.Components.Configs.Config(base_config)
-    config.tag = 'cutback'
-    config.wings['main_wing'].flaps.angle = 20. * Units.deg
-    config.wings['main_wing'].slats.angle = 20. * Units.deg
-    config.max_lift_coefficient_factor    = 1. #0.95
-
-    configs.append(config)    
+    configs.takeoff = Data()
+    configs.takeoff = config
 
     # ------------------------------------------------------------------
     #   Landing Configuration
@@ -600,25 +474,10 @@ def configs_setup(vehicle):
     config.tag = 'landing'
 
     config.wings['main_wing'].flaps.angle = 30. * Units.deg
-    config.wings['main_wing'].slats.angle = 25. * Units.deg  
-    # config.max_lift_coefficient_factor    = 1. #0.95
-
-    # config.maximum_lift_coefficient = 2.52
-    
-    configs.append(config)
-
-    # ------------------------------------------------------------------
-    #   Short Field Takeoff Configuration
-    # ------------------------------------------------------------------ 
-
-    config = SUAVE.Components.Configs.Config(base_config)
-    config.tag = 'short_field_takeoff'
-    
-    config.wings['main_wing'].flaps.angle = 20. * Units.deg
     config.wings['main_wing'].slats.angle = 25. * Units.deg
-    config.max_lift_coefficient_factor    = 1. #0.95
-  
-    configs.append(config)
+
+    configs.landing = Data()
+    configs.landing = config
 
     return configs
 
@@ -627,14 +486,10 @@ def simple_sizing(configs):
     base = configs.base
     base.pull_base()
 
-    # zero fuel weight
-    # base.mass_properties.max_zero_fuel = 0.9 * base.mass_properties.max_takeoff
-
     # wing areas
     for wing in base.wings:
         wing.areas.wetted   = 2.0 * wing.areas.reference
         wing.areas.exposed  = 0.8 * wing.areas.wetted
-        wing.areas.affected = 0.6 * wing.areas.wetted
 
     # diff the new data
     base.store_diff()
@@ -679,8 +534,22 @@ def mission_setup(analyses):
     # unpack Segments module
     Segments = SUAVE.Analyses.Mission.Segments
 
+
     # base segment
     base_segment = Segments.Segment()
+    ones_row = base_segment.state.ones_row
+    base_segment.process.iterate.initials.initialize_battery = SUAVE.Methods.Missions.Segments.Common.Energy.initialize_battery
+    base_segment.process.iterate.conditions.planet_position = SUAVE.Methods.skip
+    base_segment.process.iterate.unknowns.network = analyses.vehicle.propulsors.turboprop.unpack_unknowns
+    base_segment.process.iterate.residuals.network = analyses.vehicle.propulsors.turboprop.residuals
+    base_segment.state.unknowns.throttle = ones_row(1)
+    base_segment.state.unknowns.pitch_command = ones_row(1) * 0. * Units.deg
+    base_segment.state.conditions.propulsion = Data()
+    base_segment.state.conditions.propulsion.rpm = 1200 * ones_row(1)
+    base_segment.state.residuals.net = 0. * ones_row(1)
+    base_segment.state.numerics.number_control_points = 10
+    base_segment.state.conditions.freestream = Data()
+    base_segment.state.conditions.freestream.delta_ISA = airport.delta_isa * ones_row(1)
 
     # ------------------------------------------------------------------
     #   First Climb Segment: Constant Speed, Constant Rate
@@ -692,88 +561,16 @@ def mission_setup(analyses):
     segment.analyses.extend( analyses.takeoff )
 
     segment.altitude_start = 0.0   * Units.km
-    segment.altitude_end   = 3.048   * Units.km
-    segment.air_speed      = 138.0 * Units['m/s']
-    segment.climb_rate     = 3000. * Units['ft/min']
+    segment.altitude_end   = 5000 * Units.ft
+    segment.air_speed      = 170.0 * Units.knots
+    segment.climb_rate     = 1355. * Units['ft/min']
+
+    segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
 
     # add to misison
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Second Climb Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------    
-
-    segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
-    segment.tag = "climb_2"
-
-    segment.analyses.extend( analyses.cruise )
-
-    segment.altitude_end = 3.657 * Units.km
-    segment.air_speed    = 168.0 * Units['m/s']
-    segment.climb_rate   = 2500. * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)
-
-    # ------------------------------------------------------------------
-    #   Third Climb Segment: constant Speed, Constant Rate
-    # ------------------------------------------------------------------    
-
-    segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
-    segment.tag = "climb_3"
-
-    segment.analyses.extend( analyses.cruise )
-
-    segment.altitude_end = 25000. * Units.ft
-    segment.air_speed    = 200.0  * Units['m/s']
-    segment.climb_rate   = 1800. * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)
-    
-    # ------------------------------------------------------------------
-    #   Fourth Climb Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------
-
-    segment = Segments.Climb.Constant_Speed_Constant_Rate()
-    segment.tag = "climb_4"
-
-    # connect vehicle configuration
-    segment.analyses.extend( analyses.cruise )
-
-    # segment attributes
-    # segment.atmosphere   = atmosphere
-    # segment.planet       = planet
-
-    segment.altitude_end = 32000. * Units.ft
-    segment.air_speed    = 230.0* Units['m/s']
-    segment.climb_rate   = 900. * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)
-    
-    # ------------------------------------------------------------------
-    #   Fifth Climb Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------
-
-    segment = Segments.Climb.Constant_Speed_Constant_Rate()
-    segment.tag = "climb_5"
-
-    # connect vehicle configuration
-    segment.analyses.extend( analyses.cruise )
-
-    # segment attributes
-    # segment.atmosphere   = atmosphere
-    # segment.planet       = planet
-
-    segment.altitude_end = 37000. * Units.ft
-    segment.air_speed    = 230.0  * Units['m/s']
-    segment.climb_rate   = 300.   * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)    
-    
-    # ------------------------------------------------------------------    
     #   Cruise Segment: Constant Speed, Constant Altitude
     # ------------------------------------------------------------------    
 
@@ -782,8 +579,10 @@ def mission_setup(analyses):
 
     segment.analyses.extend( analyses.cruise )
 
-    segment.air_speed  = 450. * Units.knots
-    segment.distance   = 152. * Units.nautical_miles
+    segment.air_speed  = 245. * Units.knots
+    segment.distance   = 100. * Units.nautical_miles
+
+    segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
 
     # add to mission
     mission.append_segment(segment)
@@ -797,46 +596,14 @@ def mission_setup(analyses):
 
     segment.analyses.extend( analyses.cruise )
 
-    segment.altitude_end = 9.31  * Units.km
-    segment.air_speed    = 440.0 * Units.knots
-    segment.descent_rate = 2600. * Units['ft/min']
+    segment.altitude_end = 0.0  * Units.km
+    segment.air_speed    = 170.0 * Units.knots
+    segment.descent_rate = 1355. * Units['ft/min']
+
+    segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
 
     # add to mission
     mission.append_segment(segment)
-
-    # ------------------------------------------------------------------
-    #   Second Descent Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------
-
-    segment = Segments.Descent.Constant_Speed_Constant_Rate(base_segment)
-    segment.tag = "descent_2"
-
-    segment.analyses.extend( analyses.landing )
-
-    segment.altitude_end = 3.657 * Units.km
-    segment.air_speed    = 365.0 * Units.knots
-    segment.descent_rate = 2300. * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)
-
-    # ------------------------------------------------------------------
-    #   Third Descent Segment: Constant Speed, Constant Rate
-    # ------------------------------------------------------------------
-
-    segment = Segments.Descent.Constant_Speed_Constant_Rate(base_segment)
-    segment.tag = "descent_3"
-
-    segment.analyses.extend( analyses.landing )
-    analyses.landing.aerodynamics.settings.spoiler_drag_increment = 0.00
-
-    segment.altitude_end = 0.0   * Units.km
-    segment.air_speed    = 250.0 * Units.knots
-    segment.descent_rate = 1500. * Units['ft/min']
-
-    # add to mission
-    mission.append_segment(segment)
-
 
     # ------------------------------------------------------------------
     #   Mission definition complete    
