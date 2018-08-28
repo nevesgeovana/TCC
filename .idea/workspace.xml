@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Data/E170_final.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Data/E170_final.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170_compress_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170_engine_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170_mission_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170_parasite_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170_weight_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/LFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/LFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/PayloadRangeDiagram.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/PayloadRangeDiagram.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/TOFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/TOFL.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" afterDir="false" />
@@ -27,6 +17,8 @@
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/atr72fcom.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Data/atr72fcom.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/turboprop_draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/turboprop_draft.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +30,7 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -57,118 +49,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="51" />
+          <entry key="py" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="51" />
+          <entry key="Python" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="40" />
-          <entry key="py" value="3990" />
+          <entry key="py" value="4053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4030" />
+          <entry key="Python" value="4093" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="141">
+              <caret line="700" column="65" lean-forward="true" selection-start-line="700" selection-start-column="65" selection-end-line="700" selection-end-column="65" />
               <folding>
                 <element signature="e#269#287#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Segment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="118" column="43" lean-forward="true" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/converge_root.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/scipy/optimize/minpack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="226" selection-start-line="226" selection-end-line="226" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Climb/Unknown_Throttle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Core/Data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
             </state>
           </provider>
         </entry>
@@ -200,12 +111,12 @@
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Propeller.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py" />
-        <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py" />
+        <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="737" />
@@ -332,7 +243,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2185129" />
@@ -341,7 +252,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39016393" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39016393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -381,18 +292,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Turboprop/ATR72.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="53" />
+          <line>819</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="55" />
+          <url>file://$PROJECT_DIR$/Turboprop/ATR72.py</url>
+          <line>705</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -625,20 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Propeller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -681,23 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="e#269#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/converge_root.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -712,17 +587,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="312">
+          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Propeller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="-1512">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/cbook/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="609" column="21" lean-forward="true" selection-start-line="609" selection-start-column="21" selection-end-line="609" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="700" column="65" lean-forward="true" selection-start-line="700" selection-start-column="65" selection-end-line="700" selection-end-column="65" />
+          <folding>
+            <element signature="e#269#287#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
