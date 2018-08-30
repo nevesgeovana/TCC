@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" afterDir="false" />
@@ -17,8 +16,63 @@
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/Data/atr72fcom.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Data/atr72fcom.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/turboprop_draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/turboprop_draft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/aircraft.avl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_001.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_002.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_003.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_004.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_005.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/batch_006.run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_001.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_002.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_003.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_004.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_005.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/commands_006.deck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_001_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_002_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_003_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_004_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_005_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/avl_files/results_case_006_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/base_data_aerodynamics.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/AVL/tut_mission_B737_AVL.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Analyses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Missions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Optimize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Plot_Mission.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Procedure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Tutorials/Regional_Jet_Optimization/Vehicles.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +84,7 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -43,43 +97,74 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="56" />
+          <entry key="py" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="56" />
+          <entry key="Python" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="40" />
-          <entry key="py" value="4053" />
+          <entry key="py" value="4616" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4093" />
+          <entry key="Python" value="4656" />
         </counts>
       </usages-collector>
     </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="1_code" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="700" column="65" lean-forward="true" selection-start-line="700" selection-start-column="65" selection-end-line="700" selection-end-column="65" />
+            <state relative-caret-position="223">
+              <caret line="654" column="43" lean-forward="true" selection-start-line="654" selection-start-column="43" selection-end-line="654" selection-end-column="43" />
               <folding>
                 <element signature="e#269#287#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1586">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
             </state>
           </provider>
         </entry>
@@ -91,6 +176,7 @@
       <find>simple_sizing</find>
       <find>ener</find>
       <find>turbofan</find>
+      <find>nautical_miles</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,23 +195,24 @@
         <option value="$PROJECT_DIR$/Turbofan/E170.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Core/Diffed_Data.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Propeller.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py" />
         <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="737" />
+    <option name="x" value="679" />
+    <option name="width" value="694" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,7 +229,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,13 +332,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2185129" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49625936" weight="0.21752267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39016393" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33442622" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3826955" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -292,13 +378,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Turboprop/ATR72.py</url>
-          <line>819</line>
-          <option name="timeStamp" value="57" />
+          <line>88</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Turboprop/ATR72.py</url>
-          <line>705</line>
-          <option name="timeStamp" value="58" />
+          <line>1002</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Turboprop/ATR72.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -361,13 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="57" column="4" selection-start-line="56" selection-start-column="47" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -531,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Core/Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -624,15 +706,29 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="188">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="700" column="65" lean-forward="true" selection-start-line="700" selection-start-column="65" selection-end-line="700" selection-end-column="65" />
+        <state relative-caret-position="223">
+          <caret line="654" column="43" lean-forward="true" selection-start-line="654" selection-start-column="43" selection-end-line="654" selection-end-column="43" />
           <folding>
             <element signature="e#269#287#0" expanded="true" />
           </folding>
