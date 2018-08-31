@@ -19,7 +19,8 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      print_compress_drag, \
      print_turboprop_data,   \
      print_mission_breakdown, \
-     print_weight_breakdown
+     print_weight_breakdown, \
+     plot_mission
 from SUAVE.Methods.Performance  import payload_range
 from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
 
@@ -76,15 +77,15 @@ def main():
     # ---------------------------------------------------------------------------------------
     # PLOT RESULTS
 
-    plot_mission(results)
+    plot_mission(results, 0)
     # ---------------------------------------------------------------------------------------
     # PAYLOAD RANGE DIAGRAM
 
     config = configs.base
     cruise_segment_tag = "cruise"
-    reserves = 900.
+    reserves = 600.
     weights.mass_properties.operating_empty = 13500.
-    # payload_range_results = payload_range(config, mission, cruise_segment_tag, reserves)
+    payloadrange = payload_range(config, mission, cruise_segment_tag, reserves)
 
     return
 
@@ -151,6 +152,7 @@ def base_analysis(vehicle):
     #  Aerodynamics Analysis
     aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
     aerodynamics.geometry = vehicle
+    # aerodynamics.settings.drag_coefficient_increment = 0.0018
     analyses.append(aerodynamics)
 
     # ------------------------------------------------------------------
@@ -230,7 +232,8 @@ def vehicle_setup():
     wing.sweeps.quarter_chord    = 3.00 * Units.deg
     wing.thickness_to_chord      = 0.15
     wing.taper                   = 0.53
-    wing.span_efficiency         = 0.96
+    wing.span_efficiency         = 1.
+    wing.calibration_factor      = 1.#0.92
     wing.spans.projected         = 27.05 * Units.meter
     wing.chords.root             = 2.942 * Units.meter
     wing.chords.tip              = 1.568 * Units.meter
@@ -380,13 +383,15 @@ def vehicle_setup():
     gas_turbine.tag = 'gas_turbine'
 
     gas_turbine.datum_sea_level_power = 2750. * Units.hp
-    gas_turbine.power_scaling_factor  = 0.75
-    gas_turbine.sfc_scaling_factor    = 1.11 #1.23
+    gas_turbine.power_scaling_factor  = [0.622, 0.696, 0.74]  # NTO, MCL, MCR
+    gas_turbine.sfc_scaling_factor    = [1.135, 1.135, 1.11]  # NTO, MCL, MCR
     gas_turbine.power_extraction      = 'bleed_ECS'
     gas_turbine.load_data('engine.out')
     gas_turbine.bucket = Data()
-    gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.920, 1.000]
-    gas_turbine.bucket.RSFC = [1.126, 1.086, 1.056, 1.033, 1.014, 1.000]
+    # gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.920, 1.000]
+    gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.900, 1.000]
+    # gas_turbine.bucket.RSFC = [1.126, 1.086, 1.056, 1.033, 1.014, 1.000]
+    gas_turbine.bucket.RSFC = [1.136, 1.096, 1.066, 1.043, 1.03, 1.000]
 
     # add to the network
     turboprop.gas_turbine = gas_turbine
@@ -564,8 +569,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 0.0    * Units.ft
     segment.altitude_end   = 5000.0 * Units.ft
-    segment.air_speed      = 200.0  * Units.knots
-    segment.climb_rate     = 1300.  * Units['ft/min']
+    segment.air_speed      = 170.0  * Units.knots
+    segment.climb_rate     = 1200.  * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -582,7 +587,7 @@ def mission_setup(analyses):
 
     segment.altitude_start = 5000.0  * Units.ft
     segment.altitude_end   = 10000.0 * Units.ft
-    segment.air_speed      = 200.0   * Units.knots
+    segment.air_speed      = 170.0   * Units.knots
     segment.climb_rate     = 1000.   * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
@@ -600,8 +605,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 10000.0 * Units.ft
     segment.altitude_end   = 15000.0 * Units.ft
-    segment.air_speed      = 200.0   * Units.knots
-    segment.climb_rate     = 800.    * Units['ft/min']
+    segment.air_speed      = 170.0   * Units.knots
+    segment.climb_rate     = 700.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -618,7 +623,7 @@ def mission_setup(analyses):
 
     segment.altitude_start = 15000.0 * Units.ft
     segment.altitude_end   = 18000.0 * Units.ft
-    segment.air_speed      = 220.0   * Units.knots
+    segment.air_speed      = 170.0   * Units.knots
     segment.climb_rate     = 500.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
@@ -636,8 +641,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 18000.0 * Units.ft
     segment.altitude_end   = 21000.0 * Units.ft
-    segment.air_speed      = 240.0   * Units.knots
-    segment.climb_rate     = 350.    * Units['ft/min']
+    segment.air_speed      = 170.0   * Units.knots
+    segment.climb_rate     = 300.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -652,8 +657,10 @@ def mission_setup(analyses):
 
     segment.analyses.extend(analyses.cruise)
 
-    segment.air_speed  = 275. * Units.knots
-    segment.distance   = 661. * Units.nautical_miles #655
+    # segment.air_speed  = 275. * Units.knots
+    segment.air_speed  = 265. * Units.knots
+    # segment.distance = 661. * Units.nautical_miles  # 655
+    segment.distance   = 1600. * Units.nautical_miles #661
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
 
@@ -825,205 +832,207 @@ def missions_setup(base_mission):
 
     return missions  
 
-# ----------------------------------------------------------------------
-#   Plot Mission
-# ----------------------------------------------------------------------
-
-def plot_mission(results,line_style='bo-'):
-
-    axis_font = {'fontname':'Arial', 'size':'14'}    
-
-    # ------------------------------------------------------------------
-    #   Aerodynamics
-    # ------------------------------------------------------------------
-
-
-    fig = plt.figure("Aerodynamic Forces",figsize=(8,12))
-    for segment in results.segments.values():
-
-        time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-        Thrust = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lbf
-        eta    = segment.conditions.propulsion.throttle[:,0]
-        pitch = segment.conditions.propulsion.pitch_command[:, 0]
-        P = segment.conditions.propulsion.propeller_power[:, 0]*1.34102/1000
-        gas_turbine_power = segment.conditions.propulsion.gas_turbine_power[:, 0]*1.34102/1000
-        etap = segment.conditions.propulsion.etap[:, 0]
-
-        axes = fig.add_subplot(5, 1, 1)
-        axes.plot( time , Thrust , line_style )
-        axes.set_ylabel('Thrust (lbf)',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(5, 1, 2)
-        axes.plot(time, P, 'ko-', label='Propeller' )
-        axes.plot(time, gas_turbine_power, 'ro-', label='Gas Turbine' )
-        axes.set_ylabel('Power (HP)', axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(5, 1, 3)
-        axes.plot( time , eta , line_style )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('Throttle',axis_font)
-        axes.grid(True)	
-
-        axes = fig.add_subplot(5, 1, 4)
-        axes.plot(time, pitch*180/3.14159, line_style)
-        axes.set_xlabel('Time (min)', axis_font)
-        axes.set_ylabel('Pitch Command', axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(5, 1, 5)
-        axes.plot(time, etap, line_style)
-        axes.set_xlabel('Time (min)', axis_font)
-        axes.set_ylabel('Propeller Efficiency', axis_font)
-        axes.grid(True)
-
-        plt.savefig("ATR72_engine.pdf")
-        plt.savefig("ATR72_engine.png")
-
-    # ------------------------------------------------------------------
-    #   Aerodynamics 2
-    # ------------------------------------------------------------------
-    fig = plt.figure("Aerodynamic Coefficients",figsize=(8,10))
-    for segment in results.segments.values():
-
-        time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-        CLift  = segment.conditions.aerodynamics.lift_coefficient[:,0]
-        CDrag  = segment.conditions.aerodynamics.drag_coefficient[:,0]
-        aoa = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
-        l_d = CLift/CDrag
-
-        axes = fig.add_subplot(3,1,1)
-        axes.plot( time , CLift , line_style )
-        axes.set_ylabel('Lift Coefficient',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(3,1,2)
-        axes.plot( time , l_d , line_style )
-        axes.set_ylabel('L/D',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(3,1,3)
-        axes.plot( time , aoa , 'ro-' )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('AOA (deg)',axis_font)
-        axes.grid(True)
-
-        plt.savefig("ATR72_aero.pdf")
-        plt.savefig("ATR72_aero.png")
-
-    # ------------------------------------------------------------------
-    #   Aerodynamics 2
-    # ------------------------------------------------------------------
-    fig = plt.figure("Drag Components",figsize=(8,10))
-    axes = plt.gca()
-    for i, segment in enumerate(results.segments.values()):
-
-        time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-        drag_breakdown = segment.conditions.aerodynamics.drag_breakdown
-        cdp = drag_breakdown.parasite.total[:,0]
-        cdi = drag_breakdown.induced.total[:,0]
-        cdc = drag_breakdown.compressible.total[:,0]
-        cdm = drag_breakdown.miscellaneous.total[:,0]
-        cd  = drag_breakdown.total[:,0]
-
-        if line_style == 'bo-':
-            axes.plot( time , cdp , 'ko-', label='CD parasite' )
-            axes.plot( time , cdi , 'bo-', label='CD induced' )
-            axes.plot( time , cdc , 'go-', label='CD compressibility' )
-            axes.plot( time , cdm , 'yo-', label='CD miscellaneous' )
-            axes.plot( time , cd  , 'ro-', label='CD total'   )
-            if i == 0:
-                axes.legend(loc='upper center')            
-        else:
-            axes.plot( time , cdp , line_style )
-            axes.plot( time , cdi , line_style )
-            axes.plot( time , cdc , line_style )
-            axes.plot( time , cdm , line_style )
-            axes.plot( time , cd  , line_style )            
-
-    axes.set_xlabel('Time (min)')
-    axes.set_ylabel('CD')
-    axes.grid(True)
-    plt.savefig("ATR72_drag.pdf")
-    plt.savefig("ATR72_drag.png")
-
-    # ------------------------------------------------------------------
-    #   Altitude, sfc, vehicle weight
-    # ------------------------------------------------------------------
-
-    fig = plt.figure("Altitude_sfc_weight",figsize=(8,10))
-    for segment in results.segments.values():
-
-        time     = segment.conditions.frames.inertial.time[:,0] / Units.min
-        aoa      = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
-        mass     = segment.conditions.weights.total_mass[:,0] / Units.lb
-        altitude = segment.conditions.freestream.altitude[:,0] / Units.ft
-        mdot     = segment.conditions.weights.vehicle_mass_rate[:,0]
-        sfc      =  segment.conditions.propulsion.psfc
-        # sfc      = (mdot / Units.lb) / (gas_turbine_power) / Units.hr
-
-        axes = fig.add_subplot(3,1,1)
-        axes.plot( time , altitude , line_style )
-        axes.set_ylabel('Altitude (ft)',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(3,1,3)
-        axes.plot( time , sfc , line_style )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('sfc (lb/HP-hr)',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(3,1,2)
-        axes.plot( time , mass , 'ro-' )
-        axes.set_ylabel('Weight (lb)',axis_font)
-        axes.grid(True)
-
-        plt.savefig("ATR72_mission.pdf")
-        plt.savefig("ATR72_mission.png")
-        
-    # ------------------------------------------------------------------
-    #   Velocities
-    # ------------------------------------------------------------------
-    fig = plt.figure("Velocities",figsize=(8,10))
-    for segment in results.segments.values():
-
-        time     = segment.conditions.frames.inertial.time[:,0] / Units.min
-        Lift     = -segment.conditions.frames.wind.lift_force_vector[:,2]
-        Drag     = -segment.conditions.frames.wind.drag_force_vector[:,0] / Units.lbf
-        Thrust   = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lb
-        velocity = segment.conditions.freestream.velocity[:,0]
-        pressure = segment.conditions.freestream.pressure[:,0]
-        density  = segment.conditions.freestream.density[:,0]
-        EAS      = velocity * np.sqrt(density/1.225)
-        mach     = segment.conditions.freestream.mach_number[:,0]
-        altitude = segment.conditions.freestream.altitude[:, 0] / Units.ft
-        distance = segment.conditions.frames.inertial.position_vector[:, 0] / Units.nautical_miles
-
-        axes = fig.add_subplot(4,1,1)
-        axes.plot( time , velocity / Units.kts, line_style )
-        axes.set_ylabel('velocity (kts)',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(4,1,2)
-        axes.plot( time , EAS / Units.kts, line_style )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('Equivalent Airspeed',axis_font)
-        axes.grid(True)    
-        
-        axes = fig.add_subplot(4,1,3)
-        axes.plot( time , mach , line_style )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('Mach',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(4, 1, 4)
-        axes.plot(distance, altitude, line_style)
-        axes.set_xlabel('Time (min)', axis_font)
-        axes.set_ylabel('Distance (nm)', axis_font)
-        axes.grid(True)
-
-    return
+# # ----------------------------------------------------------------------
+# #   Plot Mission
+# # ----------------------------------------------------------------------
+#
+# def plot_mission(results,id=0,line_style='bo-'):
+#
+#     axis_font = {'fontname':'Arial', 'size':'14'}
+#
+#     # ------------------------------------------------------------------
+#     #   Aerodynamics
+#     # ------------------------------------------------------------------
+#
+#
+#     fig = plt.figure('Mission Parameters'+str(id),figsize=(8,12))
+#     for segment in results.segments.values():
+#
+#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
+#         Thrust = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lbf
+#         eta    = segment.conditions.propulsion.throttle[:,0]
+#         pitch = segment.conditions.propulsion.pitch_command[:, 0]
+#         P = segment.conditions.propulsion.propeller_power[:, 0]*1.34102/1000
+#         gas_turbine_power = segment.conditions.propulsion.gas_turbine_power[:, 0]*1.34102/1000
+#         etap = segment.conditions.propulsion.etap[:, 0]
+#
+#         axes = fig.add_subplot(5, 1, 1)
+#         axes.plot( time , Thrust , line_style )
+#         axes.set_ylabel('Thrust (lbf)',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(5, 1, 2)
+#         axes.plot(time, P, 'ko-', label='Propeller' )
+#         axes.plot(time, gas_turbine_power, 'ro-', label='Gas Turbine' )
+#         axes.set_ylabel('Power (HP)', axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(5, 1, 3)
+#         axes.plot( time , eta , line_style )
+#         axes.set_xlabel('Time (min)',axis_font)
+#         axes.set_ylabel('Throttle',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(5, 1, 4)
+#         axes.plot(time, pitch*180/3.14159, line_style)
+#         axes.set_xlabel('Time (min)', axis_font)
+#         axes.set_ylabel('Pitch Command', axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(5, 1, 5)
+#         axes.plot(time, etap, line_style)
+#         axes.set_xlabel('Time (min)', axis_font)
+#         axes.set_ylabel('Propeller Efficiency', axis_font)
+#         axes.grid(True)
+#
+#         plt.savefig("ATR72_engine"+str(id)+".pdf")
+#         plt.savefig("ATR72_engine"+str(id)+".png")
+#
+#     # ------------------------------------------------------------------
+#     #   Aerodynamics 2
+#     # ------------------------------------------------------------------
+#     fig = plt.figure("Aerodynamic Coefficients"+str(id),figsize=(8,10))
+#     for segment in results.segments.values():
+#
+#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
+#         CLift  = segment.conditions.aerodynamics.lift_coefficient[:,0]
+#         CDrag  = segment.conditions.aerodynamics.drag_coefficient[:,0]
+#         aoa = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
+#         l_d = CLift/CDrag
+#
+#         axes = fig.add_subplot(3,1,1)
+#         axes.plot( time , CLift , line_style )
+#         axes.set_ylabel('Lift Coefficient',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(3,1,2)
+#         axes.plot( time , l_d , line_style )
+#         axes.set_ylabel('L/D',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(3,1,3)
+#         axes.plot( time , aoa , 'ro-' )
+#         axes.set_xlabel('Time (min)',axis_font)
+#         axes.set_ylabel('AOA (deg)',axis_font)
+#         axes.grid(True)
+#
+#         plt.savefig("ATR72_aero"+str(id)+".pdf")
+#         plt.savefig("ATR72_aero"+str(id)+".png")
+#
+#     # ------------------------------------------------------------------
+#     #   Aerodynamics 2
+#     # ------------------------------------------------------------------
+#     fig = plt.figure("Drag Components"+str(id),figsize=(8,10))
+#     axes = plt.gca()
+#     for i, segment in enumerate(results.segments.values()):
+#
+#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
+#         drag_breakdown = segment.conditions.aerodynamics.drag_breakdown
+#         cdp = drag_breakdown.parasite.total[:,0]
+#         cdi = drag_breakdown.induced.total[:,0]
+#         cdc = drag_breakdown.compressible.total[:,0]
+#         cdm = drag_breakdown.miscellaneous.total[:,0]
+#         cd  = drag_breakdown.total[:,0]
+#
+#         if line_style == 'bo-':
+#             axes.plot( time , cdp , 'ko-', label='CD parasite' )
+#             axes.plot( time , cdi , 'bo-', label='CD induced' )
+#             axes.plot( time , cdc , 'go-', label='CD compressibility' )
+#             axes.plot( time , cdm , 'yo-', label='CD miscellaneous' )
+#             axes.plot( time , cd  , 'ro-', label='CD total'   )
+#             if i == 0:
+#                 axes.legend(loc='upper center')
+#         else:
+#             axes.plot( time , cdp , line_style )
+#             axes.plot( time , cdi , line_style )
+#             axes.plot( time , cdc , line_style )
+#             axes.plot( time , cdm , line_style )
+#             axes.plot( time , cd  , line_style )
+#
+#     axes.set_xlabel('Time (min)')
+#     axes.set_ylabel('CD')
+#     axes.grid(True)
+#     plt.savefig("ATR72_drag"+str(id)+".pdf")
+#     plt.savefig("ATR72_drag"+str(id)+".png")
+#
+#     # ------------------------------------------------------------------
+#     #   Altitude, sfc, vehicle weight
+#     # ------------------------------------------------------------------
+#
+#     fig = plt.figure("Altitude_sfc_weight"+str(id),figsize=(8,10))
+#     for segment in results.segments.values():
+#
+#         time     = segment.conditions.frames.inertial.time[:,0] / Units.min
+#         aoa      = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
+#         mass     = segment.conditions.weights.total_mass[:,0] / Units.lb
+#         altitude = segment.conditions.freestream.altitude[:,0] / Units.ft
+#         mdot     = segment.conditions.weights.vehicle_mass_rate[:,0]
+#         sfc      =  segment.conditions.propulsion.psfc
+#         # sfc      = (mdot / Units.lb) / (gas_turbine_power) / Units.hr
+#
+#         axes = fig.add_subplot(3,1,1)
+#         axes.plot( time , altitude , line_style )
+#         axes.set_ylabel('Altitude (ft)',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(3,1,3)
+#         axes.plot( time , sfc , line_style )
+#         axes.set_xlabel('Time (min)',axis_font)
+#         axes.set_ylabel('sfc (lb/HP-hr)',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(3,1,2)
+#         axes.plot( time , mass , 'ro-' )
+#         axes.set_ylabel('Weight (lb)',axis_font)
+#         axes.grid(True)
+#
+#         plt.savefig("ATR72_mission"+str(id)+".pdf")
+#         plt.savefig("ATR72_mission"+str(id)+".png")
+#
+#     # ------------------------------------------------------------------
+#     #   Velocities
+#     # ------------------------------------------------------------------
+#     fig = plt.figure("Velocities"+str(id),figsize=(8,10))
+#     for segment in results.segments.values():
+#
+#         time     = segment.conditions.frames.inertial.time[:,0] / Units.min
+#         Lift     = -segment.conditions.frames.wind.lift_force_vector[:,2]
+#         Drag     = -segment.conditions.frames.wind.drag_force_vector[:,0] / Units.lbf
+#         Thrust   = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lb
+#         velocity = segment.conditions.freestream.velocity[:,0]
+#         pressure = segment.conditions.freestream.pressure[:,0]
+#         density  = segment.conditions.freestream.density[:,0]
+#         EAS      = velocity * np.sqrt(density/1.225)
+#         mach     = segment.conditions.freestream.mach_number[:,0]
+#         altitude = segment.conditions.freestream.altitude[:, 0] / Units.ft
+#         distance = segment.conditions.frames.inertial.position_vector[:, 0] / Units.nautical_miles
+#
+#         axes = fig.add_subplot(4,1,1)
+#         axes.plot( time , velocity / Units.kts, line_style )
+#         axes.set_ylabel('velocity (kts)',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(4,1,2)
+#         axes.plot( time , EAS / Units.kts, line_style )
+#         axes.set_xlabel('Time (min)',axis_font)
+#         axes.set_ylabel('Equivalent Airspeed',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(4,1,3)
+#         axes.plot( time , mach , line_style )
+#         axes.set_xlabel('Time (min)',axis_font)
+#         axes.set_ylabel('Mach',axis_font)
+#         axes.grid(True)
+#
+#         axes = fig.add_subplot(4, 1, 4)
+#         axes.plot(distance, altitude, line_style)
+#         axes.set_xlabel('Distance (nm)', axis_font)
+#         axes.set_ylabel('Altitude (ft)', axis_font)
+#         axes.grid(True)
+#
+#         plt.savefig("ATR72_vel" + str(id) + ".pdf")
+#         plt.savefig("ATR72_vel" + str(id) + ".png")
+#     return
 
 if __name__ == '__main__': 
     main()    

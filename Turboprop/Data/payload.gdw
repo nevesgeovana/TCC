@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.24</version>
+  <File>
+    <Name>C:\Users\geova\OneDrive\TCC\5_SUAVE\1_code\Turboprop\Data\payload.bmp</Name>
+    <Width>2267</Width>
+    <Height>1371</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>192,220,192</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">15160,5314,17131,10462</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1597,10462,0.000000e+000</Xmin>
+  <Xmax MF="9">17986,10462,2.000000e+003</Xmax>
+  <Ymin MF="9">1597,10462,0.000000e+000</Ymin>
+  <Ymax MF="9">1597,1327,8.000000e+003</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>1799,1072</Position>
+  <Zoom>
+    <Scale>500.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>
