@@ -83,8 +83,8 @@ def main():
 
     config = configs.base
     cruise_segment_tag = "cruise"
-    reserves = 600.
-    weights.mass_properties.operating_empty = 13500.
+    reserves = [775., 1120., 1100.]
+    weights.mass_properties.operating_empty = weights.mass_properties.operating_empty - 239.
     payloadrange = payload_range(config, mission, cruise_segment_tag, reserves)
 
     return
@@ -152,7 +152,7 @@ def base_analysis(vehicle):
     #  Aerodynamics Analysis
     aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
     aerodynamics.geometry = vehicle
-    # aerodynamics.settings.drag_coefficient_increment = 0.0018
+    aerodynamics.settings.drag_coefficient_increment = 0.00614
     analyses.append(aerodynamics)
 
     # ------------------------------------------------------------------
@@ -232,7 +232,7 @@ def vehicle_setup():
     wing.sweeps.quarter_chord    = 3.00 * Units.deg
     wing.thickness_to_chord      = 0.15
     wing.taper                   = 0.53
-    wing.span_efficiency         = 1.
+    wing.span_efficiency         = 0.907
     wing.calibration_factor      = 1.#0.92
     wing.spans.projected         = 27.05 * Units.meter
     wing.chords.root             = 2.942 * Units.meter
@@ -329,19 +329,19 @@ def vehicle_setup():
     fuselage.seat_pitch            = 0.762
     fuselage.fineness.nose         = 2.0
     fuselage.fineness.tail         = 3.0
-    fuselage.lengths.nose          = 6.00  * Units.meter
-    fuselage.lengths.tail          = 6.00  * Units.meter
-    fuselage.lengths.cabin         = 14.90 * Units.meter
+    fuselage.lengths.nose          = 3.00  * Units.meter
+    fuselage.lengths.tail          = 4.26  * Units.meter
+    fuselage.lengths.cabin         = 19.91 * Units.meter
     fuselage.lengths.total         = 27.17 * Units.meter
     fuselage.lengths.fore_space    = 0.    * Units.meter
     fuselage.lengths.aft_space     = 0.    * Units.meter
-    fuselage.width                 = 2.787 * Units.meter
+    fuselage.width                 = 2.865 * Units.meter
     fuselage.heights.maximum       = 3.020 * Units.meter
-    fuselage.areas.side_projected  = 74.000 * Units['meters**2']
-    fuselage.areas.wetted          = 250.00 * Units['meters**2']
+    fuselage.areas.side_projected  = 70.000 * Units['meters**2']
+    fuselage.areas.wetted          = 200.00 * Units['meters**2']
     fuselage.areas.front_projected = 7.5000 * Units['meters**2']
     fuselage.effective_diameter    = 3.02
-    fuselage.differential_pressure = 6.35 * Units.psi
+    fuselage.differential_pressure = 6.00 * Units.psi
     
     fuselage.heights.at_quarter_length          = 3.02 * Units.meter
     fuselage.heights.at_three_quarters_length   = 3.02 * Units.meter
@@ -362,8 +362,8 @@ def vehicle_setup():
     # setup
     turboprop.number_of_engines = 2
     turboprop.origin            = [[8.483, 4.05, 0], [8.483, -4.05, 0]] * Units.meter
-    turboprop.nacelle_diameter  = 1.27  * Units.meter
-    turboprop.engine_length     = 4.532 * Units.meter
+    turboprop.nacelle_diameter  = 0.95  * Units.meter
+    turboprop.engine_length     = 2.25  * Units.meter
     turboprop.thrust_angle      = 0.0   * Units.deg
     turboprop.installed_power   = 2750. * Units.hp
 
@@ -410,9 +410,9 @@ def vehicle_setup():
     prop_attributes.angular_velocity    = 1200.*(2.*np.pi/60.0)  # Rotation Rate in rad/s
     prop_attributes.freestream_velocity = 140.0   # Freestream Velocity
     prop_attributes.design_Cl           = 0.43    # Design Lift Coefficient
-    prop_attributes.design_altitude     = 25000.0 * Units.ft
+    prop_attributes.design_altitude     = 21000.0 * Units.ft
     prop_attributes.design_thrust       = 0.00    * Units.N
-    prop_attributes.design_power        = 1120.0  * 1e3 * Units.N * Units['m/s']
+    prop_attributes.design_power        = 1007.0  * 1e3 * Units.N * Units['m/s']
 
     prop_attributes = propeller_design(prop_attributes)
     propeller.prop_attributes = prop_attributes
@@ -468,8 +468,8 @@ def configs_setup(vehicle):
     # ------------------------------------------------------------------
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'takeoff'
-    config.wings['main_wing'].flaps.angle = 20. * Units.deg
-    config.wings['main_wing'].slats.angle = 25. * Units.deg
+    config.wings['main_wing'].flaps.angle = 15. * Units.deg
+    config.wings['main_wing'].slats.angle = 0. * Units.deg
     configs.takeoff = Data()
     configs.takeoff = config
 
@@ -481,7 +481,7 @@ def configs_setup(vehicle):
     config.tag = 'landing'
 
     config.wings['main_wing'].flaps.angle = 30. * Units.deg
-    config.wings['main_wing'].slats.angle = 25. * Units.deg
+    config.wings['main_wing'].slats.angle = 0. * Units.deg
 
     configs.landing = Data()
     configs.landing = config
@@ -569,8 +569,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 0.0    * Units.ft
     segment.altitude_end   = 5000.0 * Units.ft
-    segment.air_speed      = 170.0  * Units.knots
-    segment.climb_rate     = 1200.  * Units['ft/min']
+    segment.air_speed      = 180.0  * Units.knots
+    segment.climb_rate     = 1220.  * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -587,8 +587,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 5000.0  * Units.ft
     segment.altitude_end   = 10000.0 * Units.ft
-    segment.air_speed      = 170.0   * Units.knots
-    segment.climb_rate     = 1000.   * Units['ft/min']
+    segment.air_speed      = 197.0   * Units.knots
+    segment.climb_rate     = 915.   * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -605,8 +605,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 10000.0 * Units.ft
     segment.altitude_end   = 15000.0 * Units.ft
-    segment.air_speed      = 170.0   * Units.knots
-    segment.climb_rate     = 700.    * Units['ft/min']
+    segment.air_speed      = 213.0   * Units.knots
+    segment.climb_rate     = 595.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -623,8 +623,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 15000.0 * Units.ft
     segment.altitude_end   = 18000.0 * Units.ft
-    segment.air_speed      = 170.0   * Units.knots
-    segment.climb_rate     = 500.    * Units['ft/min']
+    segment.air_speed      = 223.0   * Units.knots
+    segment.climb_rate     = 405.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -641,8 +641,8 @@ def mission_setup(analyses):
 
     segment.altitude_start = 18000.0 * Units.ft
     segment.altitude_end   = 21000.0 * Units.ft
-    segment.air_speed      = 170.0   * Units.knots
-    segment.climb_rate     = 300.    * Units['ft/min']
+    segment.air_speed      = 234.0   * Units.knots
+    segment.climb_rate     = 210.    * Units['ft/min']
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # add to misison
@@ -658,9 +658,9 @@ def mission_setup(analyses):
     segment.analyses.extend(analyses.cruise)
 
     # segment.air_speed  = 275. * Units.knots
-    segment.air_speed  = 265. * Units.knots
+    segment.air_speed  = 260. * Units.knots
     # segment.distance = 661. * Units.nautical_miles  # 655
-    segment.distance   = 1600. * Units.nautical_miles #661
+    segment.distance   = 1708. * Units.nautical_miles #608
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
 
@@ -678,7 +678,7 @@ def mission_setup(analyses):
 
     segment.altitude_end = 18000. * Units.ft
     segment.air_speed    = 240.0  * Units.knots
-    segment.descent_rate = 1000. * Units['ft/min']
+    segment.descent_rate = 1500. * Units['ft/min']
 
     # segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
@@ -694,8 +694,8 @@ def mission_setup(analyses):
 
     segment.analyses.extend(analyses.cruise)
 
-    segment.altitude_end = 10000. * Units.ft
-    segment.air_speed    = 240.0  * Units.knots
+    segment.altitude_end = 10000.     * Units.ft
+    segment.air_speed    = 220.0  * Units.knots
     segment.descent_rate = 1250.  * Units['ft/min']
 
     # segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
@@ -713,8 +713,8 @@ def mission_setup(analyses):
     segment.analyses.extend(analyses.landing)
 
     segment.altitude_end = 0.     * Units.ft
-    segment.air_speed    = 240.0  * Units.knots
-    segment.descent_rate = 1500.  * Units['ft/min']
+    segment.air_speed    = 200.0  * Units.knots
+    segment.descent_rate = 1000.  * Units['ft/min']
 
     # segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
@@ -730,8 +730,8 @@ def mission_setup(analyses):
     #   MISSION TO ESTIMATE TYPICAL RESERVES - 100 nm + 45 min (900 kg)
     # ------------------------------------------------------------------
     #
-    # # ------------------------------------------------------------------
-    # #   First Climb Segment: Constant Speed, Constant Rate
+    # ------------------------------------------------------------------
+    #   First Climb Segment: Constant Speed, Constant Rate
     # # ------------------------------------------------------------------
     #
     # segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
@@ -741,8 +741,8 @@ def mission_setup(analyses):
     #
     # segment.altitude_start = 0.0 * Units.ft
     # segment.altitude_end = 5000.0 * Units.ft
-    # segment.air_speed = 200.0 * Units.knots
-    # segment.climb_rate = 1300. * Units['ft/min']
+    # segment.air_speed = 180.0 * Units.knots
+    # segment.climb_rate = 1220. * Units['ft/min']
     #
     # segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # # add to misison
@@ -759,8 +759,8 @@ def mission_setup(analyses):
     #
     # segment.altitude_start = 5000.0 * Units.ft
     # segment.altitude_end = 10000.0 * Units.ft
-    # segment.air_speed = 200.0 * Units.knots
-    # segment.climb_rate = 1000. * Units['ft/min']
+    # segment.air_speed = 197.0 * Units.knots
+    # segment.climb_rate = 915. * Units['ft/min']
     #
     # segment.state.conditions.propulsion.gas_turbine_rating = 'MCL'
     # # add to misison
@@ -769,15 +769,15 @@ def mission_setup(analyses):
     # #   Cruise Segment: Constant Speed, Constant Altitude
     # # ------------------------------------------------------------------
     #
-    # segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
-    # segment.tag = "cruise_reserve_Dist"
-    #
-    # segment.analyses.extend(analyses.cruise)
-    #
-    # segment.air_speed = 275. * Units.knots
-    # segment.distance  = 44.  * Units.nautical_miles
-    #
-    # segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
+    # # segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+    # # segment.tag = "cruise_reserve_Dist"
+    # #
+    # # segment.analyses.extend(analyses.cruise)
+    # #
+    # # segment.air_speed = 170. * Units.knots
+    # # segment.distance  = 20.  * Units.nautical_miles
+    # #
+    # # segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
     #
     # # add to mission
     # mission.append_segment(segment)
@@ -791,9 +791,9 @@ def mission_setup(analyses):
     #
     # segment.analyses.extend(analyses.cruise)
     #
-    # segment.air_speed = 275. * Units.knots
-    # segment.distance  = 206. * Units.nautical_miles
-    # # Considering 45 min as being more 206 nm for 275 KTAS
+    # segment.air_speed = 178. * Units.knots
+    # segment.distance  = 127. * Units.nautical_miles
+    # # Considering 45 min as being more 127 nm for 178 KTAS
     # segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
     #
     # # add to mission
@@ -832,207 +832,6 @@ def missions_setup(base_mission):
 
     return missions  
 
-# # ----------------------------------------------------------------------
-# #   Plot Mission
-# # ----------------------------------------------------------------------
-#
-# def plot_mission(results,id=0,line_style='bo-'):
-#
-#     axis_font = {'fontname':'Arial', 'size':'14'}
-#
-#     # ------------------------------------------------------------------
-#     #   Aerodynamics
-#     # ------------------------------------------------------------------
-#
-#
-#     fig = plt.figure('Mission Parameters'+str(id),figsize=(8,12))
-#     for segment in results.segments.values():
-#
-#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-#         Thrust = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lbf
-#         eta    = segment.conditions.propulsion.throttle[:,0]
-#         pitch = segment.conditions.propulsion.pitch_command[:, 0]
-#         P = segment.conditions.propulsion.propeller_power[:, 0]*1.34102/1000
-#         gas_turbine_power = segment.conditions.propulsion.gas_turbine_power[:, 0]*1.34102/1000
-#         etap = segment.conditions.propulsion.etap[:, 0]
-#
-#         axes = fig.add_subplot(5, 1, 1)
-#         axes.plot( time , Thrust , line_style )
-#         axes.set_ylabel('Thrust (lbf)',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(5, 1, 2)
-#         axes.plot(time, P, 'ko-', label='Propeller' )
-#         axes.plot(time, gas_turbine_power, 'ro-', label='Gas Turbine' )
-#         axes.set_ylabel('Power (HP)', axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(5, 1, 3)
-#         axes.plot( time , eta , line_style )
-#         axes.set_xlabel('Time (min)',axis_font)
-#         axes.set_ylabel('Throttle',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(5, 1, 4)
-#         axes.plot(time, pitch*180/3.14159, line_style)
-#         axes.set_xlabel('Time (min)', axis_font)
-#         axes.set_ylabel('Pitch Command', axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(5, 1, 5)
-#         axes.plot(time, etap, line_style)
-#         axes.set_xlabel('Time (min)', axis_font)
-#         axes.set_ylabel('Propeller Efficiency', axis_font)
-#         axes.grid(True)
-#
-#         plt.savefig("ATR72_engine"+str(id)+".pdf")
-#         plt.savefig("ATR72_engine"+str(id)+".png")
-#
-#     # ------------------------------------------------------------------
-#     #   Aerodynamics 2
-#     # ------------------------------------------------------------------
-#     fig = plt.figure("Aerodynamic Coefficients"+str(id),figsize=(8,10))
-#     for segment in results.segments.values():
-#
-#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-#         CLift  = segment.conditions.aerodynamics.lift_coefficient[:,0]
-#         CDrag  = segment.conditions.aerodynamics.drag_coefficient[:,0]
-#         aoa = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
-#         l_d = CLift/CDrag
-#
-#         axes = fig.add_subplot(3,1,1)
-#         axes.plot( time , CLift , line_style )
-#         axes.set_ylabel('Lift Coefficient',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(3,1,2)
-#         axes.plot( time , l_d , line_style )
-#         axes.set_ylabel('L/D',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(3,1,3)
-#         axes.plot( time , aoa , 'ro-' )
-#         axes.set_xlabel('Time (min)',axis_font)
-#         axes.set_ylabel('AOA (deg)',axis_font)
-#         axes.grid(True)
-#
-#         plt.savefig("ATR72_aero"+str(id)+".pdf")
-#         plt.savefig("ATR72_aero"+str(id)+".png")
-#
-#     # ------------------------------------------------------------------
-#     #   Aerodynamics 2
-#     # ------------------------------------------------------------------
-#     fig = plt.figure("Drag Components"+str(id),figsize=(8,10))
-#     axes = plt.gca()
-#     for i, segment in enumerate(results.segments.values()):
-#
-#         time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-#         drag_breakdown = segment.conditions.aerodynamics.drag_breakdown
-#         cdp = drag_breakdown.parasite.total[:,0]
-#         cdi = drag_breakdown.induced.total[:,0]
-#         cdc = drag_breakdown.compressible.total[:,0]
-#         cdm = drag_breakdown.miscellaneous.total[:,0]
-#         cd  = drag_breakdown.total[:,0]
-#
-#         if line_style == 'bo-':
-#             axes.plot( time , cdp , 'ko-', label='CD parasite' )
-#             axes.plot( time , cdi , 'bo-', label='CD induced' )
-#             axes.plot( time , cdc , 'go-', label='CD compressibility' )
-#             axes.plot( time , cdm , 'yo-', label='CD miscellaneous' )
-#             axes.plot( time , cd  , 'ro-', label='CD total'   )
-#             if i == 0:
-#                 axes.legend(loc='upper center')
-#         else:
-#             axes.plot( time , cdp , line_style )
-#             axes.plot( time , cdi , line_style )
-#             axes.plot( time , cdc , line_style )
-#             axes.plot( time , cdm , line_style )
-#             axes.plot( time , cd  , line_style )
-#
-#     axes.set_xlabel('Time (min)')
-#     axes.set_ylabel('CD')
-#     axes.grid(True)
-#     plt.savefig("ATR72_drag"+str(id)+".pdf")
-#     plt.savefig("ATR72_drag"+str(id)+".png")
-#
-#     # ------------------------------------------------------------------
-#     #   Altitude, sfc, vehicle weight
-#     # ------------------------------------------------------------------
-#
-#     fig = plt.figure("Altitude_sfc_weight"+str(id),figsize=(8,10))
-#     for segment in results.segments.values():
-#
-#         time     = segment.conditions.frames.inertial.time[:,0] / Units.min
-#         aoa      = segment.conditions.aerodynamics.angle_of_attack[:,0] / Units.deg
-#         mass     = segment.conditions.weights.total_mass[:,0] / Units.lb
-#         altitude = segment.conditions.freestream.altitude[:,0] / Units.ft
-#         mdot     = segment.conditions.weights.vehicle_mass_rate[:,0]
-#         sfc      =  segment.conditions.propulsion.psfc
-#         # sfc      = (mdot / Units.lb) / (gas_turbine_power) / Units.hr
-#
-#         axes = fig.add_subplot(3,1,1)
-#         axes.plot( time , altitude , line_style )
-#         axes.set_ylabel('Altitude (ft)',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(3,1,3)
-#         axes.plot( time , sfc , line_style )
-#         axes.set_xlabel('Time (min)',axis_font)
-#         axes.set_ylabel('sfc (lb/HP-hr)',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(3,1,2)
-#         axes.plot( time , mass , 'ro-' )
-#         axes.set_ylabel('Weight (lb)',axis_font)
-#         axes.grid(True)
-#
-#         plt.savefig("ATR72_mission"+str(id)+".pdf")
-#         plt.savefig("ATR72_mission"+str(id)+".png")
-#
-#     # ------------------------------------------------------------------
-#     #   Velocities
-#     # ------------------------------------------------------------------
-#     fig = plt.figure("Velocities"+str(id),figsize=(8,10))
-#     for segment in results.segments.values():
-#
-#         time     = segment.conditions.frames.inertial.time[:,0] / Units.min
-#         Lift     = -segment.conditions.frames.wind.lift_force_vector[:,2]
-#         Drag     = -segment.conditions.frames.wind.drag_force_vector[:,0] / Units.lbf
-#         Thrust   = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lb
-#         velocity = segment.conditions.freestream.velocity[:,0]
-#         pressure = segment.conditions.freestream.pressure[:,0]
-#         density  = segment.conditions.freestream.density[:,0]
-#         EAS      = velocity * np.sqrt(density/1.225)
-#         mach     = segment.conditions.freestream.mach_number[:,0]
-#         altitude = segment.conditions.freestream.altitude[:, 0] / Units.ft
-#         distance = segment.conditions.frames.inertial.position_vector[:, 0] / Units.nautical_miles
-#
-#         axes = fig.add_subplot(4,1,1)
-#         axes.plot( time , velocity / Units.kts, line_style )
-#         axes.set_ylabel('velocity (kts)',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(4,1,2)
-#         axes.plot( time , EAS / Units.kts, line_style )
-#         axes.set_xlabel('Time (min)',axis_font)
-#         axes.set_ylabel('Equivalent Airspeed',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(4,1,3)
-#         axes.plot( time , mach , line_style )
-#         axes.set_xlabel('Time (min)',axis_font)
-#         axes.set_ylabel('Mach',axis_font)
-#         axes.grid(True)
-#
-#         axes = fig.add_subplot(4, 1, 4)
-#         axes.plot(distance, altitude, line_style)
-#         axes.set_xlabel('Distance (nm)', axis_font)
-#         axes.set_ylabel('Altitude (ft)', axis_font)
-#         axes.grid(True)
-#
-#         plt.savefig("ATR72_vel" + str(id) + ".pdf")
-#         plt.savefig("ATR72_vel" + str(id) + ".png")
-#     return
 
 if __name__ == '__main__': 
     main()    

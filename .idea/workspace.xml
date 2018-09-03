@@ -2,19 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_aero3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_compress_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_drag3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_engine_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown2.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown3.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_vel3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/Data/ATR72_600.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Data/ATR72_600.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turboprop/PayloadRangeDiagram.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/PayloadRangeDiagram.dat" afterDir="false" />
@@ -29,44 +65,45 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="62" />
+          <entry key="py" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="62" />
+          <entry key="Python" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="40" />
-          <entry key="py" value="5362" />
+          <entry key="py" value="5636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5402" />
+          <entry key="Python" value="5676" />
         </counts>
       </usages-collector>
     </session>
@@ -76,11 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="369" column="25" selection-start-line="369" selection-start-column="25" selection-end-line="369" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding>
                 <element signature="e#269#287#0" expanded="true" />
               </folding>
@@ -91,17 +128,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+            <state relative-caret-position="2992">
+              <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
               <folding>
                 <element signature="e#274#302#0" expanded="true" />
               </folding>
@@ -112,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="408">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#157#169#0" expanded="true" />
               </folding>
@@ -124,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="1054">
               <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
             </state>
           </provider>
@@ -133,7 +170,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="2397">
               <caret line="148" selection-start-line="148" selection-end-line="148" />
             </state>
           </provider>
@@ -167,15 +204,15 @@
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py" />
-        <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py" />
+        <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -301,14 +338,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49625936" weight="0.21752267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" weight="0.33943427" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.34442595" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38196722" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -639,23 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#157#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -663,36 +677,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="369" column="25" selection-start-line="369" selection-start-column="25" selection-end-line="369" selection-end-column="25" />
-          <folding>
-            <element signature="e#269#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="267">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        <state relative-caret-position="2992">
+          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
           <folding>
             <element signature="e#274#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#157#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+          <folding>
+            <element signature="e#269#287#0" expanded="true" />
           </folding>
         </state>
       </provider>
