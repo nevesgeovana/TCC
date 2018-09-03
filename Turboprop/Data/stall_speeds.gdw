@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.24</version>
+  <File>
+    <Name>C:\Users\geova\OneDrive\TCC\4_Reference_Aircrafts\ATR72_600\stall_speeds.bmp</Name>
+    <Width>1141</Width>
+    <Height>1295</Height>
+  </File>
+  <Line>
+    <Caption>Line #1</Caption>
+    <LineColor>0,0,0</LineColor>
+    <BkColor>255,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">6808,5521,6808,4612,6808,2965</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1849,8581,1.200000e+004</Xmin>
+  <Xmax MF="9">8788,8581,2.600000e+004</Xmax>
+  <Ymin MF="9">1354,8572,6.000000e+001</Ymin>
+  <Ymax MF="9">1354,1633,1.300000e+002</Ymax>
+  <XScale>linear</XScale>
+  <YScale>linear</YScale>
+  <Position>901,9</Position>
+  <Zoom>
+    <Scale>50.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+  <GridSettings>
+    <ShowGrid>0</ShowGrid>
+    <AreaType>0</AreaType>
+    <dx>15.000000</dx>
+    <dy>15.000000</dy>
+  </GridSettings>
+</GetDataWorkspace>
