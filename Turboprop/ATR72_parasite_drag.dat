@@ -6,7 +6,7 @@ Output file with parasite drag breakdown
   ASPECT RATIO ....................  12.0    
   WING SWEEP ......................   3.0 deg
   WING THICKNESS RATIO ............  0.15    
-  INDUCED DRAG EFFICIENCY FACTOR .. 0.716    
+  INDUCED DRAG EFFICIENCY FACTOR .. 0.651    
   MEAN AEROD. CHORD ............... 2.325 m 
   REYNOLDS NUMBER .................  12.0 millions
   MACH NUMBER ..................... 0.300    
@@ -28,4 +28,4 @@ Output file with parasite drag breakdown
 
 
 -------------------------------------------
- Sunday, 02. September 2018 02:17:30 PM
+ Monday, 03. September 2018 10:57:26 PM
