@@ -5,15 +5,15 @@ Output file with Payload Range Diagram details
  Maximum Zero Fuel Weight .........( MZFW ).....:    20800 kg
  Maximum Payload Weight ...........( PLDMX  )...:     7500 kg
  Maximum Fuel Weight ..............( FUELMX )...:     5000 kg
- Reserve Fuel  .................................:     1100 kg
+ Reserve Fuel  .................................:     1040 kg
 
     RANGE    |   PAYLOAD   |   FUEL      |    TOW      |  
      nm      |     kg      |    kg       |     kg      |  
          0   |      7500   |         0   |         0   |
-       479   |      7500   |      1225   |     23000   |
-      1583   |      4500   |      3880   |     23000   |
-      1768   |         0   |      3900   |     18500   |
+       494   |      7500   |      1225   |     23000   |
+      1660   |      4500   |      3880   |     23000   |
+      1885   |         0   |      3960   |     18500   |
 
 
 -------------------------------------------
- Monday, 03. September 2018 10:43:11 PM
+ Tuesday, 04. September 2018 06:06:20 PM
