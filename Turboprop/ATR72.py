@@ -84,7 +84,9 @@ def main():
 
     config = configs.base
     cruise_segment_tag = "cruise"
-    reserves = [775., 1120., 1100.]
+    # reserves = [775., 1120., 1100.]
+    reserves = [775., 1120., 1040.]
+    # reserves = [730., 730., 730.]
     weights.mass_properties.operating_empty = weights.mass_properties.operating_empty - 239.
     payloadrange = payload_range(config, mission, cruise_segment_tag, reserves)
 
@@ -234,7 +236,7 @@ def vehicle_setup():
     wing.thickness_to_chord      = 0.15
     wing.taper                   = 0.53
     wing.span_efficiency         = 0.907
-    wing.calibration_factor      = 1.1
+    wing.calibration_factor      = 1. #0.91
     wing.spans.projected         = 27.05 * Units.meter
     wing.chords.root             = 2.942 * Units.meter
     wing.chords.tip              = 1.568 * Units.meter
@@ -716,7 +718,7 @@ def mission_setup(analyses):
     segment.analyses.extend(analyses.cruise)
 
     segment.altitude_start = 18000.0 * Units.ft
-    segment.altitude_end   = 20000.0 * Units.ft
+    segment.altitude_end   = 21000.0 * Units.ft
     segment.air_speed      = 205.0 * Units.knots
     segment.throttle       = 1.
 
@@ -733,8 +735,8 @@ def mission_setup(analyses):
 
     segment.analyses.extend(analyses.cruise)
 
-    segment.air_speed  = 260. * Units.knots # 287.1, 268.38, 262.14
-    segment.distance   = 147. * Units.nautical_miles #608
+    segment.air_speed  = 260. * Units.knots # 287.1, 268.38, 262.14 265.207
+    segment.distance   = 101. * Units.nautical_miles #608
 
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
 
@@ -770,7 +772,7 @@ def mission_setup(analyses):
 
     segment.altitude_end = 10000.     * Units.ft
     segment.air_speed    = 220.0  * Units.knots
-    segment.descent_rate = 1200.  * Units['ft/min']
+    segment.descent_rate = 1500.  * Units['ft/min']
 
     # segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
@@ -788,7 +790,7 @@ def mission_setup(analyses):
 
     segment.altitude_end = 0.     * Units.ft
     segment.air_speed    = 200.0  * Units.knots
-    segment.descent_rate = 1000.  * Units['ft/min']
+    segment.descent_rate = 1500.  * Units['ft/min']
 
     # segment.state.conditions.propulsion.gas_turbine_rating = 'FID'
     segment.state.conditions.propulsion.gas_turbine_rating = 'MCR'
