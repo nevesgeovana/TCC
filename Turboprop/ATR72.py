@@ -23,6 +23,8 @@ from SUAVE.Input_Output.Results import  print_parasite_drag,  \
      plot_mission
 from SUAVE.Methods.Performance  import payload_range
 from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
+from SUAVE.Methods.Performance.estimate_take_off_field_length import estimate_take_off_field_length
+from SUAVE.Methods.Performance.estimate_landing_field_length import estimate_landing_field_length
 
 # ----------------------------------------------------------------------
 #   Main
@@ -33,7 +35,7 @@ def main():
     # INITIALIZING AIRCRAFT
 
     configs, analyses, vehicle = full_setup()
-    # analyses.configs.cruise.aerodynamics.settings.drag_coefficient_increment = 0.001
+
     print 'full setup OK'
     simple_sizing(configs)
 
@@ -53,23 +55,21 @@ def main():
     print 'MISSION OK'
     configs.cruise.conditions = Data()
     configs.cruise.conditions = results.segments.cruise.conditions
+
     # print weight breakdown
-    print_weight_breakdown(configs.base,filename = 'ATR72_weight_breakdown.dat')
+    print_weight_breakdown(configs.base, filename='ATR72_weight_breakdown.dat')
 
     # print parasite drag data into file - define reference condition for parasite drag
     ref_condition = Data()
     ref_condition.mach_number = 0.3
     ref_condition.reynolds_number = 12e6
-    print_parasite_drag(ref_condition,configs.cruise,analyses,'ATR72_parasite_drag.dat')
+    print_parasite_drag(ref_condition, configs.cruise, analyses, 'ATR72_parasite_drag.dat')
 
     # print compressibility drag data into file
-    print_compress_drag(configs.cruise,analyses,filename = 'ATR72_compress_drag.dat')
+    print_compress_drag(configs.cruise, analyses, filename='ATR72_compress_drag.dat')
 
     # print mission breakdown
-    print_mission_breakdown(results,filename='ATR72_mission_breakdown.dat')
-
-    # # print engine data into file
-    # print_turboprop_data(configs.cruise,filename = 'ATR72_engine_data.dat')
+    print_mission_breakdown(results, filename='ATR72_mission_breakdown.dat')
 
     state = Data()
     state.conditions = SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics()
@@ -87,6 +87,115 @@ def main():
 
     weights.mass_properties.operating_empty = weights.mass_properties.operating_empty - 239.
     payloadrange = payload_range(config, mission, cruise_segment_tag, reserves)
+
+    # ---------------------------------------------------------------------------------------
+    # TAKE OFF FIELD LENGTH
+    # ---- Inputs
+    analyses.base = analyses.configs.base
+    airport = mission.airport
+    clb_grad = 1
+
+    altitude = [0., 6000.]
+    delta_isa = 0. # +23
+    # 1000, 1100, 1200, 1300, 1400, -, 1500, 1600
+    # 1200, 1300, 1400, 1500, 1600, 1700
+    weights_tofl = [[20062, 21044, 21954, 22801, 23000, 23452, 23754, 21200],
+                    [18489, 19342, 20154, 20928, 21671, 22105, 21530]]
+
+    # ---- Inputs: FLAP AND SLAT DEFLECTION
+    flaps = [15., 0.]  # Deflections inboard local
+    slats = [0., 0.]
+
+    # ---- Inputs: FACTOR CLMAX
+    configs.takeoff.max_lift_coefficient_factor = 1.189
+    configs.takeoff.V2_VS_ratio = 1.143
+
+    # ---- Open output file
+    fid = open('TOFL.txt', 'w')  # Open output file
+
+    # ---- Run
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        airport.delta_isa = delta_isa
+        fid.write('Altitude: %4.0f ft \n' %(h))
+        fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT\n')
+        tofl                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad                = np.zeros(len(weights_tofl[j]))
+        thrust                       = np.zeros(len(weights_tofl[j]))
+        l_over_d                     = np.zeros(len(weights_tofl[j]))
+        l_over_d_v2                  = np.zeros(len(weights_tofl[j]))
+        asymmetry_drag_coefficient   = np.zeros(len(weights_tofl[j]))
+        windmilling_drag_coefficient = np.zeros(len(weights_tofl[j]))
+        clv2                         = np.zeros(len(weights_tofl[j]))
+        cdv2                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad_corrected      = np.zeros(len(weights_tofl[j]))
+
+        CLmax_ind = 0
+        # configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+        configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
+        configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
+
+        for i, TOW in enumerate(weights_tofl[j]):
+            configs.takeoff.mass_properties.takeoff = TOW * Units.kg
+            tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+            windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                i] = estimate_take_off_field_length(configs.takeoff,
+                                                    analyses, airport,
+                                                    clb_grad)
+            if secsegclbgrad_corrected[i] < 0.024:
+                # CLmax_ind = CLmax_ind + 1
+                # if CLmax_ind > 1:
+                #     CLmax_ind = 1
+                print CLmax_ind, CLmax_ind, CLmax_ind, CLmax_ind, CLmax_ind, CLmax_ind
+
+                configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
+                configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
+
+                tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+                windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                    i] = estimate_take_off_field_length(configs.takeoff,
+                                                        analyses, airport,
+                                                        clb_grad)
+
+            fid.write('%4.2f     %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f \n'
+                      % (tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i],
+                         asymmetry_drag_coefficient[i], windmilling_drag_coefficient[i], clv2[i], cdv2[i],
+                         secsegclbgrad_corrected[i]))
+        fid.write('\n')
+
+    fid.close()
+    # ---------------------------------------------------------------------------------------
+    # LANDING FIELD LENGTH
+    # ---- Inputs
+    airport.delta_isa = 0
+    altitude = [0, 6000]
+    weights_lfl = [[17000, 18000, 19000, 20000, 21000, 22000, 22350],
+                   [17000, 18000, 19000, 20000, 21000, 22000, 22350]]
+
+    flaps = [30., 15.]
+    slats = [0., 0.]
+    configs.landing.landing_constants = Data()
+
+    configs.landing.landing_constants[0] = 250.*0.25
+    configs.landing.landing_constants[1] = 0.
+    configs.landing.landing_constants[2] = 2.485 / 9.81
+
+    configs.landing.wings['main_wing'].flaps.angle = flaps[0] * Units.deg
+    configs.landing.wings['main_wing'].slats.angle = slats[0] * Units.deg
+
+    configs.landing.max_lift_coefficient_factor = 1.31
+
+    fid = open('LFL.txt', 'w')  # Open output file
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        lfl = np.zeros(len(weights_lfl[j]))
+        fid.write('Altitude: %4.0f ft \n' % (h))
+        for i, TOW in enumerate(weights_lfl[j]):
+            configs.landing.mass_properties.landing = TOW * Units.kg
+            lfl[i] = estimate_landing_field_length(configs.landing, analyses, airport)
+            fid.write('%4.2f \n' % (lfl[i]))
+        fid.write('\n')
+    fid.close()
 
     return
 
@@ -384,14 +493,14 @@ def vehicle_setup():
     gas_turbine.tag = 'gas_turbine'
 
     gas_turbine.datum_sea_level_power = 2750. * Units.hp
-    gas_turbine.power_scaling_factor  = [0.622, 0.696, 0.74]  # NTO, MCL, MCR
+    gas_turbine.power_scaling_factor  = [0.622, 0.696, 0.74]  # NTO, MCL, MCR 0.601
     gas_turbine.sfc_scaling_factor    = [1.135, 1.135, 1.11]  # NTO, MCL, MCR
     gas_turbine.power_extraction      = 'bleed_ECS'
     gas_turbine.load_data('engine.out')
     gas_turbine.bucket = Data()
     # gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.920, 1.000]
-    gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.900, 1.000]
     # gas_turbine.bucket.RSFC = [1.126, 1.086, 1.056, 1.033, 1.014, 1.000]
+    gas_turbine.bucket.RMTR = [0.600, 0.680, 0.760, 0.840, 0.900, 1.000]
     gas_turbine.bucket.RSFC = [1.136, 1.096, 1.066, 1.043, 1.03, 1.000]
 
     # add to the network
@@ -634,7 +743,7 @@ def mission_setup(analyses):
     # add to misison
     mission.append_segment(segment)
     # ------------------------------------------------------------------
-    #   First Climb Segment: Constant Speed, Constant Rate
+    #   Fifth Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
     segment = Segments.Climb.Constant_Throttle_Constant_Speed(climb_segment)
@@ -652,7 +761,7 @@ def mission_setup(analyses):
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Second Climb Segment: Constant Speed, Constant Rate
+    #   Sixth Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
     segment = Segments.Climb.Constant_Throttle_Constant_Speed(climb_segment)
@@ -670,7 +779,7 @@ def mission_setup(analyses):
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Third Climb Segment: Constant Speed, Constant Rate
+    #   Seventh Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
     segment = Segments.Climb.Constant_Throttle_Constant_Speed(climb_segment)
@@ -688,7 +797,7 @@ def mission_setup(analyses):
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Fourth Climb Segment: Constant Speed, Constant Rate
+    #   Eighth Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
     segment = Segments.Climb.Constant_Throttle_Constant_Speed(climb_segment)
@@ -706,7 +815,7 @@ def mission_setup(analyses):
     mission.append_segment(segment)
 
     # ------------------------------------------------------------------
-    #   Fifth Climb Segment: Constant Speed, Constant Rate
+    #   Ninth Climb Segment: Constant Speed, Constant Rate
     # ------------------------------------------------------------------
 
     segment = Segments.Climb.Constant_Throttle_Constant_Speed(climb_segment)
