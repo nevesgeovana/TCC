@@ -1,0 +1,16 @@
+Altitude:    0 ft 
+TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT
+1701.37     0.1492    103687.6675    9.5316    9.2119    0.0049    0.0018    1.8209    0.1910    0.1459 
+
+Altitude: 2000 ft 
+TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT
+1915.51     0.1331    96899.9339    9.5316    9.2398    0.0043    0.0018    1.8209    0.1910    0.1300 
+
+Altitude: 6000 ft 
+TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT
+2470.79     0.1031    84260.6157    9.5316    9.2873    0.0033    0.0018    1.8209    0.1910    0.1003 
+
+Altitude: 8000 ft 
+TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT
+2832.12     0.0892    78397.0037    9.5316    9.3073    0.0028    0.0018    1.8209    0.1910    0.0865 
+

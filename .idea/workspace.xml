@@ -3,144 +3,168 @@
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/aircraft.avl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_001.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_002.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_003.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_004.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_005.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/batch_006.run" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_001.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_002.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_003.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_004.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_005.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/commands_006.deck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_001_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_002_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_003_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_004_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_005_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_01.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_03.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/avl_files/results_case_006_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/base_data_aerodynamics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/AVL/tut_mission_B737_AVL.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_aero.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_compress_drag.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_drag.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_drag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_engine.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_engine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_engine_data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_mission.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_mission.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_mission_breakdown.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_parasite_drag.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/E170_weight_breakdown.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/PayloadRangeDiagram.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Analyses.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Missions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Optimize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Plot_Mission.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Procedure.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/Regional_Jet_Optimization/Vehicles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/tut_mission_B737.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Tutorials/tut_payload_range.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_aero3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_compress_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_drag3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_engine_data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_vel3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR_engine_mission0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR_engine_mission1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR_engine_mission2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/ATR_engine_mission3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/Data/ATR72_600.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Data/ATR72_600.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turboprop/PayloadRangeDiagram.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/PayloadRangeDiagram.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/APM_E170.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/CFR-2013-title14-vol1-part25.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/DISSERTAcomdadosPW150.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/E170.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/E170.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/E170_final.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/E170_v0.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/EA-2003T05-22i.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/EASA TCDS IM E 053 issue 02 16 March 2017_0.1 (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/Embraer_spec_170_Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAP5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAP5.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAP5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAPFULL.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAPFULL.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/LFL_FLAPFULL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/Resultados_E170_15-08.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA0.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA0.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA15.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA15.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/TOFL_ISA15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/VT.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/atr72fcom.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Data/datasheet-CF34-8E.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170.py.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_aero.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_compress_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_draft.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_drag.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_drag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_engine.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_engine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_engine_data.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_engine_data_SI.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_mission.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_mission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_mission_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_parasite_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_reference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/E170_weight_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/LFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/PayloadRangeDiagram.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/TOFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/_check_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_compress_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_mission_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_parasite_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_weight_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/19830024539.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/ATR72_600.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/Brochure_innovation_2009light.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/EA-9312-12i.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/EASA IM.E.041 TCDS Issue 4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/EH-2005T09i.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/TCDS ATR_EASA A 084 Iss 07.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/TextNita.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/atr72fcom.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/payload.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/payload.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/payloadrange_ATR72600.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Data/stall_speeds.gdw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/LFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/PayloadRangeDiagram.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_aero0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_aero0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_compress_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_drag0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_drag0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_engine0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_engine0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_mission0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_mission0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_mission_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_parasite_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_vel0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_vel0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/1_200nm_MTOW/ATR72_weight_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_aero0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_aero0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_compress_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_drag0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_drag0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_engine0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_engine0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_mission0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_mission0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_mission_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_parasite_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_vel0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_vel0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/2_cruise_200nm/ATR72_weight_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_aero0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_aero0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_compress_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_drag0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_drag0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_engine0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_engine0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_mission0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_mission0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_mission_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_parasite_drag.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_vel0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_vel0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Run/3_200nm_MTOW/ATR72_weight_breakdown.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/TOFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/aero3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/drag3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine_mission0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine_mission1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine_mission2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/engine_mission3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission_breakdown1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission_breakdown2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/mission_breakdown3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/turboprop_draft.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/vel3.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,23 +200,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="103" />
+          <entry key="py" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="103" />
+          <entry key="Python" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="40" />
-          <entry key="py" value="8057" />
+          <entry key="Python Console" value="64" />
+          <entry key="py" value="11344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="8097" />
+          <entry key="Python" value="11408" />
         </counts>
       </usages-collector>
     </session>
@@ -203,55 +227,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="133" column="88" lean-forward="true" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
-              <folding>
-                <element signature="e#269#287#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2885">
-              <caret line="192" column="54" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
-              <folding>
-                <element signature="e#358#370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
+        <entry file="file://$PROJECT_DIR$/Turbofan/Optimize.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+              <caret line="36" column="73" lean-forward="true" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+              <folding>
+                <element signature="e#283#295#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py">
+        <entry file="file://$PROJECT_DIR$/Turbofan/Plot_Mission.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="203" column="23" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
               <folding>
-                <element signature="e#157#169#0" expanded="true" />
+                <element signature="e#238#250#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Turbofan/Procedure.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="343" selection-start-line="343" selection-end-line="343" />
+              <folding>
+                <element signature="e#252#270#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Turbofan/Missions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="271" column="46" selection-start-line="271" selection-start-column="46" selection-end-line="271" selection-end-column="46" />
+              <folding>
+                <element signature="e#251#263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Turbofan/Vehicles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="69" column="41" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="41" />
+              <folding>
+                <element signature="e#253#265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Turbofan/E170/E170.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="169" column="120" selection-start-line="169" selection-start-column="15" selection-end-line="169" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -268,6 +325,9 @@
       <find>rpm</find>
       <find>gearbox</find>
       <find>deep</find>
+      <find>fue</find>
+      <find>Vehicle</find>
+      <find>affe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -276,39 +336,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py" />
         <option value="$PROJECT_DIR$/E170.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py" />
         <option value="$PROJECT_DIR$/Turbofan/E170.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Core/Diffed_Data.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gas_Turbine.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Propeller.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Networks/Turboprop.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py" />
-        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
         <option value="$PROJECT_DIR$/Turboprop/ATR72.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Vehicles.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Procedure.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Missions.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Plot_Mission.py" />
+        <option value="$PROJECT_DIR$/Turbofan/E170/E170.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Optimize.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="39" />
+    <option name="y" value="2" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="1_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1_code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1_code" type="462c0819:PsiDirectoryNode" />
+              <item name="Turbofan" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3_Turboprop_emb/experimental" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/projetos1suave" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -328,7 +412,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ATR72">
+  <component name="RunManager" selected="Python.Optimize">
     <configuration name="ATR72" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="1_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -358,11 +442,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Turbofan/E170" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Turbofan/E170/E170.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Optimize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="1_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Turbofan" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Turbofan/E170.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Turbofan/Optimize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,11 +479,13 @@
     <list>
       <item itemvalue="Python.E170" />
       <item itemvalue="Python.ATR72" />
+      <item itemvalue="Python.Optimize" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ATR72" />
+        <item itemvalue="Python.Optimize" />
         <item itemvalue="Python.E170" />
+        <item itemvalue="Python.ATR72" />
       </list>
     </recent_temporary>
   </component>
@@ -408,13 +515,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49625936" weight="0.21752267" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49382716" visible="true" weight="0.234375" />
+      <window_info id="Structure" order="1" sideWeight="0.50617284" side_tool="true" weight="0.234375" />
       <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.3442623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38688526" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46885246" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -451,6 +558,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Turbofan/Plot_Mission.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -463,10 +577,26 @@
       <configuration name="PythonConfigurationType">
         <watch expression="conditions.'frames' (64462640)" />
         <watch expression="T" />
+        <watch expression="results" />
+        <watch expression="analyses.'missions' (84125808)" />
+        <watch expression="configs" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *Units.m/Units.nautical_mile</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
+                                       Units.m/Units.nautical_mile</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
         <expression-string>f3([delta_isa[0,0], Hpkft[0,0], KTAS[0]])</expression-string>
@@ -486,68 +616,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_slat_lift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E170.py" />
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_parasite_drag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Turbine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Turbofan/E170.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5892">
-          <caret line="441" column="45" lean-forward="true" selection-start-line="441" selection-start-column="45" selection-end-line="441" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Propulsion/propeller_design.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Energy/Converters/Gearbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Core/Diffed_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Conditions/Aerodynamics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -608,13 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2992">
-          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -709,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Components/Propulsors/Propulsor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
@@ -803,46 +857,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="104" column="43" lean-forward="true" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
+          <folding>
+            <element signature="e#269#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/plot_mission.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="161" column="72" selection-start-line="161" selection-start-column="72" selection-end-line="161" selection-end-column="72" />
           <folding>
             <element signature="e#157#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_compress_drag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+        <state relative-caret-position="219">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py">
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="108">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_flap_lift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Fidelity_Zero/Lift/compute_max_lift_coeff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Cross_Section/Propulsion/compute_turbofan_geometry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/payload_range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="169" column="120" selection-start-line="169" selection-start-column="15" selection-end-line="169" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2885">
-          <caret line="192" column="54" selection-start-line="192" selection-start-column="54" selection-end-line="192" selection-end-column="54" />
+        <state relative-caret-position="165">
+          <caret line="278" column="73" selection-start-line="278" selection-start-column="73" selection-end-line="278" selection-end-column="73" />
           <folding>
             <element signature="e#358#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
+    <entry file="file://$PROJECT_DIR$/Turbofan/Vehicles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="133" column="88" lean-forward="true" selection-start-line="133" selection-start-column="88" selection-end-line="133" selection-end-column="88" />
+        <state relative-caret-position="80">
+          <caret line="69" column="41" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="41" />
           <folding>
-            <element signature="e#269#287#0" expanded="true" />
+            <element signature="e#253#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Missions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="271" column="46" selection-start-line="271" selection-start-column="46" selection-end-line="271" selection-end-column="46" />
+          <folding>
+            <element signature="e#251#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Procedure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="343" selection-start-line="343" selection-end-line="343" />
+          <folding>
+            <element signature="e#252#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Plot_Mission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="203" column="23" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
+          <folding>
+            <element signature="e#238#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/E170/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Optimize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="36" column="73" lean-forward="true" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+          <folding>
+            <element signature="e#283#295#0" expanded="true" />
           </folding>
         </state>
       </provider>
