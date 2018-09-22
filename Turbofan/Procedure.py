@@ -8,6 +8,7 @@
 # ----------------------------------------------------------------------    
 
 import numpy as np
+from copy import deepcopy
 
 import SUAVE
 from SUAVE.Core import Units, Data
@@ -17,6 +18,7 @@ from SUAVE.Methods.Geometry.Two_Dimensional.Cross_Section.Propulsion.compute_tur
 from SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_max_lift_coeff import compute_max_lift_coeff
 from SUAVE.Optimization.write_optimization_outputs import write_optimization_outputs
 from SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_planform import wing_planform
+from scipy import interpolate
 # ----------------------------------------------------------------------        
 #   Setup
 # ----------------------------------------------------------------------   
@@ -86,16 +88,85 @@ def find_target_range(nexus,mission):
 #   Design Mission
 # ----------------------------------------------------------------------    
 def design_mission(nexus):
-    
+    analyses = nexus.analyses
     mission = nexus.missions.base
-    # mission.design_range = 1500.*Units.nautical_miles
-    # find_target_range(nexus, mission)
+    cruise_altitude = check_cruise_altitude(analyses)
+    mission.segments['climb_5'].altitude_end = cruise_altitude
     results = nexus.results
     results.base = mission.evaluate()
     
     return nexus
 
-# ----------------------------------------------------------------------        
+
+# ----------------------------------------------------------------------
+#   Check Cruise Altitude
+# ----------------------------------------------------------------------
+
+def check_cruise_altitude(analyses):
+    # ------------------------------------------------------------------
+    #   Initialize the Mission
+    # ------------------------------------------------------------------
+
+    mission = SUAVE.Analyses.Mission.Sequential_Segments()
+    mission.tag = 'the_dummy_mission'
+
+    # airport
+    airport = SUAVE.Attributes.Airports.Airport()
+    airport.altitude = 0.0 * Units.ft
+    airport.delta_isa = 0.0
+    airport.atmosphere = SUAVE.Analyses.Atmospheric.US_Standard_1976()
+
+    mission.airport = airport
+
+    # unpack Segments module
+    Segments = SUAVE.Analyses.Mission.Segments
+
+    # base segment
+    base_segment = Segments.Segment()
+    atmosphere = SUAVE.Attributes.Atmospheres.Earth.US_Standard_1976()
+    planet = SUAVE.Attributes.Planets.Earth()
+    base_segment.state.numerics.number_control_points = 20
+    # ------------------------------------------------------------------
+    #   First Climb Segment: Constant Speed, Constant Rate
+    # ------------------------------------------------------------------
+
+    segment = Segments.Climb.Constant_EAS_Constant_Rate(base_segment)
+    segment.tag = "climb_dummy"
+
+    # connect vehicle configuration
+    segment.analyses.extend(analyses.base)
+
+    # define segment attributes
+    segment.atmosphere = atmosphere
+    segment.planet = planet
+
+    segment.altitude_start       = 0.0 * Units.ft
+    segment.altitude_end         = 35000. * Units.ft
+    segment.equivalent_air_speed = 250.5 * Units.knots
+    segment.climb_rate           = 300. * Units['ft/min']
+
+    # add to mission
+    mission.append_segment(segment)
+
+    results = mission.evaluate()
+
+    cruise_altitude = 35000.
+    for segment in results.segments.values():
+        altitude = segment.conditions.freestream.altitude[:, 0] / Units.ft
+        eta = segment.conditions.propulsion.throttle[:, 0]
+        for i in range(len(altitude)):
+            if eta[i] > 1.:
+                cruise_altitude = altitude[i - 1]
+            elif eta[i] < 1. and i == len(altitude) - 1:
+                cruise_altitude = altitude[i]
+
+    print ('Cruise altitude: ' + str(int((cruise_altitude+1)/100.)*100.)+' ft')
+    cruise_altitude = int(cruise_altitude/100.)*100. * Units.ft
+
+    return cruise_altitude
+
+
+# ----------------------------------------------------------------------
 #   Sizing
 # ----------------------------------------------------------------------    
 
@@ -120,22 +191,29 @@ def simple_sizing(nexus):
     conditions             = SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics()   #assign conditions in form for propulsor sizing
     conditions.freestream  = freestream
 
-    # HT_volume = 1.42542 * Units.less # E170
-    # VT_volume = 0.11458 * Units.less # E170
-    # lht       =   14.24 * Units.m
-    # lvt       =   13.54 * Units.m
+    HT_volume = 1.42542 * Units.less # E170
+    VT_volume = 0.11458 * Units.less # E170
+    lht       =   14.24 * Units.m
+    lvt       =   13.54 * Units.m
     for config in configs:
         wing_planform(config.wings.main_wing)
 
-        # config.wings.horizontal_stabilizer.areas.reference = (HT_volume/lht)*(config.wings.main_wing.areas.reference *
-        #                                                       config.wings.main_wing.chords.mean_aerodynamic)
-        # config.wings.vertical_stabilizer.areas.reference   = (VT_volume/lvt)*(config.wings.main_wing.areas.reference *
-        #                                                       config.wings.main_wing.spans.projected)
+        config.wings.horizontal_stabilizer.areas.reference = (HT_volume/lht)*(config.wings.main_wing.areas.reference *
+                                                                              3.194)
+        config.wings.vertical_stabilizer.areas.reference   = (VT_volume/lvt)*(config.wings.main_wing.areas.reference *
+                                                                              26.0)
+
+        SUAVE.Methods.Geometry.Two_Dimensional.Planform.wing_fuel_volume(config.wings.main_wing)
+        nexus.summary.available_fuel = config.wings.main_wing.fuel_volume * 803.0 * 1.0197
+
         for wing in config.wings:
-            # wing_planform(wing)
+
+
+            wing_planform(wing)
             wing.areas.wetted = 2.0 * wing.areas.reference
             wing.areas.exposed = 0.8 * wing.areas.wetted
             wing.areas.affected = 0.6 * wing.areas.wetted
+
 
         turbofan_sizing(config.propulsors['turbofan'], mach_number=mach_number, altitude=altitude)
         compute_turbofan_geometry(config.propulsors['turbofan'], conditions)
@@ -196,7 +274,7 @@ def simple_sizing(nexus):
 
 def weight(nexus):
     vehicle = nexus.vehicle_configurations.base
-
+    BOW = 20736.
     # weight analysis
     weights = nexus.analyses.base.weights.evaluate()
     weights = nexus.analyses.landing.weights.evaluate()
@@ -209,6 +287,10 @@ def weight(nexus):
     empty_weight     = vehicle.mass_properties.operating_empty
     passenger_weight = vehicle.passenger_weights.mass_properties.mass 
 
+    delta = BOW - empty_weight
+    vehicle.mass_properties.max_takeoff = 37200. - delta
+    vehicle.mass_properties.takeoff     = vehicle.mass_properties.max_takeoff
+    print ('MTOW: '+str('%5.1f' % vehicle.mass_properties.max_takeoff)+' kg, BOW: '+str('%5.1f' % empty_weight)+' kg')
     for config in nexus.vehicle_configurations:
         config.mass_properties.zero_fuel_center_of_gravity  = vehicle.mass_properties.zero_fuel_center_of_gravity
         config.fuel                                         = vehicle.fuel
@@ -224,22 +306,51 @@ def takeoff_field_length(nexus):
     estimate_tofl = SUAVE.Methods.Performance.estimate_take_off_field_length
 
     # unpack data
-    results  = nexus.results
     summary  = nexus.summary
     analyses = nexus.analyses
     missions = nexus.missions
     config   = nexus.vehicle_configurations.takeoff
+    vehicle  = nexus.vehicle_configurations.base
 
     # defining required data for tofl evaluation
-    takeoff_airport = missions.base.airport
-    ref_weight      = config.mass_properties.takeoff
-    config.mass_properties.takeoff = 38600.
+    config.mass_properties.takeoff = vehicle.mass_properties.takeoff
+    takeoff_airport                = missions.base.airport
+
     takeoff_field_length, second_segment_climb_gradient_takeoff = estimate_tofl(config, analyses, takeoff_airport, 1)
+
+    print ('TOFL: '+str('%5.1f' % takeoff_field_length)+' m, Second Segment Climb Gradient: ' +
+           str('%1.5f' % second_segment_climb_gradient_takeoff))
 
     # pack results
     summary.takeoff_field_length = takeoff_field_length
     summary.second_segment_climb_gradient_takeoff = second_segment_climb_gradient_takeoff
 
+    # estimating TOW for Hot and High Condition
+    config = deepcopy(nexus.vehicle_configurations.takeoff)
+    config.wings['main_wing'].flaps.angle = 9.7 * Units.deg
+    config.wings['main_wing'].slats.angle = 12. * Units.deg
+
+    takeoff_airport                = deepcopy(missions.base.airport)
+    takeoff_airport.altitude = 5433. * Units.ft
+    takeoff_airport.delta_isa = 23
+
+    TOFL_HH = np.zeros(3)
+    GRAD_HH = np.zeros(3)
+    TOW = [37740., 36740., 35740.]
+    config.mass_properties.takeoff = TOW[0] * Units.kg
+    TOFL_HH[0], GRAD_HH[0] = estimate_tofl(config, analyses, takeoff_airport, 1)
+    config.mass_properties.takeoff = TOW[1] * Units.kg
+    TOFL_HH[1], GRAD_HH[1] = estimate_tofl(config, analyses, takeoff_airport, 1)
+    config.mass_properties.takeoff = TOW[2] * Units.kg
+    TOFL_HH[2], GRAD_HH[2] = estimate_tofl(config, analyses, takeoff_airport, 1)
+
+    f = interpolate.interp1d(GRAD_HH, TOW, kind='quadratic', fill_value="extrapolate")
+
+    summary.TOW_HH = float(f(0.024))
+
+    print('TOW for Hot and High: ' + str('%5.1f' % summary.TOW_HH))
+
+    check_hh_range(nexus)
 
     return nexus
 
@@ -253,7 +364,6 @@ def landing_field_length(nexus):
     estimate_landing = SUAVE.Methods.Performance.estimate_landing_field_length
 
     # unpack data
-    results  = nexus.results
     summary = nexus.summary
     analyses = nexus.analyses
     missions = nexus.missions
@@ -261,14 +371,82 @@ def landing_field_length(nexus):
 
     # defining required data for tofl evaluation
     landing_airport = missions.base.airport
-    ref_weight      = config.mass_properties.landing
+    config.mass_properties.landing = nexus.vehicle_configurations.base.mass_properties.max_takeoff * 0.8817
 
     landing_field_length = estimate_landing(config, analyses, landing_airport)
+
+    print ('LFL for MLW (' + str('%5.1f' % config.mass_properties.landing) + ' kg): ' +
+           str('%5.1f' % landing_field_length) + ' m')
 
     # pack results
     summary.landing_field_length = landing_field_length
 
     return nexus
+
+# ----------------------------------------------------------------------
+#   Check range for hot and high TOW
+# ----------------------------------------------------------------------
+
+def check_hh_range(nexus):
+    mission = deepcopy(nexus.missions.base)
+    vehicle = nexus.vehicle_configurations.base
+
+    mission.tag = 'Range_for_HH'
+    mission.airport.altitude = 5433. * Units.ft
+    mission.segments['climb_1'].altitude_start = 5433. * Units.ft
+
+    cruise_segment_tag = 'cruise'
+
+    # Define takeoff weight
+    mission.segments[0].analyses.weights.vehicle.mass_properties.takeoff = nexus.summary.TOW_HH
+
+    # Evaluate mission with current TOW
+    results = mission.evaluate()
+    segment = results.segments[cruise_segment_tag]
+
+    maxIter = 10  # maximum iteration limit
+    tol = 1.  # fuel convergency tolerance
+    err = 9999.  # error to be minimized
+    iter = 0  # iteration count
+
+    TOW = nexus.summary.TOW_HH
+    FUEL = TOW - 100.*72. - vehicle.mass_properties.operating_empty
+
+    while abs(err) > tol and iter < maxIter:
+        iter = iter + 1
+
+        # Current total fuel burned in mission
+        TotalFuel = TOW - results.segments[-1].conditions.weights.total_mass[-1, 0]
+
+        # Difference between burned fuel and target fuel
+        missingFuel = FUEL - TotalFuel
+
+        # Current distance and fuel consumption in the cruise segment
+        CruiseDist = np.diff(segment.conditions.frames.inertial.position_vector[[0, -1], 0])[0]  # Distance [m]
+        CruiseFuel = segment.conditions.weights.total_mass[0, 0] - segment.conditions.weights.total_mass[-1, 0]  # [kg]
+        # Current specific range (m/kg)
+        CruiseSR = CruiseDist / CruiseFuel  # [m/kg]
+
+        # Estimated distance that will result in total fuel burn = target fuel
+        DeltaDist = CruiseSR * missingFuel
+        mission.segments[cruise_segment_tag].distance = (CruiseDist + DeltaDist)
+
+        # running mission with new distance
+        results = mission.evaluate()
+        segment = results.segments[cruise_segment_tag]
+
+        # Difference between burned fuel and target fuel
+        err = (TOW - results.segments[-1].conditions.weights.total_mass[-1, 0]) - FUEL
+
+    if iter >= maxIter:
+        print 'Warning: Range for Hot and High did not converge for given fuel'
+
+    nexus.summary.range_HH = results.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] * (
+            Units.m / Units.nautical_mile)
+    print ('Range for Hot and High TO (' + str('%5.1f' % TOW) + '): ' + str('%5.1f' % nexus.summary.range_HH))
+
+    return nexus
+
 
 # ----------------------------------------------------------------------
 #   Finalizing Function
@@ -324,21 +502,49 @@ def post_process(nexus):
     design_takeoff_weight    = vehicle.mass_properties.takeoff
     max_takeoff_weight       = nexus.vehicle_configurations.takeoff.mass_properties.max_takeoff
     zero_fuel_weight         = vehicle.mass_properties.max_zero_fuel
-    
-    # summary.max_zero_fuel_margin    = (design_landing_weight - zero_fuel_weight)/zero_fuel_weight
+
     summary.base_mission_fuelburn = design_takeoff_weight - design_landing_weight
     summary.fuel_margin           = design_landing_weight - operating_empty - payload
     summary.mzfw_consistency = zero_fuel_weight - operating_empty - payload
+    summary.MTOW = max_takeoff_weight
 
-    summary.takeoff_field_length_margin = 1644. - summary.takeoff_field_length
-    summary.nothing = 0.0
+    # ------------------------------------------------------------------------------------------------------------------
+    # Additional Constraints computation
+    # TOFL
+    summary.takeoff_field_length_margin = 1520. - summary.takeoff_field_length
 
-    summary.design_range_ub = 1341. - (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
+    # Second Segment Climb Gradient
+    summary.climb_gradient = summary.second_segment_climb_gradient_takeoff - 0.03
+
+    summary.range_HH_margin = summary.range_HH - 1550.
+
+    # Time to climb
+    time_f = results.base.segments['climb_5'].conditions.frames.inertial.time[-1] / Units.min
+    time_i = results.base.segments['climb_1'].conditions.frames.inertial.time[0] / Units.min
+    summary.time_to_climb = 23.0 - (time_f - time_i)
+
+    print ('Time to climb to cruise altitude: ' + str('%2.1f' % (time_f - time_i)) + ' min')
+
+    # Design Range
+    summary.design_range_ub = 1340.2 - (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)
-    summary.design_range_lb = -1339. + (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
+    summary.design_range_lb = -1339.8 + (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)
+
+    # LFL
+    summary.lfl_mlw_margin = 1270. - summary.landing_field_length
+
+    summary.max_fuel_margin = summary.available_fuel - 9420.
+    print ('Maximum Fuel available: ' + str('%4.1f' % summary.available_fuel) + ' kg')
+    print ('Fuel Burn: ' + str('%4.1f' % summary.base_mission_fuelburn) + ' kg')
+
+    beta = vehicle.wings['main_wing'].beta
+    summary.objective = summary.base_mission_fuelburn/7069. * beta + summary.MTOW/37200 * (1-beta)
+
+    print('Beta: '+str('%1.1f' % beta)+' , Objective: ' + str('%1.4f' % summary.objective))
+
     #when you run want to output results to a file
-    # filename = 'results.txt'
-    # write_optimization_outputs(nexus, filename)
-
+    filename = 'results.txt'
+    write_optimization_outputs(nexus, filename)
+    print('\n')
     return nexus    

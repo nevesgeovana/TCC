@@ -12,6 +12,7 @@
 import numpy as np
 import pylab as plt
 
+
 # SUAVE Imports
 import SUAVE
 from SUAVE.Core import Data, Units
@@ -88,119 +89,119 @@ def main():
 
     plot_mission(results)
 
-    # # ---------------------------------------------------------------------------------------
-    # # TAKE OFF FIELD LENGTH
-    # # ---- Inputs
-    # analyses.base = analyses.configs.base
-    # airport = mission.airport
-    # clb_grad = 1
-    #
-    # altitude = [0, 2000, 6000, 8000]
-    # delta_isa = 0
-    # # weights_tofl = apmdata_tow_tofl()
-    # weights_tofl = [[38600],[38600],[38600],[38600]]
-    # # altitude = [0, 5433, 8000]
-    # # altitude = [0, 6000, 8000]
-    # # delta_isa = 15
-    # # weights_tofl = apmdata_tow_tofl_ISA15()
-    #
-    #
-    # # ---- Inputs: FLAP AND SLAT DEFLECTION
-    # flaps = [19.6, 9.7, 4.9, 0.]  # Deflections inboard local
-    # slats = [20., 12., 12., 0.]
-    #
-    # # ---- Inputs: FACTOR CLMAX
-    # configs.takeoff.max_lift_coefficient_factor = 0.9765
-    #
-    # # ---- Open output file
-    # fid = open('TOFL.txt', 'w')  # Open output file
-    #
-    # # ---- Run
-    # for j, h in enumerate(altitude):
-    #     airport.altitude = h * Units.ft
-    #     airport.delta_isa = delta_isa
-    #     fid.write('Altitude: %4.0f ft \n' %(h))
-    #     fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT\n')
-    #     tofl                         = np.zeros(len(weights_tofl[j]))
-    #     secsegclbgrad                = np.zeros(len(weights_tofl[j]))
-    #     thrust                       = np.zeros(len(weights_tofl[j]))
-    #     l_over_d                     = np.zeros(len(weights_tofl[j]))
-    #     l_over_d_v2                  = np.zeros(len(weights_tofl[j]))
-    #     asymmetry_drag_coefficient   = np.zeros(len(weights_tofl[j]))
-    #     windmilling_drag_coefficient = np.zeros(len(weights_tofl[j]))
-    #     clv2                         = np.zeros(len(weights_tofl[j]))
-    #     cdv2                         = np.zeros(len(weights_tofl[j]))
-    #     secsegclbgrad_corrected      = np.zeros(len(weights_tofl[j]))
-    #
-    #     CLmax_ind = 0
-    #     # configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
-    #     configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
-    #     configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
-    #
-    #     for i, TOW in enumerate(weights_tofl[j]):
-    #         configs.takeoff.mass_properties.takeoff = TOW * Units.kg
-    #         tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
-    #         windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
-    #             i] = estimate_take_off_field_length(configs.takeoff,
-    #                                                 analyses, airport,
-    #                                                 clb_grad)
-    #         if secsegclbgrad_corrected[i] < 0.024:
-    #             CLmax_ind = CLmax_ind + 1
-    #             if CLmax_ind > 2:
-    #                 CLmax_ind = 2
-    #                 print CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind
-    #
-    #             configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
-    #             configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
-    #
-    #             # configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
-    #
-    #             tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
-    #             windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
-    #                 i] = estimate_take_off_field_length(configs.takeoff,
-    #                                                     analyses, airport,
-    #                                                     clb_grad)
-    #
-    #         fid.write('%4.2f     %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f \n'
-    #                   % (tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i],
-    #                      asymmetry_drag_coefficient[i], windmilling_drag_coefficient[i], clv2[i], cdv2[i],
-    #                      secsegclbgrad_corrected[i]))
-    #     fid.write('\n')
-    #
-    # fid.close()
-    #
-    # # ---------------------------------------------------------------------------------------
-    # # LANDING FIELD LENGTH
-    # # ---- Inputs
-    # airport.delta_isa = 0
-    # # weights_lfl = weights_lfl_apm_FLAP5()
-    # weights_lfl = weights_lfl_apm_FLAPfull()
-    # flaps = [19.6, 24.2]
-    # slats = [20., 20.]
-    # configs.landing.landing_constants = Data()
-    #
-    # configs.landing.landing_constants[0] = 250. * 1.1
-    # configs.landing.landing_constants[1] = 0.
-    # configs.landing.landing_constants[2] = 2.485/9.81 * 0.94
-    #
-    # configs.landing.wings['main_wing'].flaps.angle = flaps[1] * Units.deg
-    # configs.landing.wings['main_wing'].slats.angle = slats[1] * Units.deg
+    # ---------------------------------------------------------------------------------------
+    # TAKE OFF FIELD LENGTH
+    # ---- Inputs
+    analyses.base = analyses.configs.base
+    airport = mission.airport
+    clb_grad = 1
+
+    altitude = [0, 2000, 6000, 8000]
+    delta_isa = 0
+    # weights_tofl = apmdata_tow_tofl()
+    weights_tofl = [[38600],[38600],[38600],[38600]]
+    # altitude = [0, 5433, 8000]
     # altitude = [0, 6000, 8000]
-    # configs.landing.max_lift_coefficient_factor = configs.takeoff.max_lift_coefficient_factor
-    #
-    # fid = open('LFL.txt', 'w')  # Open output file
-    # for j, h in enumerate(altitude):
-    #     airport.altitude = h * Units.ft
-    #     lfl = np.zeros(len(weights_lfl[j]))
-    #     fid.write('Altitude: %4.0f ft \n' % (h))
-    #     for i, TOW in enumerate(weights_lfl[j]):
-    #         configs.landing.mass_properties.landing = TOW * Units.kg
-    #         lfl[i] = estimate_landing_field_length(configs.landing, analyses, airport)
-    #         fid.write('%4.2f \n' % (lfl[i]))
-    #     fid.write('\n')
-    # fid.close()
-    #
-    # return
+    # delta_isa = 15
+    # weights_tofl = apmdata_tow_tofl_ISA15()
+
+
+    # ---- Inputs: FLAP AND SLAT DEFLECTION
+    flaps = [19.6, 9.7, 4.9, 0.]  # Deflections inboard local
+    slats = [20., 12., 12., 0.]
+
+    # ---- Inputs: FACTOR CLMAX
+    configs.takeoff.max_lift_coefficient_factor = 0.9765
+
+    # ---- Open output file
+    fid = open('TOFL.txt', 'w')  # Open output file
+
+    # ---- Run
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        airport.delta_isa = delta_isa
+        fid.write('Altitude: %4.0f ft \n' %(h))
+        fid.write('TOFL      CLIMB GRADIENT     THRUST    L/D     L/Dv2    CDasym    CDwindm     CL     CD  CG_CORRECT\n')
+        tofl                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad                = np.zeros(len(weights_tofl[j]))
+        thrust                       = np.zeros(len(weights_tofl[j]))
+        l_over_d                     = np.zeros(len(weights_tofl[j]))
+        l_over_d_v2                  = np.zeros(len(weights_tofl[j]))
+        asymmetry_drag_coefficient   = np.zeros(len(weights_tofl[j]))
+        windmilling_drag_coefficient = np.zeros(len(weights_tofl[j]))
+        clv2                         = np.zeros(len(weights_tofl[j]))
+        cdv2                         = np.zeros(len(weights_tofl[j]))
+        secsegclbgrad_corrected      = np.zeros(len(weights_tofl[j]))
+
+        CLmax_ind = 0
+        # configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+        configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
+        configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
+
+        for i, TOW in enumerate(weights_tofl[j]):
+            configs.takeoff.mass_properties.takeoff = TOW * Units.kg
+            tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+            windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                i] = estimate_take_off_field_length(configs.takeoff,
+                                                    analyses, airport,
+                                                    clb_grad)
+            if secsegclbgrad_corrected[i] < 0.024:
+                CLmax_ind = CLmax_ind + 1
+                if CLmax_ind > 2:
+                    CLmax_ind = 2
+                    print CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind,CLmax_ind
+
+                configs.takeoff.wings['main_wing'].flaps.angle = flaps[CLmax_ind] * Units.deg
+                configs.takeoff.wings['main_wing'].slats.angle = slats[CLmax_ind] * Units.deg
+
+                # configs.takeoff.maximum_lift_coefficient = maximum_lift_coefficient[CLmax_ind]
+
+                tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i], asymmetry_drag_coefficient[i], \
+                windmilling_drag_coefficient[i], clv2[i], cdv2[i], secsegclbgrad_corrected[
+                    i] = estimate_take_off_field_length(configs.takeoff,
+                                                        analyses, airport,
+                                                        clb_grad)
+
+            fid.write('%4.2f     %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f    %4.4f \n'
+                      % (tofl[i], secsegclbgrad[i], thrust[i], l_over_d[i], l_over_d_v2[i],
+                         asymmetry_drag_coefficient[i], windmilling_drag_coefficient[i], clv2[i], cdv2[i],
+                         secsegclbgrad_corrected[i]))
+        fid.write('\n')
+
+    fid.close()
+
+    # ---------------------------------------------------------------------------------------
+    # LANDING FIELD LENGTH
+    # ---- Inputs
+    airport.delta_isa = 0
+    # weights_lfl = weights_lfl_apm_FLAP5()
+    weights_lfl = weights_lfl_apm_FLAPfull()
+    flaps = [19.6, 24.2]
+    slats = [20., 20.]
+    configs.landing.landing_constants = Data()
+
+    configs.landing.landing_constants[0] = 250. * 1.1
+    configs.landing.landing_constants[1] = 0.
+    configs.landing.landing_constants[2] = 2.485/9.81 * 0.94
+
+    configs.landing.wings['main_wing'].flaps.angle = flaps[1] * Units.deg
+    configs.landing.wings['main_wing'].slats.angle = slats[1] * Units.deg
+    altitude = [0, 6000, 8000]
+    configs.landing.max_lift_coefficient_factor = configs.takeoff.max_lift_coefficient_factor
+
+    fid = open('LFL.txt', 'w')  # Open output file
+    for j, h in enumerate(altitude):
+        airport.altitude = h * Units.ft
+        lfl = np.zeros(len(weights_lfl[j]))
+        fid.write('Altitude: %4.0f ft \n' % (h))
+        for i, TOW in enumerate(weights_lfl[j]):
+            configs.landing.mass_properties.landing = TOW * Units.kg
+            lfl[i] = estimate_landing_field_length(configs.landing, analyses, airport)
+            fid.write('%4.2f \n' % (lfl[i]))
+        fid.write('\n')
+    fid.close()
+
+    return
 
 # ----------------------------------------------------------------------
 #   Analysis Setup

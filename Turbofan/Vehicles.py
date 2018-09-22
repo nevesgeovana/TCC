@@ -30,6 +30,7 @@ def base_setup():
     
     vehicle = SUAVE.Vehicle()
     vehicle.tag = 'E170'
+
     
     # ------------------------------------------------------------------
     #   Vehicle-level Properties
@@ -63,6 +64,7 @@ def base_setup():
 
     wing = SUAVE.Components.Wings.Main_Wing()
     wing.tag = 'main_wing'
+    wing.beta = 1.
 
     wing.aspect_ratio            = 8.6
     wing.sweeps.quarter_chord    = 23.0 * Units.deg # 22.5
@@ -424,8 +426,8 @@ def configs_setup(vehicle):
     config = SUAVE.Components.Configs.Config(base_config)
     config.tag = 'landing'
 
-    config.wings['main_wing'].flaps_angle = 24.2 * Units.deg
-    config.wings['main_wing'].slats_angle = 20. * Units.deg
+    config.wings['main_wing'].flaps.angle = 24.2 * Units.deg
+    config.wings['main_wing'].slats.angle = 20. * Units.deg
     config.max_lift_coefficient_factor    = 0.9765
     
     config.Vref_VS_ratio = 1.23

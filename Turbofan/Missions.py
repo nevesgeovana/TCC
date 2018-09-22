@@ -253,25 +253,25 @@ def base(analyses):
     #------------------------------------------------------------------
     ###         Reserve mission
     #------------------------------------------------------------------
-    
+
     # ------------------------------------------------------------------
     #   First Climb Segment: Constant Speed, Constant Throttle
     # ------------------------------------------------------------------
- 
-    segment = Segments.Climb.Constant_Throttle_Constant_Speed()
+
+    segment = Segments.Climb.Constant_Speed_Constant_Rate()
     segment.tag = "reserve_climb"
- 
+
     # connect vehicle configuration
-    segment.analyses.extend( analyses.base )
- 
+    segment.analyses.extend(analyses.base)
+
     # define segment attributes
-    segment.atmosphere     = atmosphere
-    segment.planet         = planet
- 
-    segment.altitude_start = 0.0    * Units.km
-    segment.altitude_end   = 15000. * Units.ft
-    segment.air_speed      = 138.0  * Units['m/s']
-    segment.throttle       = 0.8
+    segment.atmosphere = atmosphere
+    segment.planet = planet
+
+    segment.altitude_start = 0.0 * Units.km
+    segment.altitude_end = 15000. * Units.ft
+    segment.air_speed = 138.0 * Units['m/s']
+    segment.climb_rate = 2500. * Units['ft/min']
  
     # add to misison
     mission.append_segment(segment)

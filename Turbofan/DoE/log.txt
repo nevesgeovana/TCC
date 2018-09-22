@@ -1,0 +1,5754 @@
+MTOW: 37199.4 kg, BOW: 20735.4 kg
+CLmax - Takeoff Config = 2.6222
+TOFL: 1518.4 m, Second Segment Climb Gradient: 0.03099
+Cruise altitude: 35000.0 ft
+
+
+DoE - parameter study. Run number: 0
+Scaling Inputs: [0.95, 1.0, 1.0, 1.0, 1.0, 1.0]
+MTOW: 36965.3 kg, BOW: 20501.3 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1585.5 m, Second Segment Climb Gradient: 0.03095
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.69084 0.86    0.3275  0.11    0.23    0.1088 ]
+Obj
+[0.0]
+Inputs
+[0.69084 0.86    0.3275  0.11    0.23    0.1088 ]
+Obj
+[0.0]
+Inputs
+[0.69084001 0.86       0.3275     0.11       0.23       0.1088    ]
+MTOW: 36949.0 kg, BOW: 20485.0 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.2 m, Second Segment Climb Gradient: 0.03101
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86000001 0.3275     0.11       0.23       0.1088    ]
+MTOW: 36947.9 kg, BOW: 20483.9 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.32750001 0.11       0.23       0.1088    ]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11000001 0.23       0.1088    ]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23000001 0.1088    ]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10880001]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10908513]
+Obj
+[0.0]
+Inputs
+[0.69084001 0.86       0.3275     0.11       0.23       0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86000001 0.3275     0.11       0.23       0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.32750001 0.11       0.23       0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11000001 0.23       0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23000001 0.10908513]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10908514]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911416]
+Obj
+[0.0]
+Inputs
+[0.69084001 0.86       0.3275     0.11       0.23       0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86000001 0.3275     0.11       0.23       0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.32750001 0.11       0.23       0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11000001 0.23       0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23000001 0.10911416]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911418]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+Obj
+[0.0]
+Inputs
+[0.69084001 0.86       0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86000001 0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.32750001 0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11000001 0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23000001 0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911418]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+Obj
+[0.0]
+Inputs
+[0.69084001 0.86       0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86000001 0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.32750001 0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11000001 0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23000001 0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911418]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Inputs
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+MTOW: 36947.8 kg, BOW: 20483.8 kg
+CLmax - Takeoff Config = 2.6181
+TOFL: 1584.1 m, Second Segment Climb Gradient: 0.03102
+Cruise altitude: 35000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 5
+            Function evaluations: 41
+            Gradient evaluations: 5
+[0.69084    0.86       0.3275     0.11       0.23       0.10911417]
+fuel burn   =  [7059.62701336]
+Constraints =  [2.05617659e+00 2.76260411e-02 9.99999994e-09 9.78768292e-01
+ 2.30797017e+00 4.00000000e-01 0.00000000e+00]
+
+DoE - parameter study. Run number: 1
+Scaling Inputs: [1.0, 0.95, 1.0, 1.0, 1.0, 1.0]
+MTOW: 37024.5 kg, BOW: 20560.5 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.0 m, Second Segment Climb Gradient: 0.02478
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272 0.817  0.3275 0.11   0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.817  0.3275 0.11   0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.817      0.3275     0.11       0.23       0.1088    ]
+MTOW: 37029.7 kg, BOW: 20565.7 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.4 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.81700001 0.3275     0.11       0.23       0.1088    ]
+MTOW: 37030.0 kg, BOW: 20566.0 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.32750001 0.11       0.23       0.1088    ]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11000001 0.23       0.1088    ]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23000001 0.1088    ]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10880001]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10837784]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.817      0.3275     0.11       0.23       0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.81700001 0.3275     0.11       0.23       0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.32750001 0.11       0.23       0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11000001 0.23       0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23000001 0.10837784]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10837786]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.81700001 0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.32750001 0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11000001 0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23000001 0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836748]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.81700001 0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.32750001 0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11000001 0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23000001 0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836748]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.81700001 0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.32750001 0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11000001 0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23000001 0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836748]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+Obj
+[0.0]
+Inputs
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+MTOW: 37030.1 kg, BOW: 20566.1 kg
+CLmax - Takeoff Config = 2.6263
+TOFL: 1508.5 m, Second Segment Climb Gradient: 0.02476
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 5
+            Function evaluations: 43
+            Gradient evaluations: 5
+[0.7272     0.817      0.3275     0.11       0.23       0.10836746]
+fuel burn   =  [7131.72970399]
+Constraints =  [1.98407390e+00 2.98193419e-02 9.99999994e-09 1.73529613e+00
+ 2.22573521e+00 1.77283255e-09 3.99999998e-01]
+
+DoE - parameter study. Run number: 2
+Scaling Inputs: [1.0, 1.0, 0.95, 1.0, 1.0, 1.0]
+MTOW: 37158.4 kg, BOW: 20694.4 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1520.5 m, Second Segment Climb Gradient: 0.03063
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Inputs
+[0.7272   0.86     0.311125 0.11     0.23     0.1088  ]
+Obj
+[0.0]
+Inputs
+[0.7272   0.86     0.311125 0.11     0.23     0.1088  ]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.311125   0.11       0.23       0.1088    ]
+MTOW: 37167.4 kg, BOW: 20703.4 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.311125   0.11       0.23       0.1088    ]
+MTOW: 37168.0 kg, BOW: 20704.0 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.31112501 0.11       0.23       0.1088    ]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.311125   0.11000001 0.23       0.1088    ]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.311125   0.11       0.23000001 0.1088    ]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.311125   0.11       0.23       0.10880001]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.7272     0.86       0.311125   0.11       0.23       0.10894372]
+MTOW: 37168.1 kg, BOW: 20704.1 kg
+CLmax - Takeoff Config = 2.6223
+TOFL: 1521.2 m, Second Segment Climb Gradient: 0.03060
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[0.7272     0.86       0.311125   0.11       0.23       0.10894372]
+fuel burn   =  [7065.08666742]
+Constraints =  [2.05071694e+00 2.44774918e-02 9.99999994e-09 1.60790907e+00
+ 2.08771403e+00 2.45428655e-01 1.54571345e-01]
+
+DoE - parameter study. Run number: 3
+Scaling Inputs: [1.0, 1.0, 1.0, 0.95, 1.0, 1.0]
+MTOW: 37284.9 kg, BOW: 20820.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1564.9 m, Second Segment Climb Gradient: 0.03277
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272 0.86   0.3275 0.1045 0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.86   0.3275 0.1045 0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.3275     0.1045     0.23       0.1088    ]
+MTOW: 37293.2 kg, BOW: 20829.2 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.5 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.3275     0.1045     0.23       0.1088    ]
+MTOW: 37293.8 kg, BOW: 20829.8 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.32750001 0.1045     0.23       0.1088    ]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.10450001 0.23       0.1088    ]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.1045     0.23000001 0.1088    ]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.1045     0.23       0.10880001]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272    0.86      0.3275    0.1045    0.23      0.1093314]
+MTOW: 37293.9 kg, BOW: 20829.9 kg
+CLmax - Takeoff Config = 2.5626
+TOFL: 1565.6 m, Second Segment Climb Gradient: 0.03273
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[0.7272    0.86      0.3275    0.1045    0.23      0.1093314]
+fuel burn   =  [7029.11250428]
+Constraints =  [2.08669110e+00 2.37180797e-02 9.99999994e-09 1.16424070e+00
+ 1.96191965e+00 2.68641367e-01 1.31358633e-01]
+
+DoE - parameter study. Run number: 4
+Scaling Inputs: [1.0, 1.0, 1.0, 1.0, 0.95, 1.0]
+MTOW: 37158.9 kg, BOW: 20694.9 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1514.7 m, Second Segment Climb Gradient: 0.03015
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272 0.86   0.3275 0.11   0.2185 0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.86   0.3275 0.11   0.2185 0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.3275     0.11       0.2185     0.1088    ]
+MTOW: 37149.6 kg, BOW: 20685.6 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1514.0 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.3275     0.11       0.2185     0.1088    ]
+MTOW: 37148.9 kg, BOW: 20684.9 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.32750001 0.11       0.2185     0.1088    ]
+MTOW: 37148.9 kg, BOW: 20684.9 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11000001 0.2185     0.1088    ]
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11       0.21850001 0.1088    ]
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11       0.2185     0.10880001]
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.3275     0.11       0.2185     0.10840718]
+MTOW: 37148.8 kg, BOW: 20684.8 kg
+CLmax - Takeoff Config = 2.6327
+TOFL: 1513.9 m, Second Segment Climb Gradient: 0.03019
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[0.7272     0.86       0.3275     0.11       0.2185     0.10840718]
+fuel burn   =  [7108.62815455]
+Constraints =  [2.00717545e+00 2.48244167e-02 9.99999994e-09 1.68102633e+00
+ 2.10695494e+00 1.80804787e-01 2.19195213e-01]
+
+DoE - parameter study. Run number: 5
+Scaling Inputs: [1.05, 1.0, 1.0, 1.0, 1.0, 1.0]
+MTOW: 37399.4 kg, BOW: 20935.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1466.0 m, Second Segment Climb Gradient: 0.03011
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356 0.86    0.3275  0.11    0.23    0.1088 ]
+Obj
+[0.0]
+Inputs
+[0.76356 0.86    0.3275  0.11    0.23    0.1088 ]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.1088    ]
+MTOW: 37417.1 kg, BOW: 20953.1 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.3 m, Second Segment Climb Gradient: 0.03005
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.1088    ]
+MTOW: 37418.3 kg, BOW: 20954.3 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.1088    ]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.1088    ]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.1088    ]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10880001]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10863159]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.10863159]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10863161]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860097]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.10860097]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860098]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860098]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860098]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+Obj
+[0.0]
+Inputs
+[0.76356001 0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86000001 0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.32750001 0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11000001 0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23000001 0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860098]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+MTOW: 37418.4 kg, BOW: 20954.4 kg
+CLmax - Takeoff Config = 2.6261
+TOFL: 1467.4 m, Second Segment Climb Gradient: 0.03004
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 6
+            Function evaluations: 49
+            Gradient evaluations: 6
+[0.76356    0.86       0.3275     0.11       0.23       0.10860096]
+fuel burn   =  [7087.82716804]
+Constraints =  [2.02797644e+00 2.13671325e-02 9.99999994e-09 2.14583452e+00
+ 1.83735928e+00 0.00000000e+00 4.00000000e-01]
+
+DoE - parameter study. Run number: 6
+Scaling Inputs: [1.0, 1.05, 1.0, 1.0, 1.0, 1.0]
+MTOW: 37347.3 kg, BOW: 20883.3 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1537.2 m, Second Segment Climb Gradient: 0.03545
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272 0.903  0.3275 0.11   0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.903  0.3275 0.11   0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.903      0.3275     0.11       0.23       0.1088    ]
+MTOW: 37342.2 kg, BOW: 20878.2 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.90300001 0.3275     0.11       0.23       0.1088    ]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.32750001 0.11       0.23       0.1088    ]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11000001 0.23       0.1088    ]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23000001 0.1088    ]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10880001]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931085]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.903      0.3275     0.11       0.23       0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.90300001 0.3275     0.11       0.23       0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.32750001 0.11       0.23       0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11000001 0.23       0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23000001 0.10931085]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931086]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.90300001 0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.32750001 0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11000001 0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23000001 0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931899]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.90300001 0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.32750001 0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11000001 0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23000001 0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931899]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.90300001 0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.32750001 0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11000001 0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23000001 0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931899]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+MTOW: 37341.8 kg, BOW: 20877.8 kg
+CLmax - Takeoff Config = 2.6183
+TOFL: 1536.8 m, Second Segment Climb Gradient: 0.03547
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 5
+            Function evaluations: 41
+            Gradient evaluations: 5
+[0.7272     0.903      0.3275     0.11       0.23       0.10931897]
+fuel burn   =  [7012.96007898]
+Constraints =  [2.10284353e+00 1.92703410e-02 9.99999994e-09 1.45201561e+00
+ 1.91399088e+00 4.00000000e-01 0.00000000e+00]
+
+DoE - parameter study. Run number: 7
+Scaling Inputs: [1.0, 1.0, 1.05, 1.0, 1.0, 1.0]
+MTOW: 37208.8 kg, BOW: 20744.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1524.4 m, Second Segment Climb Gradient: 0.03045
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272   0.86     0.343875 0.11     0.23     0.1088  ]
+Obj
+[0.0]
+Inputs
+[0.7272   0.86     0.343875 0.11     0.23     0.1088  ]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.343875   0.11       0.23       0.1088    ]
+MTOW: 37199.5 kg, BOW: 20735.5 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03048
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.343875   0.11       0.23       0.1088    ]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.34387501 0.11       0.23       0.1088    ]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11000001 0.23       0.1088    ]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23000001 0.1088    ]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10880001]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10883566]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.343875   0.11       0.23       0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.343875   0.11       0.23       0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.34387501 0.11       0.23       0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11000001 0.23       0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23000001 0.10883566]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10883568]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.34387501 0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11000001 0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23000001 0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885203]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.34387501 0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11000001 0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23000001 0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885203]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.34387501 0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11000001 0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23000001 0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885203]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+MTOW: 37198.8 kg, BOW: 20734.8 kg
+CLmax - Takeoff Config = 2.6221
+TOFL: 1523.7 m, Second Segment Climb Gradient: 0.03049
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 5
+            Function evaluations: 41
+            Gradient evaluations: 5
+[0.7272     0.86       0.343875   0.11       0.23       0.10885202]
+fuel burn   =  [7071.4099006]
+Constraints =  [2.04439371e+00 2.45694636e-02 9.99999994e-09 1.58343096e+00
+ 2.05701990e+00 4.00000000e-01 0.00000000e+00]
+
+DoE - parameter study. Run number: 8
+Scaling Inputs: [1.0, 1.0, 1.0, 1.05, 1.0, 1.0]
+MTOW: 37092.0 kg, BOW: 20628.0 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1485.5 m, Second Segment Climb Gradient: 0.02834
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272 0.86   0.3275 0.1155 0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.86   0.3275 0.1155 0.23   0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.3275     0.1155     0.23       0.1088    ]
+MTOW: 37084.7 kg, BOW: 20620.7 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1485.0 m, Second Segment Climb Gradient: 0.02836
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.3275     0.1155     0.23       0.1088    ]
+MTOW: 37084.2 kg, BOW: 20620.2 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.32750001 0.1155     0.23       0.1088    ]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11550001 0.23       0.1088    ]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.1155     0.23000001 0.1088    ]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.1155     0.23       0.10880001]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Inputs
+[0.7272     0.86       0.3275     0.1155     0.23       0.10835844]
+MTOW: 37084.1 kg, BOW: 20620.1 kg
+CLmax - Takeoff Config = 2.6770
+TOFL: 1484.9 m, Second Segment Climb Gradient: 0.02837
+Cruise altitude: 35000.0 ft
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[0.7272     0.86       0.3275     0.1155     0.23       0.10835844]
+fuel burn   =  [7113.70879468]
+Constraints =  [2.00209481e+00 2.53362647e-02 9.99999994e-09 1.97086223e+00
+ 2.17167264e+00 1.42441950e-01 2.57558050e-01]
+
+DoE - parameter study. Run number: 9
+Scaling Inputs: [1.0, 1.0, 1.0, 1.0, 1.05, 1.0]
+MTOW: 37211.4 kg, BOW: 20747.4 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1530.8 m, Second Segment Climb Gradient: 0.03093
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Inputs
+[0.7272 0.86   0.3275 0.11   0.2415 0.1088]
+Obj
+[0.0]
+Inputs
+[0.7272 0.86   0.3275 0.11   0.2415 0.1088]
+Obj
+[0.0]
+Inputs
+[0.72720001 0.86       0.3275     0.11       0.2415     0.1088    ]
+MTOW: 37220.4 kg, BOW: 20756.4 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.5 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86000001 0.3275     0.11       0.2415     0.1088    ]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.32750001 0.11       0.2415     0.1088    ]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11000001 0.2415     0.1088    ]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11       0.24150001 0.1088    ]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+Inputs
+[0.7272     0.86       0.3275     0.11       0.2415     0.10880001]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Inputs
+[0.7272    0.86      0.3275    0.11      0.2415    0.1093307]
+MTOW: 37221.0 kg, BOW: 20757.0 kg
+CLmax - Takeoff Config = 2.6111
+TOFL: 1531.6 m, Second Segment Climb Gradient: 0.03090
+Cruise altitude: 35000.0 ft
+Warning: altitude requested below minimum for this atmospheric model; returning values for h = -2.0 km
+Warning: altitude requested above maximum for this atmospheric model; returning values for h = 86.0 km
+
+
+Obj
+[0.0]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[0.7272    0.86      0.3275    0.11      0.2415    0.1093307]
+fuel burn   =  [7030.48279363]
+Constraints =  [2.08532081e+00 2.42181848e-02 9.99999994e-09 1.50412739e+00
+ 2.03476788e+00 2.58457967e-01 1.41542033e-01]
+
