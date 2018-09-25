@@ -16,6 +16,7 @@ import Missions
 import Procedure
 import Plot_Mission
 import matplotlib.pyplot as plt
+import matplotlib
 from SUAVE.Optimization import Nexus, carpet_plot
 import SUAVE.Optimization.Package_Setups.scipy_setup as scipy_setup
 from copy import deepcopy
@@ -37,14 +38,31 @@ def main():
     # # Uncomment to view contours of the design space
     # variable_sweep(problem)
 
-    output = scipy_setup.SciPy_Solve(problem, solver='SLSQP')
-    print output
-
-    print 'fuel burn   = ', problem.summary.base_mission_fuelburn
+    print ' '
+    print ' Initial Guess Results '
+    print ' '
+    print 'Fuel Burn   = ', float(problem.summary.base_mission_fuelburn)
+    print 'Cruise Fuel = ', float(problem.summary.cruise_fuel)
+    print 'Block  Fuel = ', float(problem.summary.block_fuel)
+    print 'MTOW        = ', float(problem.summary.MTOW)
+    print 'BOW         = ', float(problem.summary.BOW)
+    print 'TOFL        = ', float(problem.summary.takeoff_field_length)
+    print 'GRAD        = ', float(problem.summary.second_segment_climb_gradient_takeoff)
+    print 'Cruise Alt  = ', float(problem.summary.cruise_altitude)
+    print 'Design Ran  = ', float(problem.summary.design_range)
+    print 'Cruise Ran  = ', float(problem.summary.cruise_range)
+    print 'Total Ran   = ', float(problem.summary.total_range)
+    print 'Time To Cli = ', float(problem.summary.time_to_climb_value)
+    print 'TOW HH      = ', float(problem.summary.TOW_HH)
+    print 'Fuel HH     = ', float(problem.summary.FUEL_HH)
+    print ' '
     print 'Constraints = ', problem.all_constraints()
-
-    Plot_Mission.plot_mission(problem, 0)
-
+    print ' '
+    last_inputs = problem.last_inputs[:, 1]
+    print 'S           = ', last_inputs[0]
+    print 'AR          = ', last_inputs[1]
+    print 't/c         = ', last_inputs[2]
+    print 'Sweep Ang   = ', last_inputs[3]
     # ------------------------------------------------------------------
     # Pareto
 
@@ -55,36 +73,68 @@ def main():
     grad = []
     tofl = []
 
-    betas = [1., 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.]
-
+    # betas = [1., 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.]
+    betas = [1., 0.75, 0.5, 0.25, 0.]
+    # betas = [0.]
     fid = open('Pareto_results.txt', 'w')  # Open output file
     fid.write(' Pareto results \n')
+    fid.close()
 
     for i, beta in enumerate(betas):
+        fid = open('Pareto_results.txt', 'ab')  # Open output file
         fid.write('Pareto Frontier. Run number: ' + str(i) + ' \n')
         print('Pareto Frontier. Run number: ' + str(i))
 
         # updating Beta value
         design_vars = problem.optimization_problem.inputs[:, 1]
-        design_vars[-1] = design_vars[-1] * beta
+        design_vars[-1] = beta
+        design_vars[0] = 75.047001
+        design_vars[1] = 10.6
+        design_vars[2] = 0.13695658
+        design_vars[3] = 34.885149
         problem.optimization_problem.inputs[:, 1] = design_vars
 
         bounds = problem.optimization_problem.inputs[:, 2]
         bounds[-1] = list(bounds[-1])
-        bounds[-1][0] = bounds[-1][0] * beta
-        bounds[-1][1] = bounds[-1][1] * beta
+        bounds[-1][0] = beta
+        bounds[-1][1] = beta
         bounds[-1] = tuple(bounds[-1])
         problem.optimization_problem.inputs[:, 2] = bounds
 
         output = scipy_setup.SciPy_Solve(problem, solver='SLSQP')
-        print output
-        print 'fuel burn   = ', problem.summary.base_mission_fuelburn
-        print 'MTOW        = ', problem.summary.MTOW
-        print 'Constraints = ', problem.all_constraints()
-
-        Plot_Mission.plot_mission(problem, i)
 
         finalvalue.append(output)
+
+        print output
+        print ' '
+        print ' Final Results '
+        print ' '
+        print 'Fuel Burn   = ', float(problem.summary.base_mission_fuelburn)
+        print 'Cruise Fuel = ', float(problem.summary.cruise_fuel)
+        print 'Block  Fuel = ', float(problem.summary.block_fuel)
+        print 'MTOW        = ', float(problem.summary.MTOW)
+        print 'BOW         = ', float(problem.summary.BOW)
+        print 'TOFL        = ', float(problem.summary.takeoff_field_length)
+        print 'GRAD        = ', float(problem.summary.second_segment_climb_gradient_takeoff)
+        print 'Cruise Alt  = ', float(problem.summary.cruise_altitude)
+        print 'Design Ran  = ', float(problem.summary.design_range)
+        print 'Cruise Ran  = ', float(problem.summary.cruise_range)
+        print 'Total Ran   = ', float(problem.summary.total_range)
+        print 'Time To Cli = ', float(problem.summary.time_to_climb_value)
+        print 'TOW HH      = ', float(problem.summary.TOW_HH)
+        print 'Fuel HH     = ', float(problem.summary.FUEL_HH)
+        print ' '
+        print 'Constraints = ', problem.all_constraints()
+        print ' '
+        last_inputs = finalvalue[-1]
+        print 'S           = ', last_inputs[0]
+        print 'AR          = ', last_inputs[1]
+        print 't/c         = ', last_inputs[2]
+        print 'Sweep Ang   = ', last_inputs[3]
+        # -----------------------------------------
+        Plot_Mission.plot_mission(problem, i)
+
+
         fuelburn.append(problem.summary.base_mission_fuelburn)
         allconstraints.append(problem.all_constraints())
         grad.append(problem.summary.second_segment_climb_gradient_takeoff)
@@ -98,7 +148,9 @@ def main():
         fid.write(str(allconstraints[-1]) + ' \n')
         fid.write(str(finalvalue[-1]) + ' \n')
         fid.write('\n \n')
+        fid.close()
 
+    fid = open('Pareto_results.txt', 'ab')  # Open output file
     elapsed = time.time() - t0
 
     fid.write('Total run time: ' + str(elapsed))
@@ -124,12 +176,12 @@ def setup():
 
     #   [ tag                            , initial, (lb,ub)             , scaling , units ]
     problem.inputs = np.array([
-        ['wing_area',     72.72, (60.0, 85.0),     100.,       Units.meter**2],
-        ['aspect_ratio',    8.6,     (6.6, 10.6),  100.0,           Units.less],
+        ['wing_area',     75.047, (65.0, 85.0),     100.,       Units.meter**2],
+        ['aspect_ratio',    10.6,     (7.6, 10.6),  100.0,           Units.less],
         # ['taper_ratio',  0.3275, (0.2875, 0.4275),   1.,           Units.less],
-        ['t_c_ratio',      0.11,   (0.09, 0.15),     1.,           Units.less],
-        ['sweep_angle',    23.0,   (15.0, 35.0),  100.0,            Units.deg],
-        ['cruise_range',  1078., (800., 1350.), 10000.0, Units.nautical_miles],
+        ['t_c_ratio',      0.13695658,   (0.09, 0.15),     1.,           Units.less],
+        ['sweep_angle',    34.885149,   (18.0, 35.0),  100.0,            Units.deg],
+        ['cruise_range',  1122.5982894, (800., 1350.), 10000.0, Units.nautical_miles],
         ['beta',             1., (1., 1.), 1.,                  Units.less],
     ])
 
@@ -151,6 +203,7 @@ def setup():
     # [ tag, sense, edge, scaling, units ]
     # CONSTRAINTS ARE SET TO BE BIGGER THAN ZERO, SEE PROCEDURE (SciPy's SLSQP optimization algorithm assumes this form)
     problem.constraints = np.array([
+        # ['design_range_margin',      '=', 0., 100., Units.nautical_miles],  # Range consistency
         ['fuel_margin',              '>', 0., 1000.,  Units.kg],   #fuel margin defined here as fuel
         ['Throttle_min',             '>', 0., 1.,   Units.less],
         ['Throttle_max',             '>', 0., 1.,   Units.less],
@@ -162,7 +215,10 @@ def setup():
         ['climb_gradient',           '>', 0., 1.,  Units.less],  # second segment climb gradient
         ['lfl_mlw_margin',           '>', 0., 100.,   Units.m],  # landing field length
         ['max_fuel_margin',          '>', 0., 1000., Units.kg],  # max fuel margin
-        ['range_HH_margin',          '>', 0., 1000., Units.nautical_miles],  # Range for Hot and High
+        # ['range_HH_margin',          '>', 0., 1000., Units.nautical_miles],  # Range for Hot and High
+        ['TOW_HH_margin',          '>', 0., 1000., Units.kg],  # TOW for Hot and High
+        # ['MTOW',                   '>', 0., 100000., Units.kg],  # TOW for Hot and High
+        # ['BOW',                    '>', 0., 1., Units.kg],  # TOW for Hot and High
     ])
     
     # -------------------------------------------------------------------
@@ -185,13 +241,17 @@ def setup():
         ['Throttle_max',                'summary.throttle_max'                                         ],
         ['tofl_mtow_margin',            'summary.takeoff_field_length_margin'                          ],
         ['mzfw_consistency',            'summary.mzfw_consistency'                                     ],
+        # ['design_range_margin',         'summary.design_range_margin'],
         ['design_range_ub',             'summary.design_range_ub'                                      ],
         ['design_range_lb',             'summary.design_range_lb'                                      ],
         ['time_to_climb',               'summary.time_to_climb'                                        ],
         ['climb_gradient',              'summary.climb_gradient'                                       ],
         ['lfl_mlw_margin',              'summary.lfl_mlw_margin'                                       ],
         ['max_fuel_margin',             'summary.max_fuel_margin'                                      ],
-        ['range_HH_margin',             'summary.range_HH_margin'],
+        # ['range_HH_margin',             'summary.range_HH_margin'],
+        ['TOW_HH_margin',               'summary.TOW_HH_margin'],
+        # ['MTOW',                        'summary.MTOW'],
+        # ['BOW',                         'summary.BOW'],
         ['beta',                        'vehicle_configurations.base.wings.main_wing.beta'],
         ['objective',                   'summary.objective'],
     ]    
@@ -223,7 +283,11 @@ def setup():
     nexus.total_number_of_iterations = 0
     return nexus
     
-def variable_sweep(problem):    
+def variable_sweep(problem):
+    from matplotlib import rcParams
+    rcParams['font.family'] = 'times new roman'
+    # rcParams['font.times-new-roman'] = ['times new roman']
+
     number_of_points = 5
     outputs     = carpet_plot(problem, number_of_points, 0, 0)  #run carpet plot, suppressing default plots
     inputs      = outputs.inputs
@@ -233,18 +297,66 @@ def variable_sweep(problem):
     CS   = plt.contourf(inputs[0,:],inputs[1,:], objective, 20, linewidths=2)
     cbar = plt.colorbar(CS)
     
-    cbar.ax.set_ylabel('fuel burn (kg)')
-    CS_const = plt.contour(inputs[0,:],inputs[1,:], constraints[0,:,:])
+    cbar.ax.set_ylabel('Fuel Burn (kg)')
+    CS_const = plt.contour(inputs[0,:],inputs[1,:], constraints[-1,:,:],cmap=plt.get_cmap('hot'))
+    plt.clabel(CS_const, inline=1, fontsize=12, family='times new roman')
+    cbar = plt.colorbar(CS_const)
+    # plt.FontProperties(family='times new roman', style='italic', size=12)
+    cbar.ax.set_ylabel('BOW (kg)')
+    # font = matplotlib.font_manager.FontProperties(family='times new roman', style='italic', size=12)
+
+    # CS_const.font_manager.FontProperties.set_family(family='times new roman')
+
+    plt.xlabel('Wing Area (m^2)')
+    plt.ylabel('Aspect Ratio (-)')
+
+    plt.legend(loc='upper left')  
+    # plt.show(block=True)
+    plt.show()
+
+    number_of_points = 5
+    outputs = carpet_plot(problem, number_of_points, 0, 0, sweep_index_0=1, sweep_index_1=3)  # run carpet plot, suppressing default plots
+    inputs = outputs.inputs
+    objective = outputs.objective
+    constraints = outputs.constraint_val
+    plt.figure(0)
+    CS = plt.contourf(inputs[0, :], inputs[1, :], objective, 20, linewidths=2)
+    cbar = plt.colorbar(CS)
+
+    cbar.ax.set_ylabel('Fuel Burn (kg)')
+    CS_const = plt.contour(inputs[0, :], inputs[1, :], constraints[-1, :, :], cmap=plt.get_cmap('hot'))
     plt.clabel(CS_const, inline=1, fontsize=10)
     cbar = plt.colorbar(CS_const)
-    cbar.ax.set_ylabel('fuel margin')
-    
-    plt.xlabel('Wing Area (m^2)')
-    plt.ylabel('Cruise Altitude (km)')
-    
-    plt.legend(loc='upper left')  
-    plt.show(block=True)    
-    
+    cbar.ax.set_ylabel('BOW (kg)')
+
+    plt.xlabel('AR (-)')
+    plt.ylabel('Sweep Angle (Deg)')
+
+    plt.legend(loc='upper left')
+    plt.show()
+
+    number_of_points = 5
+    outputs = carpet_plot(problem, number_of_points, 0, 0, sweep_index_0=2,
+                          sweep_index_1=3)  # run carpet plot, suppressing default plots
+    inputs = outputs.inputs
+    objective = outputs.objective
+    constraints = outputs.constraint_val
+    plt.figure(0)
+    CS = plt.contourf(inputs[0, :], inputs[1, :], objective, 20, linewidths=2)
+    cbar = plt.colorbar(CS)
+
+    cbar.ax.set_ylabel('Fuel Burn (kg)')
+    CS_const = plt.contour(inputs[0, :], inputs[1, :], constraints[-1, :, :], cmap=plt.get_cmap('hot'))
+    plt.clabel(CS_const, inline=1, fontsize=10)
+    cbar = plt.colorbar(CS_const)
+    cbar.ax.set_ylabel('BOW (kg)')
+
+    plt.xlabel('t/c (-)')
+    plt.ylabel('Sweep Angle (Deg)')
+
+    plt.legend(loc='upper left')
+    plt.show(block=True)
+
     return
 
 if __name__ == '__main__':

@@ -3,58 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="214de0ce-e113-456a-9c09-c416a2e210a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_aero.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_aero.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_aero.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_aero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_compress_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_compress_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_drag.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_drag.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_drag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_engine.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_engine.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_engine.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_engine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_engine_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_engine_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_mission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_mission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_mission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_mission.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_mission_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_mission_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_parasite_drag.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_parasite_drag.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/E170_weight_breakdown.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/E170_weight_breakdown.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/E170/TOFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/E170/TOFL.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turbofan/Missions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Missions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/Opt_turbofan.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Opt_turbofan.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turbofan/Optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Optimize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turbofan/Procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Procedure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/Vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/Vehicles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/aero0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/aero1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/aero2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/compress_drag0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/compress_drag1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/compress_drag2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/compress_drag3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/drag0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/drag1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/drag2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine_data0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine_data1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine_data2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/engine_data3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission_breakdown0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission_breakdown1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission_breakdown2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/mission_breakdown3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/parasite_drag0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/parasite_drag1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/parasite_drag2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/parasite_drag3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/weight_breakdown0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/weight_breakdown1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/weight_breakdown2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turbofan/weight_breakdown3.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/aero-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/aero-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/compress_drag-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/compress_drag-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/drag-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/drag-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/engine-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/engine-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/engine_data-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/engine_data-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/mission-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/mission-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/mission_breakdown-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/mission_breakdown-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/parasite_drag-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/parasite_drag-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turbofan/weight_breakdown-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Turbofan/weight_breakdown-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/ATR72_600/Data/ATR72_600.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/ATR72_600/Data/ATR72_600.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Analyses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Analyses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Missions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Missions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Optimize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Plot_Mission.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Plot_Mission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Procedure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turboprop/Vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turboprop/Vehicles.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,11 +35,11 @@
     <session id="577967951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="2" />
@@ -85,28 +54,28 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="145" />
+          <entry key="py" value="175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="145" />
+          <entry key="Python" value="175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="64" />
-          <entry key="py" value="15196" />
+          <entry key="py" value="17388" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="15260" />
+          <entry key="Python" value="17452" />
         </counts>
       </usages-collector>
     </session>
@@ -119,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Turbofan/Optimize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="197">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="e#283#295#0" expanded="true" />
               </folding>
@@ -131,35 +100,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Turbofan/Procedure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="543" column="28" selection-start-line="543" selection-start-column="28" selection-end-line="543" selection-end-column="28" />
+            <state relative-caret-position="92">
+              <caret line="288" selection-start-line="288" selection-end-line="288" />
               <folding>
                 <element signature="e#252#270#0" expanded="true" />
-                <marker date="1537576920563" expanded="true" signature="16114:18475" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Turbofan/Vehicles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-              <folding>
-                <element signature="e#253#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Turbofan/E170/E170.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-              <folding>
-                <element signature="e#268#286#0" expanded="true" />
+                <marker date="1537913857248" expanded="true" signature="17265:19636" ph="..." />
               </folding>
             </state>
           </provider>
@@ -204,17 +149,19 @@
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform/wing_planform.py" />
         <option value="$PROJECT_DIR$/Turbofan/Plot_Mission.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_landing_field_length.py" />
-        <option value="$PROJECT_DIR$/Turbofan/Missions.py" />
         <option value="$PROJECT_DIR$/Turbofan/E170/E170.py" />
         <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py" />
         <option value="$PROJECT_DIR$/Turbofan/Vehicles.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Throttle_Constant_Speed.py" />
+        <option value="$PROJECT_DIR$/Turbofan/Missions.py" />
+        <option value="$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/Package_Setups/scipy_setup.py" />
         <option value="$PROJECT_DIR$/Turbofan/Procedure.py" />
         <option value="$PROJECT_DIR$/Turbofan/Optimize.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -223,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,11 +187,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/projetos1suave" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Turboprop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -307,6 +254,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Optimize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <output_file path="$PROJECT_DIR$/Turbofan/log_file.txt" is_save="true" />
       <module name="1_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,16 +311,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49382716" weight="0.234375" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49382716" weight="0.47799698" />
+      <window_info id="Structure" order="1" sideWeight="0.50617284" side_tool="true" weight="0.234375" />
+      <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985119" visible="true" weight="0.452459" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46721312" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3294509" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014881" side_tool="true" weight="0.34754097" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49382716" weight="0.47799698" />
       <window_info id="Structure" order="1" sideWeight="0.50617284" side_tool="true" weight="0.234375" />
       <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985119" visible="true" weight="0.3527454" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46755406" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46721312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -383,25 +350,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49382716" visible="true" weight="0.234375" />
-      <window_info id="Structure" order="1" sideWeight="0.50617284" side_tool="true" weight="0.234375" />
-      <window_info id="Favorites" order="2" sideWeight="0.50374067" side_tool="true" weight="0.21752267" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.3442623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46885246" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.33442622" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -409,6 +357,28 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Common/Sub_Segments.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Turbofan/Procedure.py</url>
+          <line>472</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Turbofan/Optimize.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Turbofan/Procedure.py</url>
+          <line>279</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -451,34 +421,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Climb/Constant_Speed_Constant_Rate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Input_Output/Results/print_engine_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="118" column="43" lean-forward="true" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Cruise/Common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/matplotlib/cbook/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="609" column="21" lean-forward="true" selection-start-line="609" selection-start-column="21" selection-end-line="609" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -490,13 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
           <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Climb/Constant_Throttle_Constant_Speed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-478">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -549,27 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Throttle_Constant_Speed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Common/Sub_Segments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Energy/Energy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -588,27 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/scipy/optimize/minpack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3570">
-          <caret line="226" selection-start-line="226" selection-end-line="226" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/converge_root.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
@@ -664,16 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="104" column="43" lean-forward="true" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
-          <folding>
-            <element signature="e#269#287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Turboprop/ATR72.py" />
     <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Aerodynamics/Common/Fidelity_Zero/Drag/induced_drag_aircraft.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -685,9 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="161" column="72" selection-start-line="161" selection-start-column="72" selection-end-line="161" selection-end-column="72" />
-          <folding>
-            <element signature="e#157#169#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,67 +628,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/Nexus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="132" column="49" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Turbofan/Plot_Mission.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="e#238#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/carpet_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Turbofan/Missions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="e#251#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Turbofan/E170/E170.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-          <folding>
-            <element signature="e#268#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Turbofan/Vehicles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#253#265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-          <folding>
-            <element signature="e#358#370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,21 +642,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/Nexus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/write_optimization_outputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="78" column="4" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="78" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Performance/estimate_take_off_field_length.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Throttle_Constant_Speed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/converge_root.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/scipy/optimize/minpack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Common/Aerodynamics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Mission/Segments/Climb/Constant_Throttle_Constant_Speed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="65" column="8" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Methods/Missions/Segments/Common/Sub_Segments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/E170/E170.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12971">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Missions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Turbofan/Vehicles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="82" column="51" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Analyses/Atmospheric/US_Standard_1976.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/carpet_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="102" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/SUAVE/trunk/SUAVE/Optimization/Package_Setups/scipy_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding>
+            <element signature="e#298#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Turbofan/Procedure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="543" column="28" selection-start-line="543" selection-start-column="28" selection-end-line="543" selection-end-column="28" />
+        <state relative-caret-position="92">
+          <caret line="288" selection-start-line="288" selection-end-line="288" />
           <folding>
             <element signature="e#252#270#0" expanded="true" />
-            <marker date="1537576920563" expanded="true" signature="16114:18475" ph="..." />
+            <marker date="1537913857248" expanded="true" signature="17265:19636" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Turbofan/Optimize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="197">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#283#295#0" expanded="true" />
           </folding>

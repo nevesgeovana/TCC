@@ -1,0 +1,26 @@
+MTOW: 37199.4 kg, BOW: 20735.4 kg
+Cruise altitude: 35000.0 ft
+TOFL: 1518.4 m, Second Segment Climb Gradient: 0.03099
+TOW for Hot and High: 36652.9
+LFL for MLW (32798.7 kg): 1263.3 m
+Time to climb to cruise altitude: 21.3 min
+Design Range: 1340.0
+Maximum Fuel available: 9428.0 kg
+Fuel Burn: 7091.9 kg
+Beta: 1.0 , Objective: 7091.9394
+
+
+[0.7091939352333415]
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[0.7272  0.086   0.11    0.23    0.11032 1.     ]
+Obj
+[0.7091939352333415]
+Inputs
+[0.7272  0.086   0.11    0.23    0.11032 1.     ]
+Obj
+[0.7091939352333415]
+Inputs
+[0.72720001 0.086      0.11       0.23       0.11032    1.        ]
+MTOW: 37184.7 kg, BOW: 20720.7 kg
+Cruise altitude: 34700.0 ft

@@ -1,0 +1,10 @@
+Output file with engine data 
+
+  VEHICLE TAG : ATR72
+
+
+ DELTA ISA:   0 degC
+
+        |                                         SPEED [KTAS]                                                |                            SPEED [KTAS]                                 
+        |       100       122       144       167       189       211       233       256       278       300 |      100    122    144    167    189    211    233    256    278    300 
+ HP[ft] |                                         THRUST [lbf]                                                |                               SFC [adm]                                 |
