@@ -1,0 +1,2702 @@
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+[0.09654683983119394]
+ 
+ Initial Guess Results 
+ 
+Fuel Burn   =  2008.17426849
+Cruise Fuel =  1045.14835989
+Block  Fuel =  1251.232389
+MTOW        =  23000.0
+BOW         =  13500.0
+TOFL        =  1389.70326506
+GRAD        =  0.0395421155624
+Cruise Alt  =  6400.8
+Design Ran  =  499.798258132
+Cruise Ran  =  414.340876261
+Total Ran   =  780.68368856
+Time To Cli =  34.7785241443
+TOW HH      =  21003.6741025
+Fuel HH     =  1103.67410249
+ 
+Constraints =  [-0.001      -0.00817427  0.06243264  0.00080217  0.01296735  0.04017419
+ -0.02017419  0.01214759  0.00014212  0.00461025  0.0001      0.03674102]
+ 
+S           =  61.0
+AR          =  12.0
+t/c         =  0.15
+Sweep Ang   =  3
+Pareto Frontier. Run number: 0
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[1.        1.        1.        1.        1.        0.9923913]
+Obj
+[0.09654683983119394]
+Inputs
+[1.        1.        1.        1.        1.        0.9923913]
+Obj
+[0.09654683983119394]
+Inputs
+[1.00000001 1.         1.         1.         1.         0.9923913 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.09654683994461948]
+Inputs
+[1.         1.00000001 1.         1.         1.         0.9923913 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.0965468395797741]
+Inputs
+[1.         1.         1.00000001 1.         1.         0.9923913 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.09654683992255758]
+Inputs
+[1.         1.         1.         1.00000001 1.         0.9923913 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.09654684037966157]
+Inputs
+[1.         1.         1.         1.         1.00000001 0.9923913 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.09654684056119898]
+Inputs
+[1.         1.         1.         1.         1.         0.99239132]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Obj
+[0.09654683983119394]
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1389.7 m, Second Segment Climb Gradient: 0.03954
+TOW for Hot and High: 21003.7
+LFL for MLW (22350.0 kg): 916.5 m
+Fuel Margin: -8.17 kg
+BOW: 13500.0 kg
+MTOW target: 23008.2 kg, MZFW target: 21000.0
+MZFW: 20999.0 kg, MZFW difference: -1.0
+MTOW: 23000.0 kg, MTOW difference: -8.2
+Fuel available - HH: 1103.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.8
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2008.2 kg
+MTOW: 23000.0
+Beta: 1.0 , Objective: 0.9655
+
+
+    1     8     9.654684E-02     6.430376E-02
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060894 1.00129938 0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 1.0 , Objective: 0.9653
+
+
+Obj
+[0.09652937900075603]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0965293790008
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+[1.00174748 1.00736097 1.00105805 1.00060894 1.00129938 0.99219316]
+ 
+ Final Results 
+ 
+Fuel Burn   =  2007.81108322
+Cruise Fuel =  1045.0586674
+Block  Fuel =  1250.98555028
+MTOW        =  23029.8857681
+BOW         =  13522.1400047
+TOFL        =  1391.00241696
+GRAD        =  0.0398163529433
+Cruise Alt  =  6400.8
+Design Ran  =  500.000000007
+Cruise Ran  =  414.542618136
+Total Ran   =  780.885430435
+Time To Cli =  34.7785241443
+TOW HH      =  21080.6340948
+Fuel HH     =  1158.49409007
+ 
+Constraints =  [-5.24931521e-05 -6.53197861e-05  6.11511790e-02  1.80295532e-03
+ -2.41696301e-05  1.99999993e-02  7.43273176e-10  1.21475856e-02
+  4.16352943e-04  6.51803072e-03  8.71895262e-04  5.84940901e-01]
+ 
+S           =  61.10659597971219
+AR          =  12.088331603275545
+t/c         =  0.15015870767945116
+Sweep Ang   =  3
+Pareto Frontier. Run number: 1
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060894 1.00129938 0.99219316]
+Obj
+[0.09652937900075603]
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060894 1.00129938 0.99219316]
+Obj
+[0.09652937900075603]
+Inputs
+[1.00174749 1.00736097 1.00105805 1.00060894 1.00129938 0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.0974295188679972]
+Inputs
+[1.00174748 1.00736098 1.00105805 1.00060894 1.00129938 0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742951859528351]
+Inputs
+[1.00174748 1.00736097 1.00105807 1.00060894 1.00129938 0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742951884984033]
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060896 1.00129938 0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742951919227519]
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060894 1.0012994  0.99219316]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742951969816897]
+Inputs
+[1.00174748 1.00736097 1.00105805 1.00060894 1.00129938 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742951878113906]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23030.0 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+    1     8     9.652938E-02     1.479672E+05
+Inputs
+[0.93297121 0.93208163 0.93652517 0.9392863  0.98400577 0.99328289]
+Cruise altitude: 21000.0 ft
+TOFL: 1461.7 m, Second Segment Climb Gradient: 0.03466
+TOW for Hot and High: 19892.6
+LFL for MLW (21992.5 kg): 969.2 m
+Fuel Margin: -10.19 kg
+BOW: 13186.5 kg
+MTOW target: 22642.3 kg, MZFW target: 20686.5
+MZFW: 20681.7 kg, MZFW difference: -4.8
+MTOW: 22632.1 kg, MTOW difference: -10.2
+Fuel available - HH: 306.1 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 479.7
+Maximum Fuel available: 3968.2 kg
+Fuel Burn: 1955.8 kg
+MTOW: 22632.1
+Beta: 0.8 , Objective: 0.9512
+
+
+Obj
+[0.0951232704301906]
+Inputs
+[0.98485328 0.98886936 0.9852062  0.98554566 0.99705138 0.99246084]
+Cruise altitude: 21000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Segment did not converge. Segment Tag: descent_2
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+TOFL: 1405.1 m, Second Segment Climb Gradient: 0.03864
+TOW for Hot and High: 20793.0
+LFL for MLW (22284.1 kg): 927.6 m
+Fuel Margin: -0.81 kg
+BOW: 13438.9 kg
+MTOW target: 22933.0 kg, MZFW target: 20938.9
+MZFW: 20938.5 kg, MZFW difference: -0.3
+MTOW: 22932.2 kg, MTOW difference: -0.8
+Fuel available - HH: 954.1 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 495.0
+Maximum Fuel available: 4740.2 kg
+Fuel Burn: 1994.1 kg
+MTOW: 22932.2
+Beta: 0.8 , Objective: 0.9683
+
+
+Obj
+[0.0968294775774303]
+Inputs
+[0.99712663 1.0023032  0.9967223  0.99648888 1.00013748 0.99226638]
+Cruise altitude: 21000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+TOFL: 1394.6 m, Second Segment Climb Gradient: 0.03950
+TOW for Hot and High: 21002.3
+LFL for MLW (22353.1 kg): 919.3 m
+Fuel Margin: -0.46 kg
+BOW: 13499.3 kg
+MTOW target: 23003.6 kg, MZFW target: 20999.3
+MZFW: 20999.2 kg, MZFW difference: -0.1
+MTOW: 23003.2 kg, MTOW difference: -0.5
+Fuel available - HH: 1102.9 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 498.6
+Maximum Fuel available: 4928.6 kg
+Fuel Burn: 2004.3 kg
+MTOW: 23003.2
+Beta: 0.8 , Objective: 0.9727
+
+
+Obj
+[0.09727429351684647]
+Inputs
+[1.00034727 1.00582836 0.99974423 0.99936048 1.0009473  0.99221535]
+Cruise altitude: 21000.0 ft
+TOFL: 1392.1 m, Second Segment Climb Gradient: 0.03972
+TOW for Hot and High: 21056.9
+LFL for MLW (22371.2 kg): 917.2 m
+Fuel Margin: -0.07 kg
+BOW: 13515.2 kg
+MTOW target: 23021.9 kg, MZFW target: 21015.2
+MZFW: 21015.2 kg, MZFW difference: -0.1
+MTOW: 23021.8 kg, MTOW difference: -0.1
+Fuel available - HH: 1141.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.6
+Maximum Fuel available: 4978.4 kg
+Fuel Burn: 2006.6 kg
+MTOW: 23021.8
+Beta: 0.8 , Objective: 0.9738
+
+
+Obj
+[0.09737837383666006]
+Inputs
+[1.0013217  1.00689493 1.00065855 1.00022931 1.00119232 0.99219991]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.3 m, Second Segment Climb Gradient: 0.03979
+TOW for Hot and High: 21073.4
+LFL for MLW (22376.7 kg): 916.6 m
+Fuel Margin: -0.07 kg
+BOW: 13520.0 kg
+MTOW target: 23027.5 kg, MZFW target: 21020.0
+MZFW: 21020.0 kg, MZFW difference: -0.1
+MTOW: 23027.4 kg, MTOW difference: -0.1
+Fuel available - HH: 1153.4 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.9
+Maximum Fuel available: 4993.5 kg
+Fuel Burn: 2007.5 kg
+MTOW: 23027.4
+Beta: 0.8 , Objective: 0.9741
+
+
+Obj
+[0.09741394926649545]
+Inputs
+[1.00161773 1.00721895 1.00093631 1.00049325 1.00126676 0.99219522]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.1 m, Second Segment Climb Gradient: 0.03981
+TOW for Hot and High: 21078.4
+LFL for MLW (22378.3 kg): 916.4 m
+Fuel Margin: -0.07 kg
+BOW: 13521.5 kg
+MTOW target: 23029.2 kg, MZFW target: 21021.5
+MZFW: 21021.4 kg, MZFW difference: -0.1
+MTOW: 23029.1 kg, MTOW difference: -0.1
+Fuel available - HH: 1156.9 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4998.1 kg
+Fuel Burn: 2007.7 kg
+MTOW: 23029.1
+Beta: 0.8 , Objective: 0.9742
+
+
+Obj
+[0.09742477259998199]
+Inputs
+[1.00170765 1.00731738 1.00102069 1.00057343 1.00128937 0.99219379]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03981
+TOW for Hot and High: 21080.0
+LFL for MLW (22378.8 kg): 916.4 m
+Fuel Margin: -0.07 kg
+BOW: 13521.9 kg
+MTOW target: 23029.7 kg, MZFW target: 21021.9
+MZFW: 21021.9 kg, MZFW difference: -0.1
+MTOW: 23029.7 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.0 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4999.5 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.7
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742806191276812]
+Inputs
+[1.00173496 1.00734727 1.00104631 1.00059778 1.00129623 0.99219336]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.4
+LFL for MLW (22379.0 kg): 916.4 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.0 kg, MZFW difference: -0.1
+MTOW: 23029.8 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.3 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4999.9 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.8
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742906092467374]
+Inputs
+[1.00174322 1.00735631 1.00105406 1.00060515 1.00129831 0.99219323]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.0 kg): 916.4 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.4 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742936317446364]
+Inputs
+[1.00174578 1.00735912 1.00105646 1.00060743 1.00129896 0.99219319]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742945689362148]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.8 , Objective: 0.9743
+
+
+Obj
+[0.09742949419234212]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.0974294941923
+            Iterations: 1
+            Function evaluations: 19
+            Gradient evaluations: 1
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+ 
+ Final Results 
+ 
+Fuel Burn   =  2007.81051846
+Cruise Fuel =  1045.05819117
+Block  Fuel =  1250.98505452
+MTOW        =  23029.8818812
+BOW         =  13522.1366818
+TOFL        =  1391.00293562
+GRAD        =  0.0398163073838
+Cruise Alt  =  6400.8
+Design Ran  =  499.999801474
+Cruise Ran  =  414.542419603
+Total Ran   =  780.885231902
+Time To Cli =  34.7785241443
+TOW HH      =  21080.6227122
+Fuel HH     =  1158.48603038
+ 
+Constraints =  [-5.24926397e-05 -6.53190117e-05  6.11513722e-02  1.80287671e-03
+ -2.93561995e-05  2.00198526e-02 -1.98525768e-05  1.21475856e-02
+  4.16307384e-04  6.51379663e-03  7.67654779e-04  5.84860304e-01]
+ 
+S           =  61.106554982031966
+AR          =  12.088322775568368
+t/c         =  0.1501586130855449
+Sweep Ang   =  3
+Pareto Frontier. Run number: 2
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+Obj
+[0.09742949419234212]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+Obj
+[0.09742949419234212]
+Inputs
+[1.00174682 1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.0983296365937915]
+Inputs
+[1.0017468  1.00736025 1.00105742 1.00060834 1.00129921 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.09832963641191801]
+Inputs
+[1.0017468  1.00736023 1.00105744 1.00060834 1.00129921 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.09832963658207206]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060836 1.00129921 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.0983296368099519]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129923 0.99219317]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.0983296376438605]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Obj
+[0.09832963653578909]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.5 , Objective: 0.9833
+
+
+    5     8     9.742949E-02     1.479677E+05
+Positive directional derivative for linesearch    (Exit mode 8)
+            Current function value: 0.0974294941923
+            Iterations: 5
+            Function evaluations: 8
+            Gradient evaluations: 1
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219317]
+ 
+ Final Results 
+ 
+Fuel Burn   =  2007.81051846
+Cruise Fuel =  1045.05819117
+Block  Fuel =  1250.98505452
+MTOW        =  23029.8818812
+BOW         =  13522.1366964
+TOFL        =  1391.00293562
+GRAD        =  0.0398163073838
+Cruise Alt  =  6400.8
+Design Ran  =  499.999801474
+Cruise Ran  =  414.542419603
+Total Ran   =  780.885231902
+Time To Cli =  34.7785241443
+TOW HH      =  21080.6227122
+Fuel HH     =  1158.48601572
+ 
+Constraints =  [-5.21915792e-05 -6.53336694e-05  6.11513722e-02  1.80287671e-03
+ -2.93561995e-05  2.00198526e-02 -1.98525768e-05  1.21475856e-02
+  4.16307384e-04  6.51379663e-03  7.67654779e-04  5.84860157e-01]
+ 
+S           =  61.106554982031966
+AR          =  12.088322775568368
+t/c         =  0.1501586130855449
+Sweep Ang   =  3
+Pareto Frontier. Run number: 3
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219318]
+Obj
+[0.09832963653578909]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219318]
+Obj
+[0.09832963653578909]
+Inputs
+[1.00174682 1.00736023 1.00105742 1.00060834 1.00129921 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922977890823724]
+Inputs
+[1.0017468  1.00736025 1.00105742 1.00060834 1.00129921 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922977881730051]
+Inputs
+[1.0017468  1.00736023 1.00105744 1.00060834 1.00129921 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922977890237752]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060836 1.00129921 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922977901631744]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129923 0.99219318]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922978017832981]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Obj
+[0.09922977887923604]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.2 , Objective: 0.9923
+
+
+    5     8     9.832964E-02     1.479677E+05
+Positive directional derivative for linesearch    (Exit mode 8)
+            Current function value: 0.0983296365358
+            Iterations: 5
+            Function evaluations: 8
+            Gradient evaluations: 1
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219318]
+ 
+ Final Results 
+ 
+Fuel Burn   =  2007.81051846
+Cruise Fuel =  1045.05819117
+Block  Fuel =  1250.98505452
+MTOW        =  23029.8818812
+BOW         =  13522.1367111
+TOFL        =  1391.00293562
+GRAD        =  0.0398163073838
+Cruise Alt  =  6400.8
+Design Ran  =  499.999801474
+Cruise Ran  =  414.542419603
+Total Ran   =  780.885231902
+Time To Cli =  34.7785241443
+TOW HH      =  21080.6227122
+Fuel HH     =  1158.48600106
+ 
+Constraints =  [-5.18905187e-05 -6.53483271e-05  6.11513722e-02  1.80287671e-03
+ -2.93561995e-05  2.00198526e-02 -1.98525768e-05  1.21475856e-02
+  4.16307384e-04  6.51379663e-03  7.67654779e-04  5.84860011e-01]
+ 
+S           =  61.106554982031966
+AR          =  12.088322775568368
+t/c         =  0.1501586130855449
+Sweep Ang   =  3
+Pareto Frontier. Run number: 4
+  NIT    FC           OBJFUN            GNORM
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.9921932 ]
+Obj
+[0.09922977887923604]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.9921932 ]
+Obj
+[0.09922977887923604]
+Inputs
+[1.00174682 1.00736023 1.00105742 1.00060834 1.00129921 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992122268301]
+Inputs
+[1.0017468  1.00736025 1.00105742 1.00060834 1.00129921 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992122268301]
+Inputs
+[1.0017468  1.00736023 1.00105744 1.00060834 1.00129921 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992122268301]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060836 1.00129921 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992122268301]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129923 0.9921932 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992271279912]
+Inputs
+[1.0017468  1.00736023 1.00105742 1.00060834 1.00129921 0.99219321]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012992122268301]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+    1     8     9.922978E-02     1.479677E+05
+Inputs
+[0.81967213 0.83333333 0.80910316 0.93570782 0.94663576 0.99592641]
+Cruise altitude: 21000.0 ft
+TOFL: 1664.1 m, Second Segment Climb Gradient: 0.02696
+TOW for Hot and High: 18099.6
+LFL for MLW (21157.3 kg): 1106.9 m
+Fuel Margin: -379.28 kg
+BOW: 12704.7 kg
+MTOW target: 22151.9 kg, MZFW target: 20204.7
+MZFW: 19949.2 kg, MZFW difference: -255.4
+MTOW: 21772.6 kg, MTOW difference: -379.3
+Fuel available - HH: -1005.1 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 478.5
+Maximum Fuel available: 2193.5 kg
+Fuel Burn: 1947.2 kg
+MTOW: 21772.6
+Beta: 0.0 , Objective: 0.9466
+
+
+Obj
+[0.09466357577987461]
+Inputs
+[0.96031387 0.96775865 0.95737629 0.98583957 0.98885999 0.99304273]
+Cruise altitude: 21000.0 ft
+TOFL: 1425.1 m, Second Segment Climb Gradient: 0.03744
+TOW for Hot and High: 20421.8
+LFL for MLW (22101.0 kg): 944.8 m
+Fuel Margin: -74.41 kg
+BOW: 13331.2 kg
+MTOW target: 22818.2 kg, MZFW target: 20831.2
+MZFW: 20778.7 kg, MZFW difference: -52.5
+MTOW: 22743.8 kg, MTOW difference: -74.4
+Fuel available - HH: 690.6 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 495.1
+Maximum Fuel available: 4309.9 kg
+Fuel Burn: 1987.0 kg
+MTOW: 22743.8
+Beta: 0.0 , Objective: 0.9889
+
+
+Obj
+[0.09888599914876468]
+Inputs
+[0.99113726 0.99721963 0.98987219 0.99682657 0.99811396 0.99241074]
+Cruise altitude: 21000.0 ft
+TOFL: 1398.4 m, Second Segment Climb Gradient: 0.03924
+TOW for Hot and High: 20913.2
+LFL for MLW (22307.9 kg): 922.9 m
+Fuel Margin: -18.50 kg
+BOW: 13473.0 kg
+MTOW target: 22975.1 kg, MZFW target: 20973.0
+MZFW: 20959.8 kg, MZFW difference: -13.2
+MTOW: 22956.6 kg, MTOW difference: -18.5
+Fuel available - HH: 1040.2 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 498.7
+Maximum Fuel available: 4820.5 kg
+Fuel Burn: 2002.2 kg
+MTOW: 22956.6
+Beta: 0.0 , Objective: 0.9981
+
+
+Obj
+[0.09981139557540206]
+Inputs
+[0.99889448 1.00463398 0.99805032 0.99959163 1.00044287 0.99225168]
+Cruise altitude: 21000.0 ft
+Segment did not converge. Segment Tag: cruise
+Error Message:
+The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+TOFL: 1392.9 m, Second Segment Climb Gradient: 0.03966
+TOW for Hot and High: 21035.7
+LFL for MLW (22359.9 kg): 918.1 m
+Fuel Margin: -5.32 kg
+BOW: 13508.9 kg
+MTOW target: 23015.5 kg, MZFW target: 21008.9
+MZFW: 21005.3 kg, MZFW difference: -3.6
+MTOW: 23010.2 kg, MTOW difference: -5.3
+Fuel available - HH: 1126.8 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.7
+Maximum Fuel available: 4951.6 kg
+Fuel Burn: 2006.6 kg
+MTOW: 23010.2
+Beta: 0.0 , Objective: 1.0004
+
+
+Obj
+[0.10004428712961877]
+Inputs
+[1.0009345  1.00658384 1.00020105 1.0003188  1.00105534 0.99220986]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.5 m, Second Segment Climb Gradient: 0.03977
+TOW for Hot and High: 21067.8
+LFL for MLW (22373.6 kg): 916.8 m
+Fuel Margin: -1.46 kg
+BOW: 13518.4 kg
+MTOW target: 23025.7 kg, MZFW target: 21018.4
+MZFW: 21017.3 kg, MZFW difference: -1.0
+MTOW: 23024.3 kg, MTOW difference: -1.5
+Fuel available - HH: 1149.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 499.9
+Maximum Fuel available: 4986.3 kg
+Fuel Burn: 2007.4 kg
+MTOW: 23024.3
+Beta: 0.0 , Objective: 1.0011
+
+
+Obj
+[0.10010553395683057]
+Inputs
+[1.00151412 1.00713784 1.00081212 1.0005254  1.00122936 0.99219797]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.2 m, Second Segment Climb Gradient: 0.03980
+TOW for Hot and High: 21077.0
+LFL for MLW (22377.5 kg): 916.5 m
+Fuel Margin: -0.47 kg
+BOW: 13521.1 kg
+MTOW target: 23028.7 kg, MZFW target: 21021.1
+MZFW: 21020.7 kg, MZFW difference: -0.3
+MTOW: 23028.3 kg, MTOW difference: -0.5
+Fuel available - HH: 1155.9 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4996.1 kg
+Fuel Burn: 2007.7 kg
+MTOW: 23028.3
+Beta: 0.0 , Objective: 1.0012
+
+
+Obj
+[0.10012293562375503]
+Inputs
+[1.0016799  1.00729628 1.00098688 1.00058449 1.00127913 0.99219457]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03981
+TOW for Hot and High: 21079.6
+LFL for MLW (22378.6 kg): 916.4 m
+Fuel Margin: -0.18 kg
+BOW: 13521.8 kg
+MTOW target: 23029.6 kg, MZFW target: 21021.8
+MZFW: 21021.7 kg, MZFW difference: -0.1
+MTOW: 23029.4 kg, MTOW difference: -0.2
+Fuel available - HH: 1157.7 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4998.9 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.4
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012791255453653]
+Inputs
+[1.0017273  1.00734159 1.00103686 1.00060139 1.00129336 0.9921936 ]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.3
+LFL for MLW (22378.9 kg): 916.4 m
+Fuel Margin: -0.10 kg
+BOW: 13522.0 kg
+MTOW target: 23029.8 kg, MZFW target: 21022.0
+MZFW: 21022.0 kg, MZFW difference: -0.1
+MTOW: 23029.7 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.3 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 4999.7 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.7
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012933576992769]
+Inputs
+[1.00174084 1.00735453 1.00105114 1.00060622 1.00129742 0.99219332]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.5
+LFL for MLW (22379.0 kg): 916.4 m
+Fuel Margin: -0.08 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.0 kg, MZFW difference: -0.1
+MTOW: 23029.8 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.4 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.8
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012974225619094]
+Inputs
+[1.00174464 1.00735817 1.00105514 1.00060757 1.00129856 0.99219324]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.0 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.0 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012985636649392]
+Inputs
+[1.00174595 1.00735941 1.00105652 1.00060804 1.00129896 0.99219322]
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.07 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 0.0 , Objective: 1.0013
+
+
+Obj
+[0.10012989552710963]
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.100129895527
+            Iterations: 1
+            Function evaluations: 19
+            Gradient evaluations: 1
+[1.00174595 1.00735941 1.00105652 1.00060804 1.00129896 0.99219322]
+ 
+ Final Results 
+ 
+Fuel Burn   =  2007.81005368
+Cruise Fuel =  1045.05788647
+Block  Fuel =  1250.98471644
+MTOW        =  23029.8759712
+BOW         =  13522.1327366
+TOFL        =  1391.00349122
+GRAD        =  0.0398162612899
+Cruise Alt  =  6400.8
+Design Ran  =  499.999700402
+Cruise Ran  =  414.542318531
+Total Ran   =  780.88513083
+Time To Cli =  34.7785241443
+TOW HH      =  21080.6092428
+Fuel HH     =  1158.47650622
+ 
+Constraints =  [-5.29389400e-05 -6.68190318e-05  6.11515900e-02  1.80285858e-03
+ -3.49122423e-05  2.00299598e-02 -2.99597771e-05  1.21475856e-02
+  4.16261290e-04  6.50872647e-03  6.21946740e-04  5.84765062e-01]
+ 
+S           =  61.10650277360467
+AR          =  12.088312959018776
+t/c         =  0.15015847773804272
+Sweep Ang   =  3
+Total run time: 6178.28500009

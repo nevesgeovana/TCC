@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from SUAVE.Optimization import Nexus, carpet_plot
 import SUAVE.Optimization.Package_Setups.scipy_setup as scipy_setup
+import SUAVE.Optimization.Package_Setups.pyopt_setup as pyopt_setup
 from copy import deepcopy
 from timeit import time
 # ----------------------------------------------------------------------        
@@ -33,7 +34,7 @@ def main():
     ## Base Input Values
     output = problem.objective()
     print output
-    Plot_Mission.plot_mission(problem, -1)
+    # Plot_Mission.plot_mission(problem, -1)
 
     # # Uncomment to view contours of the design space
     # variable_sweep(problem)
@@ -62,8 +63,9 @@ def main():
     last_inputs = problem.last_inputs[:, 1]
     print 'S           = ', last_inputs[0]
     print 'AR          = ', last_inputs[1]
-    print 't/c         = ', last_inputs[2]
-    print 'Sweep Ang   = ', last_inputs[3]
+    print 'Taper       = ', last_inputs[2]
+    print 't/c         = ', last_inputs[3]
+    print 'Sweep       = ', last_inputs[4]
     # ------------------------------------------------------------------
     # Pareto
 
@@ -75,7 +77,7 @@ def main():
     tofl = []
     variations = []
 
-    fid = open('DoE_results.txt', 'w')  # Open output file
+    fid = open('DoE_results2.txt', 'w')  # Open output file
     fid.write(' DoE results \n')
     fid.close()
 
@@ -83,14 +85,15 @@ def main():
     original_values = deepcopy(problem.optimization_problem.inputs[:, 1])
     original_bounds = deepcopy(problem.optimization_problem.inputs[:, 2])
     for k, delta in enumerate(deltas):
-        for i in range(len(problem.optimization_problem.inputs)-2):
+        for i in range(len(problem.optimization_problem.inputs) - 3):
             fid = open('DoE_results.txt', 'ab')  # Open output file
-            fid.write('DoE - parameter study. Run number: '+str(i+(len(problem.optimization_problem.inputs)-1)*k)+' \n')
-            print ('DoE - parameter study. Run number: '+str(i+(len(problem.optimization_problem.inputs)-1)*k))
-            inputs = [1., 1., 1., 1., 1., 1., 1.]
+            fid.write('DoE - parameter study. Run number: ' + str(
+                i + (len(problem.optimization_problem.inputs) - 3) * k) + ' \n')
+            print ('DoE - parameter study. Run number: ' + str(i + (len(problem.optimization_problem.inputs) - 3) * k))
+            inputs = [1., 1., 1., 1., 1., 1., 1., 1.]
             inputs[i] = delta
             variations.append(inputs)
-            print ('Scaling Inputs: '+str(inputs))
+            print ('Scaling Inputs: ' + str(inputs))
 
             # reset values
             problem.optimization_problem.inputs[:, 1] = deepcopy(original_values)
@@ -109,9 +112,12 @@ def main():
             bounds[i] = tuple(bounds[i])
             problem.optimization_problem.inputs[:, 2] = bounds
 
-            output = scipy_setup.SciPy_Solve(problem, solver='SLSQP')
-            print output
+            output = scipy_setup.SciPy_Solve(problem, solver='SLSQP', sense_step=1.4901161193847656e-05)
+            # output = pyopt_setup.Pyopt_Solve(problem, solver='ALPSO')
+
             finalvalue.append(output)
+
+            print output
             print ' '
             print ' Final Results '
             print ' '
@@ -129,14 +135,19 @@ def main():
             print 'Time To Cli = ', float(problem.summary.time_to_climb_value)
             print 'TOW HH      = ', float(problem.summary.TOW_HH)
             print 'Fuel HH     = ', float(problem.summary.FUEL_HH)
+            print 'Max Throttl = ', float(1. - problem.summary.throttle_max)
+            print 'Max Thr Cli = ', float(problem.summary.max_throttle_climb)
             print ' '
             print 'Constraints = ', problem.all_constraints()
+            print ' '
             last_inputs = finalvalue[-1]
-            print 'S           = ', last_inputs[0]
-            print 'AR          = ', last_inputs[1]
-            print 't/c         = ', last_inputs[2]
-            print 'Sweep Ang   = ', last_inputs[3]
-            Plot_Mission.plot_mission(problem, i)
+            print 'S           = ', last_inputs[0] * 61.
+            print 'AR          = ', last_inputs[1] * 12.
+            print 'Taper       = ', last_inputs[2] * 0.53
+            print 't/c         = ', last_inputs[3] * 0.15
+            print 'Sweep       = ', last_inputs[4] * 3.
+            # -----------------------------------------
+            Plot_Mission.plot_mission(problem, i + (len(problem.optimization_problem.inputs) - 3) * k)
 
             fuelburn.append(problem.summary.base_mission_fuelburn)
             allconstraints.append(problem.all_constraints())
@@ -144,17 +155,18 @@ def main():
             tofl.append(problem.summary.takeoff_field_length)
             MTOW.append(problem.summary.MTOW)
 
-            fid.write(str(fuelburn[-1])+' \n')
+            fid.write(str(fuelburn[-1]) + ' \n')
             fid.write(str(grad[-1]) + ' \n')
             fid.write(str(tofl[-1]) + ' \n')
             fid.write(str(MTOW[-1]) + ' \n')
             fid.write(str(allconstraints[-1]) + ' \n')
-            fid.write(str(variations[-1]) + ' \n')
             fid.write(str(finalvalue[-1]) + ' \n')
             fid.write('\n \n')
             fid.close()
 
-    fid = open('DoE_results.txt', 'ab')  # Open output file
+
+
+    fid = open('Pareto_results.txt', 'ab')  # Open output file
     elapsed = time.time() - t0
 
     fid.write('Total run time: ' + str(elapsed))
@@ -178,16 +190,16 @@ def setup():
     # Inputs
     # -------------------------------------------------------------------
 
-    #   [ tag                            , initial, (lb,ub)             , scaling , units ]
+    #   [ tag          , initial, (lb,ub)             , scaling ,    units]
     problem.inputs = np.array([
-        ['wing_area',      61., (61.0, 61.0),   100., Units.meter**2],
-        ['aspect_ratio',   12.,   (12., 12.),  100.0,     Units.less],
-        ['t_c_ratio',     0.15, (0.15, 0.15),     1.,     Units.less],
-        ['sweep_angle',     3.,   (3.,  3.0),  100.0,      Units.deg],
-        ['taper_ratio',   0.53, (0.53, 0.53),     1.,     Units.less],
-        ['cruise_range', 331.3, (300., 350.), 1000.0, Units.nautical_miles],
-        ['delta_fuel',     8.8, (0., 250.),   1000.0,       Units.kg],  # MTOW consistency
-        # ['beta',            1., (1., 1.), 1.,                   Units.less],
+        ['wing_area',        61.,   (61., 61.),   61.,       Units.meter**2],
+        ['aspect_ratio',     12.,   (12., 12.),  12.0,           Units.less],
+        ['taper_ratio',     0.53, (0.53, 0.53),  0.53,           Units.less],
+        ['t_c_ratio',       0.15, (0.15, 0.15),  0.15,           Units.less],
+        ['sweep_angle',       3.,   (3.0, 3.0),   3.0,            Units.deg],
+        ['cruise_range',    331.5017418, (310., 350.), 331.3,    Units.nautical_miles],
+        ['MTOW',            23009.2657571, (21000., 25000.), 23000.,         Units.kg],
+        ['MZFW_ratio',     0.912696041, (0.8, 0.98),        1.,            Units.less],
     ])
 
     # -------------------------------------------------------------------
@@ -197,7 +209,8 @@ def setup():
     # throw an error if the user isn't specific about wildcards
     # [ tag, scaling, units ]
     problem.objective = np.array([
-        ['Nothing', 1., Units.kg],
+        # ['objective', 1., Units.less],
+        ['Nothing', 1., Units.less],
     ])
     
     # -------------------------------------------------------------------
@@ -207,23 +220,18 @@ def setup():
     # [ tag, sense, edge, scaling, units ]
     # CONSTRAINTS ARE SET TO BE BIGGER THAN ZERO, SEE PROCEDURE (SciPy's SLSQP optimization algorithm assumes this form)
     problem.constraints = np.array([
-        # ['design_range_margin',      '=', 0., 100., Units.nautical_miles],  # Range consistency
-        ['fuel_margin_ub',              '>', 0., 1000.,  Units.kg],   # MTOW consistency
-        ['fuel_margin_lb',              '>', 0., 1000.,  Units.kg],   # MTOW consistency
-        ['Throttle_min',             '>', 0., 1.,   Units.less],
-        # ['Throttle_max',             '>', 0., 1.,   Units.less],
-        # ['tofl_mtow_margin',         '>', 0., 100.,    Units.m],  # take-off field length
-        # ['mzfw_consistency',         '>', 0., 1000.,  Units.kg],  # MZFW consistency
-        ['design_range_ub',          '>', 0., 1., Units.nautical_miles],  # Range consistency
-        ['design_range_lb',          '>', 0., 1., Units.nautical_miles],  # Range consistency
-        # ['time_to_climb',            '>', 0., 10.,  Units.min],  # Time to climb consistency
-        # ['climb_gradient',           '>', 0., 1.,  Units.less],  # second segment climb gradient
-        # ['lfl_mlw_margin',           '>', 0., 100.,   Units.m],  # landing field length
-        # ['max_fuel_margin',          '>', 0., 1000., Units.kg],  # max fuel margin
-        # ['range_HH_margin',          '>', 0., 1000., Units.nautical_miles],  # Range for Hot and High
-        # ['TOW_HH_margin',            '>', 0., 1000., Units.kg],  # TOW for Hot and High
-        # ['MTOW',                   '>', 0., 100000., Units.kg],  # TOW for Hot and High
-        # ['BOW',                    '>', 0., 1., Units.kg],  # TOW for Hot and High
+       ['mzfw_consistency',         '=', 0., 1000.,  Units.kg],           # MZFW consistency
+       ['fuel_margin',              '=', 0., 1000.,  Units.kg],           # fuel margin defined here as fuel
+       # ['Throttle_min',             '>', 0., 1.,   Units.less],
+       # ['Throttle_max',             '>', 0., 1.,   Units.less],
+       # ['tofl_mtow_margin',         '>', 0., 100.,    Units.m],           # take-off field length
+       ['design_range_ub',          '>', 0., 10., Units.nautical_miles],  # Range consistency
+       ['design_range_lb',          '>', 0., 10., Units.nautical_miles],  # Range consistency
+       # ['time_to_climb',            '>', 0., 10.,  Units.min],            # Time to climb consistency
+       # ['climb_gradient',           '>', 0., 1.,  Units.less],            # second segment climb gradient
+       # ['lfl_mlw_margin',           '>', 0., 100.,   Units.m],            # landing field length
+       # ['max_fuel_margin',          '>', 0., 100.,  Units.kg],            # max fuel margin
+       # ['TOW_HH_margin',            '>', 0., 100.,  Units.kg],            # TOW for Hot and High
     ])
     
     # -------------------------------------------------------------------
@@ -231,39 +239,33 @@ def setup():
     # -------------------------------------------------------------------
     
     # [ 'alias' , ['data.path1.name','data.path2.name'] ]
-
     problem.aliases = [
-        ['wing_area',                  ['vehicle_configurations.*.wings.main_wing.areas.reference',
-                                        'vehicle_configurations.*.reference_area'                     ]],
-        ['aspect_ratio',                'vehicle_configurations.*.wings.main_wing.aspect_ratio'        ],
-        ['taper_ratio',                 'vehicle_configurations.*.wings.main_wing.taper'               ],
-        ['t_c_ratio',                   'vehicle_configurations.*.wings.main_wing.thickness_to_chord'  ],
-        ['sweep_angle',                 'vehicle_configurations.*.wings.main_wing.sweeps.quarter_chord'],
-        ['cruise_range',                'missions.base.segments.cruise.distance'                       ],
-        ['delta_fuel',                  'vehicle_configurations.base.delta_fuel'                       ],
-        ['Nothing',                     'summary.nothing'                                              ],
-        # ['fuel_burn',                   'summary.base_mission_fuelburn'                                ],
-        ['fuel_margin_ub',              'summary.fuel_margin_ub'                                       ],
-        ['fuel_margin_lb',              'summary.fuel_margin_lb'                                       ],
-        ['Throttle_min',                'summary.throttle_min'                                         ],
-        ['Throttle_max',                'summary.throttle_max'                                         ],
-        ['tofl_mtow_margin',            'summary.takeoff_field_length_margin'                          ],
-        ['mzfw_consistency',            'summary.mzfw_consistency'                                     ],
-        # ['design_range_margin',         'summary.design_range_margin'],
-        ['design_range_ub',             'summary.design_range_ub'                                      ],
-        ['design_range_lb',             'summary.design_range_lb'                                      ],
-        ['time_to_climb',               'summary.time_to_climb'                                        ],
-        ['climb_gradient',              'summary.climb_gradient'                                       ],
-        ['lfl_mlw_margin',              'summary.lfl_mlw_margin'                                       ],
-        ['max_fuel_margin',             'summary.max_fuel_margin'                                      ],
-        # ['range_HH_margin',             'summary.range_HH_margin'],
-        ['TOW_HH_margin',               'summary.TOW_HH_margin'],
-        # ['MTOW',                        'summary.MTOW'],
-        # ['BOW',                         'summary.BOW'],
-        ['beta',                        'vehicle_configurations.base.wings.main_wing.beta'],
-        ['objective',                   'summary.objective'],
-
-    ]    
+       ['wing_area',                  ['vehicle_configurations.*.wings.main_wing.areas.reference',
+                                       'vehicle_configurations.*.reference_area'                     ]],
+       ['aspect_ratio',                'vehicle_configurations.*.wings.main_wing.aspect_ratio'        ],
+       ['t_c_ratio',                   'vehicle_configurations.*.wings.main_wing.thickness_to_chord'  ],
+       ['sweep_angle',                 'vehicle_configurations.*.wings.main_wing.sweeps.quarter_chord'],
+       ['cruise_range',                'missions.base.segments.cruise.distance'                       ],
+       ['fuel_margin',                 'summary.fuel_margin'                                          ],
+       ['Throttle_min',                'summary.throttle_min'                                         ],
+       ['Throttle_max',                'summary.throttle_max'                                         ],
+       ['tofl_mtow_margin',            'summary.takeoff_field_length_margin'                          ],
+       ['mzfw_consistency',            'summary.mzfw_consistency'                                     ],
+       ['design_range_ub',             'summary.design_range_ub'                                      ],
+       ['design_range_lb',             'summary.design_range_lb'                                      ],
+       ['time_to_climb',               'summary.time_to_climb'                                        ],
+       ['climb_gradient',              'summary.climb_gradient'                                       ],
+       ['lfl_mlw_margin',              'summary.lfl_mlw_margin'                                       ],
+       ['max_fuel_margin',             'summary.max_fuel_margin'                                      ],
+       ['TOW_HH_margin',               'summary.TOW_HH_margin'                                        ],
+       ['MTOW',                       ['vehicle_configurations.*.mass_properties.max_takeoff',
+                                       'vehicle_configurations.*.mass_properties.takeoff'             ]],
+       ['MZFW_ratio',                  'summary.MZFW_ratio'                                            ],
+       ['beta',                        'vehicle_configurations.base.wings.main_wing.beta'              ],
+       ['objective',                   'summary.objective'                                             ],
+       ['Nothing',                     'summary.nothing'                                               ],
+       ['taper_ratio',                 'vehicle_configurations.*.wings.main_wing.taper'                ],
+    ]
     
     # -------------------------------------------------------------------
     #  Vehicles
@@ -291,6 +293,10 @@ def setup():
     # -------------------------------------------------------------------    
     nexus.summary = Data()    
     nexus.total_number_of_iterations = 0
+
+    nexus.beta = Data()
+    nexus.beta = 1.
+
     return nexus
     
 def variable_sweep(problem):

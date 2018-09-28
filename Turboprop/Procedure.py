@@ -55,72 +55,26 @@ def setup():
 #   Design Mission
 # ----------------------------------------------------------------------    
 def design_mission(nexus):
+    nexus.vehicle_configurations.base = nexus.vehicle_configurations.cruise
+    vehicle = nexus.vehicle_configurations.base
+    print(' ')
+    print('----- Geometry -----')
+    print('S    :  ' + str(vehicle.wings.main_wing.areas.reference))
+    print('AR   :  ' + str(vehicle.wings.main_wing.aspect_ratio))
+    print('Taper:  ' + str(vehicle.wings.main_wing.taper))
+    print('tc   :  ' + str(vehicle.wings.main_wing.thickness_to_chord))
+    print('Sweep:  ' + str(vehicle.wings.main_wing.sweeps.quarter_chord/Units.deg))
+    print(' ')
+    print('----- Results -----')
     analyses = nexus.analyses
     mission = nexus.missions.base
-    mission.design_range = 500. * Units.nautical_miles
 
     cruise_altitude = check_cruise_altitude(analyses)
     mission.segments['climb_10'].altitude_end = cruise_altitude
 
-    # find_target_range(nexus, mission)
-
     results = nexus.results
     results.base = mission.evaluate()
     nexus.summary.cruise_altitude = cruise_altitude
-
-    return nexus
-
-
-def find_target_range(nexus, mission):
-    segments = mission.segments
-    cruise_altitude = mission.segments['climb_10'].altitude_end
-
-    climb_1 = segments['climb_1']
-    climb_2 = segments['climb_2']
-    climb_3 = segments['climb_3']
-    climb_4 = segments['climb_4']
-    climb_5 = segments['climb_5']
-    climb_6 = segments['climb_6']
-    climb_7 = segments['climb_7']
-    climb_8 = segments['climb_8']
-    climb_9 = segments['climb_9']
-    climb_10 = segments['climb_10']
-
-    descent_1 = segments['descent_1']
-    descent_2 = segments['descent_2']
-    descent_3 = segments['descent_3']
-
-    x_climb_1 = climb_1.altitude_end / np.tan(np.arcsin(climb_1.climb_rate / climb_1.air_speed))
-    x_climb_2 = (climb_2.altitude_end - climb_1.altitude_end) / np.tan(
-        np.arcsin(climb_2.climb_rate / climb_2.air_speed))
-    x_climb_3 = (climb_3.altitude_end - climb_2.altitude_end) / np.tan(
-        np.arcsin(climb_3.climb_rate / climb_3.air_speed))
-    x_climb_4 = (climb_4.altitude_end - climb_3.altitude_end) / np.tan(
-        np.arcsin(climb_4.climb_rate / climb_4.air_speed))
-    x_climb_5 = (climb_5.altitude_end - climb_4.altitude_end) / np.tan(
-        np.arcsin(climb_5.climb_rate / climb_5.air_speed))
-    x_climb_6 = (climb_6.altitude_end - climb_5.altitude_end) / np.tan(
-        np.arcsin(climb_6.climb_rate / climb_5.air_speed))
-    x_climb_7 = (climb_7.altitude_end - climb_6.altitude_end) / np.tan(
-        np.arcsin(climb_7.climb_rate / climb_6.air_speed))
-    x_climb_8 = (climb_8.altitude_end - climb_7.altitude_end) / np.tan(
-        np.arcsin(climb_8.climb_rate / climb_7.air_speed))
-    x_climb_9 = (climb_9.altitude_end - climb_8.altitude_end) / np.tan(
-        np.arcsin(climb_9.climb_rate / climb_8.air_speed))
-    x_climb_10 = (climb_10.altitude_end - climb_9.altitude_end) / np.tan(
-        np.arcsin(climb_10.climb_rate / climb_9.air_speed))
-    x_descent_1 = (climb_10.altitude_end - descent_1.altitude_end) / np.tan(
-        np.arcsin(descent_1.descent_rate / descent_1.air_speed))
-    x_descent_2 = (descent_1.altitude_end - descent_2.altitude_end) / np.tan(
-        np.arcsin(descent_2.descent_rate / descent_2.air_speed))
-    x_descent_3 = (descent_2.altitude_end - descent_3.altitude_end) / np.tan(
-        np.arcsin(descent_3.descent_rate / descent_3.air_speed))
-
-    cruise_range = mission.design_range - (
-                x_climb_1 + x_climb_2 + x_climb_3 + x_climb_4 + x_climb_5 + x_climb_6 + x_climb_7 + x_climb_8 +
-                x_climb_9 + x_climb_10 + x_descent_1 + x_descent_2 + x_descent_3)
-
-    segments['cruise'].distance = cruise_range
 
     return nexus
 
@@ -243,7 +197,12 @@ def simple_sizing(nexus):
 
 def weight(nexus):
     vehicle = nexus.vehicle_configurations.base
-    BOW = 13500.
+
+    for config in nexus.vehicle_configurations:
+        config.mass_properties.max_zero_fuel = nexus.summary.MZFW_ratio * vehicle.mass_properties.max_takeoff
+        config.mass_properties.takeoff       = vehicle.mass_properties.max_takeoff
+        config.mass_properties.max_takeoff   = vehicle.mass_properties.max_takeoff
+
     # weight analysis
     weights = nexus.analyses.base.weights.evaluate()
     weights = nexus.analyses.landing.weights.evaluate()
@@ -252,21 +211,16 @@ def weight(nexus):
 
     vehicle.mass_properties.breakdown = weights
 
-    empty_weight     = vehicle.mass_properties.operating_empty
-    passenger_weight = vehicle.passenger_weights.mass_properties.mass
-    empty_weight = empty_weight - 239.
+    vehicle.mass_properties.operating_empty = vehicle.mass_properties.operating_empty - 248.5806022
 
-    delta = BOW - empty_weight
-    vehicle.mass_properties.max_takeoff = 23000. - delta + vehicle.delta_fuel
-    vehicle.mass_properties.takeoff     = vehicle.mass_properties.max_takeoff
-    print ('MTOW: '+str('%5.1f' % vehicle.mass_properties.max_takeoff)+' kg, BOW: '+str('%5.1f' % empty_weight)+' kg')
     for config in nexus.vehicle_configurations:
         config.mass_properties.zero_fuel_center_of_gravity  = vehicle.mass_properties.zero_fuel_center_of_gravity
         config.fuel                                         = vehicle.fuel
-        config.mass_properties.takeoff                      = vehicle.mass_properties.takeoff
-        config.mass_properties.max_takeoff                  = vehicle.mass_properties.max_takeoff
+        config.mass_properties.operating_empty              = vehicle.mass_properties.operating_empty
+
     nexus.summary.MTOW = vehicle.mass_properties.max_takeoff
-    nexus.summary.BOW  = empty_weight
+    nexus.summary.BOW  = vehicle.mass_properties.operating_empty
+
     return nexus
 # ----------------------------------------------------------------------
 #   Takeoff Field Length Evaluation
@@ -464,6 +418,8 @@ def post_process(nexus):
     summary                           = nexus.summary
     missions                          = nexus.missions  
     nexus.total_number_of_iterations +=1
+    
+    # -----------------------------------------------------------------------------------------------------------------
     # Static stability calculations
     CMA = -10.
     for segment in results.base.segments.values():
@@ -472,13 +428,19 @@ def post_process(nexus):
             CMA = max_CMA
             
     summary.static_stability = CMA
-    
-    #throttle in design mission
+
+    # -----------------------------------------------------------------------------------------------------------------
+    # throttle in design mission
+    max_throttle_climb = 0.
     max_throttle = 0.
+    i = 0
     for segment in results.base.segments.values():
+        i += 1
         max_segment_throttle = np.max(segment.conditions.propulsion.throttle[:, 0])
         if max_segment_throttle > max_throttle:
             max_throttle = max_segment_throttle
+        if i == 10:
+            max_throttle_climb = max_throttle
     min_throttle = 1.
     for segment in results.base.segments.values():
         min_segment_throttle = np.min(segment.conditions.propulsion.throttle[:, 0])
@@ -487,36 +449,54 @@ def post_process(nexus):
 
     summary.throttle_max = 1.00001 - max_throttle  # strategy to make constraint > 0
     summary.throttle_min = min_throttle + 0.01
+    summary.max_throttle_climb = max_throttle_climb
 
+    print('Max Throttle : ' + str(max_throttle))
+    print('Cli Throttle : ' + str(max_throttle_climb))
+    # -----------------------------------------------------------------------------------------------------------------
     # Fuel margin and base fuel calculations
-    operating_empty          = summary.BOW
-    max_payload              = vehicle.mass_properties.max_payload
-    design_landing_weight    = results.base.segments[-1].conditions.weights.total_mass[-1]
-    design_takeoff_weight    = results.base.segments[0].conditions.weights.total_mass[0]
-    zero_fuel_weight         = vehicle.mass_properties.max_zero_fuel
+    operating_empty       = summary.BOW
+    max_payload           = vehicle.mass_properties.max_payload
+    design_landing_weight = results.base.segments[-1].conditions.weights.total_mass[-1]
+    design_takeoff_weight = results.base.segments[0].conditions.weights.total_mass[0]
+    zero_fuel_weight      = nexus.vehicle_configurations.takeoff.mass_properties.max_zero_fuel
 
+    # design mission: MTOW, PLDmax for fixed range
     summary.base_mission_fuelburn = design_takeoff_weight - design_landing_weight
-    summary.fuel_margin_ub        = design_landing_weight - operating_empty - max_payload
-    summary.fuel_margin_lb        = 10. - (design_landing_weight - operating_empty - max_payload)
-    print('Fuel Margin: ' + str('%4.1f' % summary.fuel_margin_ub) + ' kg')
-    summary.mzfw_consistency      = zero_fuel_weight - operating_empty - max_payload
+    summary.fuel_margin = design_landing_weight - operating_empty - max_payload
+    summary.mzfw_consistency = zero_fuel_weight - operating_empty - max_payload
 
+    print('Fuel Margin: ' + str('%4.2f' % summary.fuel_margin) + ' kg')
+
+    print('BOW: ' + str('%5.1f' % operating_empty) + ' kg')
+
+    print('MTOW target: ' + str('%5.1f' % (summary.base_mission_fuelburn + operating_empty + max_payload))
+          + ' kg, MZFW target: ' + str('%4.1f' % (operating_empty + max_payload)))
+
+    print('MZFW: ' + str('%4.1f' % zero_fuel_weight) + ' kg, MZFW difference: ' + str(
+        '%4.1f' % summary.mzfw_consistency))
+
+    print('MTOW: ' + str('%4.1f' % design_takeoff_weight) + ' kg, MTOW difference: ' + str(
+        '%4.1f' % (design_takeoff_weight - (summary.base_mission_fuelburn + operating_empty + max_payload))))
     # ------------------------------------------------------------------------------------------------------------------
-    # Additional Constraints computation
     # TOFL
     summary.takeoff_field_length_margin = 1391. - summary.takeoff_field_length
 
-    if summary.takeoff_field_length_margin > -0.05 and summary.takeoff_field_length_margin < 0:
-        summary.takeoff_field_length_margin = - summary.takeoff_field_length_margin
+    # if summary.takeoff_field_length_margin > -0.05 and summary.takeoff_field_length_margin < 0:
+    #     summary.takeoff_field_length_margin = - summary.takeoff_field_length_margin
 
+    # -----------------------------------------------------------------------------------------------------------------
     # Second Segment Climb Gradient
-    summary.climb_gradient = summary.second_segment_climb_gradient_takeoff - 0.03
+    summary.climb_gradient = summary.second_segment_climb_gradient_takeoff - 0.0394
 
-    # summary.range_HH_margin = summary.range_HH - 1216.8
-    summary.TOW_HH_margin = (summary.TOW_HH - 6400. - operating_empty) - 1100.
+    # -----------------------------------------------------------------------------------------------------------------
+    # Fuel for HH condition
     summary.FUEL_HH       = summary.TOW_HH - 6400. - operating_empty
-    print('Fuel available - HH: ' + str('%4.1f' % (summary.TOW_HH - 6400. - operating_empty)) + ' kg')
+    summary.TOW_HH_margin = summary.FUEL_HH - 1100.
 
+    print('Fuel available - HH: ' + str('%4.1f' % (summary.FUEL_HH)) + ' kg')
+
+    # -----------------------------------------------------------------------------------------------------------------
     # Time to climb
     time_f = results.base.segments['climb_10'].conditions.frames.inertial.time[-1] / Units.min
     time_i = results.base.segments['climb_1'].conditions.frames.inertial.time[0] / Units.min
@@ -525,8 +505,9 @@ def post_process(nexus):
 
     print ('Time to climb to cruise altitude: ' + str('%2.1f' % (time_f - time_i)) + ' min')
 
-    # Design Range
-    summary.cruise_range = -((results.base.segments['climb_5'].conditions.frames.inertial.position_vector[-1, 0] *
+    # -----------------------------------------------------------------------------------------------------------------
+    # Design Range, Cruise Range, Total Range
+    summary.cruise_range = -((results.base.segments['climb_10'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile) -
                             (results.base.segments['cruise'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile))
@@ -534,39 +515,45 @@ def post_process(nexus):
                                        Units.m/Units.nautical_mile)
     summary.total_range  = (results.base.segments[-1].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)
-    summary.design_range_margin = 500.0 - (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
-                                       Units.m/Units.nautical_mile)
     summary.design_range_ub = 500.2 - (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)
-    summary.design_range_lb = -499.8 + (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
+    summary.design_range_lb = -500.0 + (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)
 
-    if summary.design_range_ub > -0.05 and summary.design_range_ub < 0:
-        summary.design_range_ub = - summary.design_range_ub
-
-    if summary.design_range_lb > -0.05 and summary.design_range_lb < 0:
-        summary.design_range_lb = - summary.design_range_lb
+    # if summary.design_range_ub > -0.05 and summary.design_range_ub < 0:
+    #     summary.design_range_ub = - summary.design_range_ub
+    #
+    # if summary.design_range_lb > -0.05 and summary.design_range_lb < 0:
+    #     summary.design_range_lb = - summary.design_range_lb
 
     print('Design Range: ' + str('%4.1f' % (results.base.segments['descent_3'].conditions.frames.inertial.position_vector[-1, 0] *
                                        Units.m/Units.nautical_mile)))
 
+    # -----------------------------------------------------------------------------------------------------------------
+    # Block fuel, cruise fuel computation
     summary.block_fuel = design_takeoff_weight - results.base.segments['descent_3'].conditions.weights.total_mass[-1, 0]
     summary.cruise_fuel = (results.base.segments['climb_5'].conditions.weights.total_mass[-1, 0] -
                            results.base.segments['cruise'].conditions.weights.total_mass[-1, 0])
+
+    # -----------------------------------------------------------------------------------------------------------------
     # LFL
     summary.lfl_mlw_margin = 917. - summary.landing_field_length
-
+    
+    # -----------------------------------------------------------------------------------------------------------------
+    # Max fuel available margin
     summary.max_fuel_margin = summary.available_fuel - 5000.
     print ('Maximum Fuel available: ' + str('%4.1f' % summary.available_fuel) + ' kg')
+    
+    # -----------------------------------------------------------------------------------------------------------------
+    # Objective function
+    beta = nexus.beta
+    # summary.objective = (summary.base_mission_fuelburn / 2080.) * beta + (summary.MTOW / 23000.) * (1 - beta)
+    summary.objective = 0.
     print ('Fuel Burn: ' + str('%4.1f' % summary.base_mission_fuelburn) + ' kg')
     print('MTOW: ' + str('%5.1f' % summary.MTOW))
-    # beta = vehicle.wings['main_wing'].beta
-    # summary.objective = summary.base_mission_fuelburn * beta + summary.MTOW/4. * (1-beta)
+    print('Beta: ' + str('%1.1f' % beta) + ' , Objective: ' + str('%1.4f' % summary.objective))
 
-    # print('Beta: '+str('%1.1f' % beta)+' , Objective: ' + str('%1.4f' % summary.objective))
     summary.nothing = 0.
-    #when you run want to output results to a file
-    # filename = 'results.txt'
-    # write_optimization_outputs(nexus, filename)
+
     print('\n')
     return nexus    

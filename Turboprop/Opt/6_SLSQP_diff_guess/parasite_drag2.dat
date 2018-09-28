@@ -1,0 +1,31 @@
+Output file with parasite drag breakdown
+
+  VEHICLE TAG : cruise
+
+  REFERENCE AREA ..................  62.4 m2 
+  ASPECT RATIO ....................  13.0    
+  WING SWEEP ......................   3.0 deg
+  WING THICKNESS RATIO ............  0.16    
+  INDUCED DRAG EFFICIENCY FACTOR .. 0.705    
+  MEAN AEROD. CHORD ............... 2.263 m 
+  REYNOLDS NUMBER .................  12.0 millions
+  MACH NUMBER ..................... 0.300    
+
+
+            COMPONENT                 |      CDO      |  WETTED AREA  |  FORM FACTOR  | FLAT PLATE CF.| REYNOLDS FACT.| COMPRES. FACT.|
+                                      |      [-]      |      [m2]     |      [-]      |      [-]      |      [-]      |      [-]      |
+                                      |               |               |               |               |               |               |
+ vertical_stabilizer                  |    0.00171    |       31.7    |      1.238    |    0.00272    |      0.996    |      0.990    |
+ main_wing                            |    0.00841    |      124.9    |      1.462    |    0.00288    |      0.996    |      0.990    |
+ turboprop  (EACH)                    |    0.00071    |       13.4    |      1.148    |    0.00288    |      0.996    |      0.990    |
+ horizontal_stabilizer                |    0.00153    |       23.6    |      1.331    |    0.00303    |      0.996    |      0.990    |
+ Pylon (TOTAL)                        |    0.00028    |        5.4    |      1.148    |    0.00288    |      0.996    |      0.990    |
+ fuselage                             |    0.00711    |      200.0    |      1.112    |    0.00199    |      0.996    |      0.990    |
+ Miscellaneous Drag                   |    0.00132    |        -      |        -      |        -      |        -      |        -      |
+ Drag Coefficient Increment           |    0.00614    |        -      |        -      |        -      |        -      |        -      |
+                                      |               |               |               |               |               |               |
+                             SUM 	  |    0.02791    |      412.4    |               |               |               |               |
+
+
+-------------------------------------------
+ Thursday, 27. September 2018 03:57:43 PM

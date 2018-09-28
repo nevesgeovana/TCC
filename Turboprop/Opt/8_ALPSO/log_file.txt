@@ -1,0 +1,80 @@
+Cruise altitude: 21000.0 ft
+TOFL: 1391.0 m, Second Segment Climb Gradient: 0.03982
+TOW for Hot and High: 21080.6
+LFL for MLW (22379.1 kg): 916.3 m
+Fuel Margin: -0.06 kg
+BOW: 13522.1 kg
+MTOW target: 23029.9 kg, MZFW target: 21022.1
+MZFW: 21022.1 kg, MZFW difference: -0.1
+MTOW: 23029.9 kg, MTOW difference: -0.1
+Fuel available - HH: 1158.5 kg
+Time to climb to cruise altitude: 34.8 min
+Design Range: 500.0
+Maximum Fuel available: 5000.1 kg
+Fuel Burn: 2007.8 kg
+MTOW: 23029.9
+Beta: 1.0 , Objective: 23029.8805
+
+
+[1.0012991513913043]
+ 
+ Initial Guess Results 
+ 
+Fuel Burn   =  2007.81154898
+Cruise Fuel =  1045.05895709
+Block  Fuel =  1250.98590506
+MTOW        =  23029.880482
+BOW         =  13522.1339274
+TOFL        =  1391.00228022
+GRAD        =  0.0398162412077
+Cruise Alt  =  6400.8
+Design Ran  =  499.999999932
+Cruise Ran  =  331.5017418
+Total Ran   =  780.88543036
+Time To Cli =  34.7785241443
+TOW HH      =  21080.609699
+Fuel HH     =  1158.47577155
+ 
+Constraints =  [-5.22927114e-05 -6.49943811e-05  6.11515988e-02  1.80246250e-03
+ -2.28021949e-05  2.00000068e-02 -6.81364440e-09  1.21475856e-02
+  4.16241208e-04  6.51708814e-03  8.67146128e-04  5.84757716e-01]
+ 
+S           =  61.1065701272
+AR          =  12.0883021218
+t/c         =  0.150158611168
+Sweep Ang   =  3
+Pareto Frontier. Run number: 0
+
+Optimization Problem -- SUAVE
+================================================================================
+
+        Objective Function: <lambda>
+
+    Objectives:
+        Name        Value        Optimum
+	 objective           0             0
+
+	Variables (c - continuous, i - integer, d - discrete):
+        Name    Type       Value       Lower Bound  Upper Bound
+	 wing_area    c	      1.001747       8.20e-01     1.18e+00 
+	 aspect_ratio    c	      1.007359       8.33e-01     1.17e+00 
+	 t_c_ratio    c	      1.001057       7.33e-01     1.20e+00 
+	 cruise_range    c	      1.000609       9.36e-01     1.06e+00 
+	    MTOW      c	      1.001299       9.13e-01     1.09e+00 
+	 MZFW_ratio    c	      0.992193       8.70e-01     1.07e+00 
+
+	Constraints (i - inequality, e - equality):
+        Name    Type                    Bounds
+	 mzfw_consistency    e                0.000000 = 0.00e+00
+	 fuel_margin    e                0.000000 = 0.00e+00
+	 Throttle_min	  i        0.00e+00 <= 0.000000 <=      inf
+	 Throttle_max	  i        0.00e+00 <= 0.000000 <=      inf
+	 tofl_mtow_margin	  i        0.00e+00 <= 0.000000 <=      inf
+	 design_range_ub	  i        0.00e+00 <= 0.000000 <=      inf
+	 design_range_lb	  i        0.00e+00 <= 0.000000 <=      inf
+	 time_to_climb	  i        0.00e+00 <= 0.000000 <=      inf
+	 climb_gradient	  i        0.00e+00 <= 0.000000 <=      inf
+	 lfl_mlw_margin	  i        0.00e+00 <= 0.000000 <=      inf
+	 max_fuel_margin	  i        0.00e+00 <= 0.000000 <=      inf
+	 TOW_HH_margin	  i        0.00e+00 <= 0.000000 <=      inf
+
